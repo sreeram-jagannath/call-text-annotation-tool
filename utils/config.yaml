@@ -2,17 +2,25 @@ credentials:
   usernames:
     usera:
       name: User A
+      role: annotator
       password: $2b$12$fYW8Sy96ebCLapT4tXlvqO5XhnKRBayAxjJoVQwtpCjdRUa.Q.nd2
     userb:
       name: User B
+      role: annotator
       password: $2b$12$QtxO3CBCVsCkPdu/41m7GeUFZI1Deqc9cdzAfyAJ/9yNi5z.jtwku
     userc:
       name: User C
+      role: annotator
       password: $2b$12$xRxA8Ibvt4kay.r5oNXQ5e65LPELKhR1hVjjLQG5JqwebYvRhXBDe
     userd:
       name: User D
+      role: reviewer
       password: $2b$12$rS7.tBJBeNUUBJt23hWSFOUEsAkH1RMpDt0PSathTr55bJLDhXYXK
+    usere:
+      name: User E
+      role: reviewer
+      password: $2b$12$TILeFJa.pp2JRY0H0Ko9puEFh8LLmbvz/rOVOYlEFngiVYLXJyawm
 cookie:
   expiry_days: 0
-  key: some_signature_key # Must be string
+  key: some_signature_key
   name: some_cookie_name
