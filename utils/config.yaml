@@ -1,0 +1,18 @@
+credentials:
+  usernames:
+    usera:
+      name: User A
+      password: $2b$12$fYW8Sy96ebCLapT4tXlvqO5XhnKRBayAxjJoVQwtpCjdRUa.Q.nd2
+    userb:
+      name: User B
+      password: $2b$12$QtxO3CBCVsCkPdu/41m7GeUFZI1Deqc9cdzAfyAJ/9yNi5z.jtwku
+    userc:
+      name: User C
+      password: $2b$12$xRxA8Ibvt4kay.r5oNXQ5e65LPELKhR1hVjjLQG5JqwebYvRhXBDe
+    userd:
+      name: User D
+      password: $2b$12$rS7.tBJBeNUUBJt23hWSFOUEsAkH1RMpDt0PSathTr55bJLDhXYXK
+cookie:
+  expiry_days: 0
+  key: some_signature_key # Must be string
+  name: some_cookie_name
