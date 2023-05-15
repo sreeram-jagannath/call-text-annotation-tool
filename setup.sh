@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# make the script executable
-chmod +x setup.sh
-
 # create a virtual environment with python 3.8
 python3.8 -m venv annotator-webapp-env
 
