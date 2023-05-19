@@ -34,8 +34,9 @@ def get_unannotated_ids(call_data, annotated_df, user_call_mapping, username):
     )
     # st.write("Outer", outer.shape, outer)
 
+    # st.write("call data", call_data.shape, call_data)
     # perform anti-join
-    anti_join = outer[(outer._merge == "left_only")].drop("_merge", axis=1).head()
+    anti_join = outer[(outer._merge == "left_only")].drop("_merge", axis=1)
     # st.write("Anti-Join", anti_join.shape, anti_join)
 
     return anti_join
@@ -52,8 +53,7 @@ def read_dataframes():
 
 @st.cache_data
 def read_annotated_data(_conn):
-    user = st.session_state["name"]
-    select_data_query = f"SELECT * FROM call_annotation_table WHERE role = 'annotator' and username = '{user}'"
+    select_data_query = f"SELECT * FROM call_annotation_table"
     df = pd.read_sql_query(select_data_query, _conn)
 
     return df

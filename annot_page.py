@@ -64,6 +64,9 @@ def get_annotator_page():
             unsafe_allow_html=True,
         )
 
+        progress_text = f"Progress: [{len(st.session_state['annotated_idx'])} / {st.session_state['n_chunks']}]"
+        st.progress(value=len(st.session_state["annotated_idx"])/st.session_state["n_chunks"], text=progress_text)
+
         # Text display
         st.write(
             f"ConnectionID: {current_conn_id} ChunkID: {current_row['chunk_id']}",
@@ -131,11 +134,11 @@ def get_annotator_page():
         st.title("")
         _, bcol1, bcol2, bcol3, _ = st.columns([1.5, 1, 1, 1, 1])
 
-        st.write(
-            st.session_state["n_chunks"],
-            st.session_state["current_idx"],
-            st.session_state["annotated_idx"],
-        )
+        # st.write(
+        #     st.session_state["n_chunks"],
+        #     st.session_state["current_idx"],
+        #     st.session_state["annotated_idx"],
+        # )
 
         if st.session_state["current_idx"] > 0:
             bcol1.button("Previous", on_click=previous_button_clicked)
