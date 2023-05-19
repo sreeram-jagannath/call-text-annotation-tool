@@ -162,3 +162,9 @@ def get_annotator_page():
             cursor.close()
             conn.close()
             st.stop()
+
+        if st.button("Read database"):
+            query = f"SELECT * FROM call_annotation_table"
+            df = pd.read_sql_query(query, conn)
+
+            st.write(df)
