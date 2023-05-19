@@ -17,6 +17,12 @@
 | confidence        | High, Medium or low |
 | comments | Additional comments by the annotator/reviewer |
 
+## How to run
+
+- Create a virtual environment
+- Install all the requirements using `pip install -r requirements.txt`
+- Use `streamlit run app.py` to run the app
+
 ---
 ## Functionalities
 
