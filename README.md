@@ -8,7 +8,7 @@
 | Column Name | Column Description |
 |-------------|-------------------|
 | call_id        | connectionID + chunkID |
-| username         | Annotator name |
+| username         | name of the user who logged in |
 | role         | annotator or reviewer |
 | date     | Date of annotation (YYYY-mm-dd) |
 | time       | Time of annotation (HH:MM:SS) |
@@ -41,3 +41,6 @@
 - [ ] Show the call texts which are not already reviewed by default in the reviewer page
 - [ ] Docstrings for functions
 - [ ] Adding CSS 
+- [ ] Close database connection on exiting app
+- [ ] Connect and store data in a database hosted in EC2
+ 
