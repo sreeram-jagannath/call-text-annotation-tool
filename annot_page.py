@@ -14,8 +14,8 @@ def get_annotator_page():
         "<h1 style='text-align: center;'>Sunlife Annotation Tool</h1>",
         unsafe_allow_html=True,
     )
-    st.write(f'Welcome *{st.session_state.get("name")}*')
-    st.write(f"Role: {st.session_state.get('role')}")
+    
+    display_name_and_role()
 
     data, intents, mapping = read_dataframes()
     all_intents = get_all_intent_options(intent_df=intents)
@@ -43,7 +43,7 @@ def get_annotator_page():
         st.success("You don't have any texts to annotate!")
     else:
         # connection_id = connection_ids[0]
-        if "current_idx" not in st.session_state:
+        if "annotated_idx" not in st.session_state:
             st.session_state["current_idx"] = 0
             st.session_state["n_chunks"] = call_ids.shape[0]
             st.session_state["annotated_idx"] = set()
@@ -59,23 +59,34 @@ def get_annotator_page():
             full_text = current_row["full_text"]
             st.text(full_text)
 
+        progress_text = f"Progress: [{len(st.session_state['annotated_idx'])} / {st.session_state['n_chunks']}]"
+        st.progress(value=len(st.session_state["annotated_idx"])/st.session_state["n_chunks"], text=progress_text)
+
         st.markdown(
             "<h3 style='text-align: center;'>Annotate chunks</h3>",
             unsafe_allow_html=True,
         )
 
-        progress_text = f"Progress: [{len(st.session_state['annotated_idx'])} / {st.session_state['n_chunks']}]"
-        st.progress(value=len(st.session_state["annotated_idx"])/st.session_state["n_chunks"], text=progress_text)
+        # Display connection id and chunk id
+        _, col1, col2, _  = st.columns([2, 1, 1, 2])
 
-        # Text display
-        st.write(
-            f"ConnectionID: {current_conn_id} ChunkID: {current_row['chunk_id']}",
-        )
-        st.markdown(
-            f"<p style='text-align: center;'>{current_row['text']}</p>",
+        col1.markdown(
+            f"<p style='text-align: center;'><b>Connection ID: {current_conn_id}</b></p>",
             unsafe_allow_html=True,
         )
-        st.title("")
+
+        col2.markdown(
+            f"<p style='text-align: center;'><b>Chunk ID: {current_row['chunk_id'].astype(int)}</b></p>",
+            unsafe_allow_html=True,
+        )
+
+        # Text display
+        _, chunk_col, _ = st.columns([1, 2, 1])
+        chunk_col.markdown(
+            f"<p style='text-align: justify; padding: 10px; border: 1px solid black; border-radius: 5px; background-color: #D8D8D8;'>{current_row['text']}</p>",
+            unsafe_allow_html=True,
+        )
+        # st.title("")
 
         # st.write(current_row["Call Type"].split(','), all_intents)
         # st.write(all_intents, [] if current_row["Call Type"] is None else current_row["Call Type"].split(','))

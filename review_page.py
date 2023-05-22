@@ -4,12 +4,14 @@ from helper_functions import *
 
 
 def get_reviewer_page():
+
     st.markdown(
         "<h1 style='text-align: center;'>Sunlife Annotation Tool</h1>",
         unsafe_allow_html=True,
     )
-    st.write(f'Welcome *{st.session_state.get("name")}*')
-    st.write(f"Role: *{st.session_state.get('role')}*")
+
+    display_name_and_role()
+
 
     data, intents, mapping = read_dataframes()
     all_intents = get_all_intent_options(intent_df=intents)
@@ -37,6 +39,7 @@ def get_reviewer_page():
         if "current_idx" not in st.session_state:
             st.session_state["current_idx"] = 0
             st.session_state["n_chunks"] = review_call_ids.shape[0]
+            st.session_state["annotated_idx"] = set()
 
         current_row = review_call_ids.iloc[st.session_state["current_idx"]]
         current_conn_id = current_row["ConnectionID"]
@@ -46,15 +49,27 @@ def get_reviewer_page():
         if "conn_id_select" in st.session_state:
             st.session_state["conn_id_select"] = current_conn_id
 
+        if "chunk_id_select" in st.session_state:
+            st.session_state["chunk_id_select"] = current_chunk_id
+
         conn_id_list = review_call_ids["ConnectionID"].unique().tolist()
-        st.selectbox(
+        chunk_id_list = review_call_ids[review_call_ids["ConnectionID"] == current_conn_id]["chunk_id"].unique().tolist()
+
+        _, fcol1, fcol2, _ = st.columns([1, 2, 2, 1])
+        fcol1.selectbox(
             "Connection ID",
             options=conn_id_list,
             key="conn_id_select",
             on_change=reviewer_select_connid,
             args=(review_call_ids,),
         )
-        
+        fcol2.selectbox(
+            "Chunk ID",
+            options=chunk_id_list,
+            key="chunk_id_select",
+            on_change=reviewer_select_chunkid,
+            args=(review_call_ids,),
+        )
 
         with st.expander(
             label=f"Expand to see full conversation (ConnectionID: {current_conn_id})"
@@ -62,55 +77,38 @@ def get_reviewer_page():
             full_text = current_row["full_text"]
             st.text(full_text)
 
-        st.markdown(
-            "<h3 style='text-align: center;'>Review annotations</h3>",
-            unsafe_allow_html=True,
-        )
-
-        # progress_text = f"Progress: [{len(st.session_state['annotated_idx'])} / {st.session_state['n_chunks']}]"
-        # st.progress(value=len(st.session_state["annotated_idx"])/st.session_state["n_chunks"], text=progress_text)
-
-        st.markdown(
-            "<h3 style='text-align: center;'>Annotation details</h3>",
-            unsafe_allow_html=True,
-        )
-
         # Text display
-        st.markdown(
-            f"<p style='text-align: center;'>{current_row['text']}</p>",
+        _, chunk_col, _ = st.columns([1, 2, 1])
+        chunk_col.markdown(
+            f"<p style='text-align: justify; padding: 10px; border: 1px solid black; border-radius: 5px; background-color: #D8D8D8;'>{current_row['text']}</p>",
             unsafe_allow_html=True,
         )
         # st.write(f"ConnectionID: {current_conn_id} ChunkID: {current_row['chunk_id']}", )
 
-        st.info("**Annotation Details**")
-        req_cols = [
-            "ConnectionID",
-            "chunk_id",
-            "Annotator",
-            "case_type",
-            "subcase_type",
-            "confidence",
-            "comments",
-        ]
-        st.table(current_row[req_cols].T)
-        # st.write(f"**Annotated by**: {current_row['Annotator']}")
-        # st.write(f"**Intents**: {current_row['case_type']}")
-        # st.write(f"**Sub Intents**: {current_row['subcase_type']}")
-        # st.write(f"**Confidence**: {current_row['confidence']}")
-        # st.write(f"**Annotator Comments**: {current_row['comments']}")
-
-        # st.write(current_row["Call Type"].split(','), all_intents)
-        # st.write(all_intents, [] if current_row["Call Type"] is None else current_row["Call Type"].split(','))
-
-        status, reviewed_df = get_already_reviewed_calls(
+        _, icol, _ = st.columns([1, 2, 1])
+        icol.info("**Annotation Details**")
+        
+        display_annotation_details(current_row=current_row)
+        
+        review_status, reviewed_df = get_already_reviewed_calls(
             _conn=conn, connection_id=current_conn_id, chunk_id=current_chunk_id
         )
-        st.info(f"Reviewer Status: {status}")
-        st.table(reviewed_df)
+
+        _, scol, _ = st.columns([1, 2, 1])
+        if review_status == "Pending":
+            default_intents = get_default_options(current_row["case_type"])
+            scol.warning(f"Reviewer Status: {review_status}")
+
+        else:
+            default_intents = get_default_options(reviewed_df.iloc[0]["case_type"])
+            scol.success(f"Reviewer Status: {review_status}")
+
+        # st.table(reviewed_df)
+        
 
         # Dropdowns
         _, scol1, scol2, _ = st.columns([1, 1, 1, 1])
-        default_intents = get_default_options(current_row["case_type"])
+        # default_intents = get_default_options(current_row["case_type"])
         intent_list = scol1.multiselect(
             label="Intent",
             options=all_intents,
@@ -121,7 +119,12 @@ def get_reviewer_page():
         valid_subintents = get_valid_subintent_options(
             intent_list=intent_list, subintent_map=all_subintents
         )
-        default_subintents = get_default_options(current_row["subcase_type"])
+
+        if review_status == "Pending":
+            default_subintents = get_default_options(current_row["subcase_type"])
+        else:
+            default_subintents = get_default_options(reviewed_df.iloc[0]["subcase_type"])
+
         final_default_subintents = list(
             set(valid_subintents).intersection(set(default_subintents))
         )
@@ -187,7 +190,7 @@ def get_reviewer_page():
             conn.close()
             st.stop()
 
-        if st.button("Read database"):
+        if st.button("Read Database"):
             query = f"SELECT * FROM call_annotation_table"
             df = pd.read_sql_query(query, conn)
 

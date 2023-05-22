@@ -317,3 +317,51 @@ def reviewer_select_connid(review_df):
     st.session_state["current_idx"] = review_df[
         review_df["ConnectionID"] == st.session_state["conn_id_select"]
     ].index[0]
+
+
+def reviewer_select_chunkid(review_df):
+
+    st.session_state["current_idx"] = review_df[
+        (review_df["ConnectionID"] == st.session_state["conn_id_select"])
+        & (review_df["chunk_id"] == st.session_state["chunk_id_select"])
+    ].index[0]
+
+
+
+def display_annotation_details(current_row):
+
+    rename_columns = {
+        "ConnectionID": "Connection ID",
+        "chunk_id": "Chunk ID",
+        "Annotator": "Annotator",
+        "case_type": "Intent",
+        "subcase_type": "Sub-Intent",
+        "confidence": "Confidence Level",
+        "comments": "Annotator Comments",
+    }
+
+    _, dcol, _ = st.columns([1, 2, 1])
+
+    df = (
+        current_row
+        .filter(rename_columns.keys())
+        .reset_index(name="Details")
+        .replace(rename_columns)
+        .rename(columns={"index": "Columns"})
+    )
+
+    dcol.dataframe(df, use_container_width=True)
+
+
+def display_name_and_role():
+    _, col1, col2, _  = st.columns([1, 2, 2, 1])
+
+    col1.markdown(
+        f"<p style='text-align: left;'><b>Welcome {st.session_state.get('name')}</b></p>",
+        unsafe_allow_html=True,
+    )
+
+    col2.markdown(
+        f"<p style='text-align: right;'><b>Role: {st.session_state.get('role')}</b></p>",
+        unsafe_allow_html=True,
+    )
