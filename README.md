@@ -38,9 +38,8 @@
 
 ## Pending Tasks
 
-- [ ] Show the call texts which are not already reviewed by default in the reviewer page
 - [ ] Docstrings for functions
 - [ ] Adding CSS 
 - [ ] Close database connection on exiting app
-- [ ] Connect and store data in a database hosted in EC2
+- [ ] Automatically scroll a little bit up when the user clicks the buttons.
  
