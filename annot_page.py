@@ -68,7 +68,7 @@ def get_annotator_page():
         )
 
         # Display connection id and chunk id
-        _, col1, col2, _  = st.columns([2, 1, 1, 2])
+        _, col1, col2, _  = st.columns([1, 2, 2, 1])
 
         col1.markdown(
             f"<p style='text-align: center;'><b>Connection ID: {current_conn_id}</b></p>",
