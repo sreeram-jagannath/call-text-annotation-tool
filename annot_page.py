@@ -59,6 +59,8 @@ def get_annotator_page():
             full_text = current_row["full_text"]
             st.text(full_text)
 
+            st.markdown("<style>div[data-testid='stText'] {background-color: lightyellow; border: 5px; padding: 10px}", unsafe_allow_html=True)
+
         progress_text = f"Progress: [{len(st.session_state['annotated_idx'])} / {st.session_state['n_chunks']}]"
         st.progress(value=len(st.session_state["annotated_idx"])/st.session_state["n_chunks"], text=progress_text)
 

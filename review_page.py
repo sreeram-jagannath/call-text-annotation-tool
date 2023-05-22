@@ -77,6 +77,9 @@ def get_reviewer_page():
             full_text = current_row["full_text"]
             st.text(full_text)
 
+            st.markdown("<style>div[data-testid='stText'] {background-color: lightyellow; border: 5px; padding: 10px}", unsafe_allow_html=True)
+
+
         # Text display
         _, chunk_col, _ = st.columns([1, 2, 1])
         chunk_col.markdown(
