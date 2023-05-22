@@ -185,10 +185,10 @@ def get_reviewer_page():
             ),
         )
 
-        if st.button("close_database"):
-            cursor.close()
-            conn.close()
-            st.stop()
+        # if st.button("close_database"):
+        #     cursor.close()
+        #     conn.close()
+        #     st.stop()
 
         if st.button("Read Database"):
             query = f"SELECT * FROM call_annotation_table"

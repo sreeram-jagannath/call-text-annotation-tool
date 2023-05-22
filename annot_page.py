@@ -172,10 +172,10 @@ def get_annotator_page():
             ),
         )
 
-        if st.button("close_database"):
-            cursor.close()
-            conn.close()
-            st.stop()
+        # if st.button("close_database"):
+        #     cursor.close()
+        #     conn.close()
+        #     st.stop()
 
         if st.button("Read database"):
             query = f"SELECT * FROM call_annotation_table"
