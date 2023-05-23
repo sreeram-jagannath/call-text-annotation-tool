@@ -41,5 +41,7 @@
 - [ ] Docstrings for functions
 - [ ] Adding CSS 
 - [ ] Close database connection on exiting app
+- [ ] Add logging functionalities
+- [ ] Add exception handling
 - [ ] Automatically scroll a little bit up when the user clicks the buttons.
  
