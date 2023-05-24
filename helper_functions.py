@@ -4,12 +4,34 @@ import logging
 import traceback
 import pandas as pd
 from typing import Dict, List, Tuple
+import atexit
 
 from datetime import datetime
 
  # Configure logging
 logging.basicConfig(filename="./logs/app.log", level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s')
+
+
+# Register a function to close the database connection.
+def close_database(cursor, connection):
+    # Close the database connection.
+    try:
+        cursor.close()
+        connection.close()
+        logging.info(f"Connection to the database closed.")
+
+    # it is closing multiple instances of connections...
+    # so from the second time onwards
+    # it throws error, hence we are catching that exception
+    except sqlite3.ProgrammingError:
+        # print("exception caught!!")
+        pass
+
+    except Exception as e:
+        logging.error("An unexpected error occurred while closing connection to the database.")
+        logging.error(traceback.format_exc())
+        raise 
 
 
 @st.cache_resource
