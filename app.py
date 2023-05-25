@@ -31,7 +31,7 @@ authenticator = stauth.Authenticate(
 
 if __name__ == "__main__":
     with st.sidebar:
-        download_pdf(filepath="sample.pdf")
+        download_pdf(filepath="./sample.pdf")
 
     name, authentication_status, username = authenticator.login('Login', 'main')
 
