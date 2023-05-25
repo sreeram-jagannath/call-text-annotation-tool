@@ -8,7 +8,7 @@ from collections import deque
 from helper_functions import *
 
 
-def get_annotator_page():
+def get_annotator_page(conn, cursor):
     # Centered title using HTML tags
     st.markdown(
         "<h1 style='text-align: center;'>Sunlife Annotation Tool</h1>",
@@ -20,8 +20,6 @@ def get_annotator_page():
     data, intents, mapping = read_dataframes()
     all_intents = get_all_intent_options(intent_df=intents)
     all_subintents = get_all_subintent_options(intent_df=intents)
-
-    conn, cursor = init_connection()
 
     already_annotated_df = read_annotated_data(_conn=conn)
 

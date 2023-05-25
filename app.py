@@ -1,10 +1,3 @@
-import base64
-import os
-import pickle
-import random
-from datetime import datetime
-
-import pandas as pd
 import streamlit as st
 import streamlit_authenticator as stauth
 import yaml
@@ -12,6 +5,8 @@ from yaml.loader import SafeLoader
 
 from annot_page import get_annotator_page
 from review_page import get_reviewer_page
+
+from helper_functions import *
 
 page_icon_img = "images/sunlife.png"
 st.set_page_config(
@@ -32,7 +27,12 @@ authenticator = stauth.Authenticate(
     config['cookie']['expiry_days'],
 )
 
+
+
 if __name__ == "__main__":
+    with st.sidebar:
+        download_pdf(filepath="sample.pdf")
+
     name, authentication_status, username = authenticator.login('Login', 'main')
 
     if authentication_status:
@@ -42,10 +42,16 @@ if __name__ == "__main__":
         st.session_state["name"] = name
         st.session_state["role"] = role
 
+        conn, cursor = init_connection()
+
         if role == "annotator":
-            get_annotator_page()
+            get_annotator_page(conn=conn, cursor=cursor)
         elif role == "reviewer":
-            get_reviewer_page()
+            get_reviewer_page(conn=conn, cursor=cursor)
+
+        @atexit.register
+        def close_db():
+            close_database(cursor=cursor, connection=conn)
 
     elif authentication_status is False:
         st.error('Username/password is incorrect')

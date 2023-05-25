@@ -1,0 +1,79 @@
+2023-05-24 12:05:04,708 - INFO - Connection to the database initialized.
+2023-05-24 13:38:28,581 - INFO - Connection to the database initialized.
+2023-05-24 13:42:15,501 - INFO - Connection to the database initialized.
+2023-05-24 13:53:54,637 - INFO - Connection to the database initialized.
+2023-05-24 16:18:49,047 - INFO - Connection to the database initialized. User: User B
+2023-05-24 16:27:18,768 - INFO - Connection to the database initialized. User: User B
+2023-05-24 16:27:30,137 - INFO - Connection to the database closed. User: None
+2023-05-24 16:27:30,138 - INFO - Connection to the database closed. User: None
+2023-05-24 16:27:30,145 - INFO - Connection to the database closed. User: None
+2023-05-24 16:27:30,151 - INFO - Connection to the database closed. User: None
+2023-05-24 16:27:30,160 - INFO - Connection to the database closed. User: None
+2023-05-24 16:27:30,166 - INFO - Connection to the database closed. User: None
+2023-05-24 16:29:04,923 - INFO - Connection to the database initialized. User: User E
+2023-05-24 16:30:18,799 - INFO - Connection to the database initialized. User: User D
+2023-05-24 16:30:24,721 - INFO - Connection to the database closed.
+2023-05-24 16:30:24,721 - INFO - Connection to the database closed.
+2023-05-24 17:10:47,219 - INFO - Connection to the database initialized. User: User A
+2023-05-24 17:11:11,284 - INFO - Connection to the database closed.
+2023-05-24 17:11:11,284 - INFO - Connection to the database closed.
+2023-05-24 17:11:11,300 - INFO - Connection to the database closed.
+2023-05-24 17:11:11,300 - INFO - Connection to the database closed.
+2023-05-24 17:11:11,316 - INFO - Connection to the database closed.
+2023-05-24 17:16:47,767 - INFO - Connection to the database initialized. User: User C
+2023-05-24 17:17:09,105 - INFO - Connection to the database closed.
+2023-05-24 17:17:09,105 - INFO - Connection to the database closed.
+2023-05-24 17:17:09,114 - INFO - Connection to the database closed.
+2023-05-24 17:17:09,119 - INFO - Connection to the database closed.
+2023-05-24 17:17:09,122 - INFO - Connection to the database closed.
+2023-05-24 17:17:09,126 - INFO - Connection to the database closed.
+2023-05-24 17:17:09,129 - INFO - Connection to the database closed.
+2023-05-24 17:17:09,134 - INFO - Connection to the database closed.
+2023-05-24 17:17:09,136 - INFO - Connection to the database closed.
+2023-05-24 17:22:15,026 - INFO - Connection to the database initialized. User: User A
+2023-05-24 17:22:42,702 - INFO - Connection to the database closed.
+2023-05-24 17:22:42,707 - INFO - Connection to the database closed.
+2023-05-24 17:22:42,713 - INFO - Connection to the database closed.
+2023-05-24 17:22:42,716 - INFO - Connection to the database closed.
+2023-05-24 17:22:42,720 - INFO - Connection to the database closed.
+2023-05-24 17:22:42,721 - INFO - Connection to the database closed.
+2023-05-24 17:22:42,726 - INFO - Connection to the database closed.
+2023-05-24 17:22:42,726 - INFO - Connection to the database closed.
+2023-05-24 17:23:36,160 - INFO - Connection to the database initialized. User: User B
+2023-05-24 17:23:45,771 - INFO - Connection to the database closed.
+2023-05-24 17:23:45,771 - INFO - Connection to the database closed.
+2023-05-24 17:23:45,779 - INFO - Connection to the database closed.
+2023-05-24 17:23:45,782 - INFO - Connection to the database closed.
+2023-05-24 17:23:45,786 - INFO - Connection to the database closed.
+2023-05-24 17:23:45,788 - INFO - Connection to the database closed.
+2023-05-24 17:23:45,788 - INFO - Connection to the database closed.
+2023-05-24 17:23:45,795 - INFO - Connection to the database closed.
+2023-05-24 17:25:30,063 - INFO - Connection to the database initialized. User: User E
+2023-05-24 17:25:44,991 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,991 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,991 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,991 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,991 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,995 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,995 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,995 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,995 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,997 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,997 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,997 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,998 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,999 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,999 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,999 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,999 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,999 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,999 - INFO - Connection to the database closed.
+2023-05-24 17:25:44,999 - INFO - Connection to the database closed.
+2023-05-24 17:28:32,233 - INFO - Connection to the database initialized. User: User E
+2023-05-24 17:28:43,795 - INFO - Connection to the database closed.
+2023-05-25 11:52:57,134 - INFO - Connection to the database initialized. User: User A
+2023-05-25 11:54:20,482 - INFO - Connection to the database closed.
+2023-05-25 11:57:07,078 - INFO - Connection to the database initialized. User: User B
+2023-05-25 12:00:40,418 - INFO - Connection to the database closed.
+2023-05-25 18:03:26,138 - INFO - Connection to the database initialized. User: User A
+2023-05-25 18:04:45,246 - INFO - Connection to the database closed.
