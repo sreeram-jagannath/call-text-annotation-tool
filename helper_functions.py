@@ -13,6 +13,20 @@ logging.basicConfig(filename="./logs/app.log", level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 
+def download_pdf(filepath):
+
+    # Read the file content
+    with open(filepath, "rb") as file:
+        pdf_bytes = file.read()
+
+    # Display the download button
+    st.download_button(
+        "Download Guideline PDF", 
+        data=pdf_bytes, 
+        file_name="Sunlife_Annotation_Tool_Guidelines.pdf", 
+        mime="application/pdf",
+    )
+
 # Register a function to close the database connection.
 def close_database(cursor, connection):
     # Close the database connection.

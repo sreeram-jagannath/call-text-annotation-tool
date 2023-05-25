@@ -71,3 +71,9 @@
 2023-05-24 17:25:44,999 - INFO - Connection to the database closed.
 2023-05-24 17:28:32,233 - INFO - Connection to the database initialized. User: User E
 2023-05-24 17:28:43,795 - INFO - Connection to the database closed.
+2023-05-25 11:52:57,134 - INFO - Connection to the database initialized. User: User A
+2023-05-25 11:54:20,482 - INFO - Connection to the database closed.
+2023-05-25 11:57:07,078 - INFO - Connection to the database initialized. User: User B
+2023-05-25 12:00:40,418 - INFO - Connection to the database closed.
+2023-05-25 18:03:26,138 - INFO - Connection to the database initialized. User: User A
+2023-05-25 18:04:45,246 - INFO - Connection to the database closed.
