@@ -1,4 +1,4 @@
-import atexit
+import base64
 import logging
 import sqlite3
 import traceback
@@ -14,6 +14,26 @@ logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
+
+def show_pdf(file_path: str) -> None:
+    """
+    Displays a PDF file.
+
+    Args:
+        file_path (str): The path to the PDF file.
+
+    Returns:
+        None
+    """
+    try:
+        with open(file_path, "rb") as f:
+            base64_pdf = base64.b64encode(f.read()).decode("utf-8")
+
+        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="800" type="application/pdf"></iframe>'
+        st.markdown(pdf_display, unsafe_allow_html=True)
+    except Exception as e:
+        logging.error(f"Error occurred while displaying PDF: {e}")
+        logging.error(traceback.format_exc())
 
 
 def download_pdf(filepath):

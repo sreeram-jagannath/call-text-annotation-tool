@@ -188,3 +188,6 @@ def get_annotator_page(conn, cursor):
             df = pd.read_sql_query(query, conn)
 
             st.write(df)
+
+        with st.expander(label="Guidelines to use the dashboard"):
+            show_pdf(file_path="./sample.pdf")

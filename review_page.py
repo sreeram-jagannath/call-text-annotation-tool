@@ -203,9 +203,5 @@ def get_reviewer_page(conn, cursor):
 
             st.write(df)
 
-    @atexit.register
-    def close_db():
-        try:
-            close_database(cursor=cursor, connection=conn)
-        except:
-            pass
+        with st.expander(label="Guidelines to use the dashboard"):
+            show_pdf(file_path="./sample.pdf")

@@ -1,3 +1,4 @@
+import atexit
 import streamlit as st
 import streamlit_authenticator as stauth
 import yaml
@@ -28,13 +29,11 @@ authenticator = stauth.Authenticate(
 
 
 if __name__ == "__main__":
-    with st.sidebar:
-        download_pdf(filepath="./sample.pdf")
 
     name, authentication_status, username = authenticator.login("Login", "main")
 
     if authentication_status:
-        authenticator.logout("Logout", "sidebar")
+        # authenticator.logout("Logout", "main", )
         role = config.get("credentials").get("usernames").get(username).get("role")
 
         st.session_state["name"] = name
@@ -56,3 +55,8 @@ if __name__ == "__main__":
 
     elif authentication_status is None:
         st.warning("Please enter your username and password")
+
+    # st.markdown(
+    #     "<h3 style='text-align: center;'>Guidelines</h3>",
+    #     unsafe_allow_html=True,
+    # )
