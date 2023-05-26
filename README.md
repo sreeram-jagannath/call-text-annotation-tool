@@ -38,10 +38,10 @@
 
 ## Pending Tasks
 
-- [ ] Docstrings for functions
+- [x] Docstrings for functions
 - [ ] Adding CSS 
-- [ ] Close database connection on exiting app
-- [ ] Add logging functionalities
-- [ ] Add exception handling
+- [x] Close database connection on exiting app
+- [x] Add logging functionalities
+- [x] Add exception handling
 - [ ] Automatically scroll a little bit up when the user clicks the buttons.
  
