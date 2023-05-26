@@ -11,7 +11,7 @@ import streamlit as st
 # Configure logging
 logging.basicConfig(
     filename="./logs/app.log",
-    level=logging.DEBUG,
+    level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
 
