@@ -1,9 +1,9 @@
-import streamlit as st
-import pandas as pd
 import sqlite3
-
-from datetime import datetime
 from collections import deque
+from datetime import datetime
+
+import pandas as pd
+import streamlit as st
 
 from helper_functions import *
 
@@ -14,7 +14,7 @@ def get_annotator_page(conn, cursor):
         "<h1 style='text-align: center;'>Sunlife Annotation Tool</h1>",
         unsafe_allow_html=True,
     )
-    
+
     display_name_and_role()
 
     data, intents, mapping = read_dataframes()
@@ -57,10 +57,16 @@ def get_annotator_page(conn, cursor):
             full_text = current_row["full_text"]
             st.text(full_text)
 
-            st.markdown("<style>div[data-testid='stText'] {background-color: lightyellow; border: 5px; padding: 10px}", unsafe_allow_html=True)
+            st.markdown(
+                "<style>div[data-testid='stText'] {background-color: lightyellow; border: 5px; padding: 10px}",
+                unsafe_allow_html=True,
+            )
 
         progress_text = f"Progress: [{len(st.session_state['annotated_idx'])} / {st.session_state['n_chunks']}]"
-        st.progress(value=len(st.session_state["annotated_idx"])/st.session_state["n_chunks"], text=progress_text)
+        st.progress(
+            value=len(st.session_state["annotated_idx"]) / st.session_state["n_chunks"],
+            text=progress_text,
+        )
 
         st.markdown(
             "<h3 style='text-align: center;'>Annotate chunks</h3>",
@@ -68,7 +74,7 @@ def get_annotator_page(conn, cursor):
         )
 
         # Display connection id and chunk id
-        _, col1, col2, _  = st.columns([1, 2, 2, 1])
+        _, col1, col2, _ = st.columns([1, 2, 2, 1])
 
         col1.markdown(
             f"<p style='text-align: center;'><b>Connection ID: {current_conn_id}</b></p>",

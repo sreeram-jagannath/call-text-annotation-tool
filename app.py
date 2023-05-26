@@ -4,9 +4,8 @@ import yaml
 from yaml.loader import SafeLoader
 
 from annot_page import get_annotator_page
-from review_page import get_reviewer_page
-
 from helper_functions import *
+from review_page import get_reviewer_page
 
 page_icon_img = "images/sunlife.png"
 st.set_page_config(
@@ -16,29 +15,28 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-with open('./utils/config.yaml') as file:
+with open("./utils/config.yaml") as file:
     config = yaml.load(file, Loader=SafeLoader)
 
 
 authenticator = stauth.Authenticate(
-    config['credentials'],
-    config['cookie']['name'],
-    config['cookie']['key'],
-    config['cookie']['expiry_days'],
+    config["credentials"],
+    config["cookie"]["name"],
+    config["cookie"]["key"],
+    config["cookie"]["expiry_days"],
 )
-
 
 
 if __name__ == "__main__":
     with st.sidebar:
         download_pdf(filepath="./sample.pdf")
 
-    name, authentication_status, username = authenticator.login('Login', 'main')
+    name, authentication_status, username = authenticator.login("Login", "main")
 
     if authentication_status:
-        authenticator.logout('Logout', 'sidebar')
+        authenticator.logout("Logout", "sidebar")
         role = config.get("credentials").get("usernames").get(username).get("role")
-        
+
         st.session_state["name"] = name
         st.session_state["role"] = role
 
@@ -54,7 +52,7 @@ if __name__ == "__main__":
             close_database(cursor=cursor, connection=conn)
 
     elif authentication_status is False:
-        st.error('Username/password is incorrect')
+        st.error("Username/password is incorrect")
 
     elif authentication_status is None:
-        st.warning('Please enter your username and password')
+        st.warning("Please enter your username and password")

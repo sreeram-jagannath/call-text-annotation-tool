@@ -1,16 +1,19 @@
-import streamlit as st
-import sqlite3
-import logging
-import traceback
-import pandas as pd
-from typing import Dict, List, Tuple
 import atexit
-
+import logging
+import sqlite3
+import traceback
 from datetime import datetime
+from typing import Dict, List, Tuple
 
- # Configure logging
-logging.basicConfig(filename="./logs/app.log", level=logging.DEBUG,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+import pandas as pd
+import streamlit as st
+
+# Configure logging
+logging.basicConfig(
+    filename="./logs/app.log",
+    level=logging.DEBUG,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
 
 
 def download_pdf(filepath):
@@ -43,14 +46,17 @@ def close_database(cursor, connection):
     # it is closing multiple instances of connections...
     # so from the second time onwards
     # it throws error, hence we are catching that exception
+    # and just passing it!
     except sqlite3.ProgrammingError:
         # print("exception caught!!")
         pass
 
     except Exception as e:
-        logging.error("An unexpected error occurred while closing connection to the database.")
+        logging.error(
+            "An unexpected error occurred while closing connection to the database."
+        )
         logging.error(traceback.format_exc())
-        raise 
+        raise
 
 
 @st.cache_resource
@@ -67,7 +73,9 @@ def init_connection() -> Tuple[sqlite3.Connection, sqlite3.Cursor]:
         conn = sqlite3.connect("./outputs/annotations_db.db", check_same_thread=False)
         cursor = conn.cursor()
 
-        logging.info(f"Connection to the database initialized. User: {st.session_state.get('name')}")
+        logging.info(
+            f"Connection to the database initialized. User: {st.session_state.get('name')}"
+        )
         return conn, cursor
 
     except sqlite3.Error as e:
@@ -76,13 +84,20 @@ def init_connection() -> Tuple[sqlite3.Connection, sqlite3.Cursor]:
         raise
 
     except Exception as e:
-        logging.error("An unexpected error occurred while initializing connection to the database.")
+        logging.error(
+            "An unexpected error occurred while initializing connection to the database."
+        )
         logging.error(traceback.format_exc())
         raise
 
 
 @st.cache_data
-def get_unannotated_ids(call_data: pd.DataFrame, annotated_df: pd.DataFrame, user_call_mapping: pd.DataFrame, username: str) -> pd.DataFrame:
+def get_unannotated_ids(
+    call_data: pd.DataFrame,
+    annotated_df: pd.DataFrame,
+    user_call_mapping: pd.DataFrame,
+    username: str,
+) -> pd.DataFrame:
     """
     Get the unannotated IDs based on the call data, annotated dataframe, user-call mapping, and username.
 
@@ -100,7 +115,9 @@ def get_unannotated_ids(call_data: pd.DataFrame, annotated_df: pd.DataFrame, use
             pd.merge(call_data, user_call_mapping, on="ConnectionID", how="left")
             .query("Annotator == @username")
             .assign(
-                new_id=lambda x: x["ConnectionID"] + "_chunk_" + x["chunk_id"].astype(str)
+                new_id=lambda x: x["ConnectionID"]
+                + "_chunk_"
+                + x["chunk_id"].astype(str)
             )
             .sort_values(by=["ConnectionID", "chunk_id"])
             .reset_index(drop=True)
@@ -108,7 +125,11 @@ def get_unannotated_ids(call_data: pd.DataFrame, annotated_df: pd.DataFrame, use
 
         # Perform outer join
         outer = call_ids.merge(
-            annotated_df, left_on="new_id", right_on="call_id", how="outer", indicator=True
+            annotated_df,
+            left_on="new_id",
+            right_on="call_id",
+            how="outer",
+            indicator=True,
         )
 
         # Perform anti-join
@@ -141,7 +162,6 @@ def read_dataframes() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         logging.error("An error occurred while reading the dataframes.")
         logging.error(traceback.format_exc())
         raise
-
 
 
 @st.cache_data
@@ -188,7 +208,6 @@ def get_all_intent_options(intent_df: pd.DataFrame) -> List[str]:
         raise
 
 
-
 @st.cache_data
 def get_all_subintent_options(intent_df: pd.DataFrame) -> Dict[str, List[str]]:
     """
@@ -211,7 +230,9 @@ def get_all_subintent_options(intent_df: pd.DataFrame) -> Dict[str, List[str]]:
         raise
 
 
-def get_valid_subintent_options(intent_list: List[str], subintent_map: Dict[str, List[str]]) -> List[str]:
+def get_valid_subintent_options(
+    intent_list: List[str], subintent_map: Dict[str, List[str]]
+) -> List[str]:
     """
     Get valid sub-intent options for a given list of intents from the sub-intent map.
 
@@ -331,7 +352,7 @@ def next_button_clicked_reviewer():
     except Exception as e:
         logging.error(f"An error occurred in 'next_button_clicked_reviewer': {e}")
         logging.error(traceback.format_exc())
-    
+
 
 def save_next_button_clicked_reviewer(
     conn, cursor, new_id, selected_intents, selected_subintents, confidence, comment
@@ -494,7 +515,6 @@ def save_next_button_clicked(
         logging.error(traceback.format_exc())
 
 
-
 def get_default_options(values):
     """
     Get the list of options from a comma-separated string.
@@ -516,8 +536,12 @@ def get_default_options(values):
         logging.error(traceback.format_exc())
 
 
-def get_call_ids_to_be_reviewed(call_data: pd.DataFrame, user_call_mapping: pd.DataFrame,
-                                annot_data: pd.DataFrame, rev_username: str) -> pd.DataFrame:
+def get_call_ids_to_be_reviewed(
+    call_data: pd.DataFrame,
+    user_call_mapping: pd.DataFrame,
+    annot_data: pd.DataFrame,
+    rev_username: str,
+) -> pd.DataFrame:
     """
     Retrieve the call IDs to be reviewed based on the given input data.
 
@@ -541,10 +565,15 @@ def get_call_ids_to_be_reviewed(call_data: pd.DataFrame, user_call_mapping: pd.D
             pd.merge(call_data, user_call_mapping, on="ConnectionID", how="left")
             .query("Reviewer == @rev_username")
             .assign(
-                new_id=lambda x: x["ConnectionID"] + "_chunk_" + x["chunk_id"].astype(str)
+                new_id=lambda x: x["ConnectionID"]
+                + "_chunk_"
+                + x["chunk_id"].astype(str)
             )
             .merge(
-                only_annotator_data, left_on=["new_id"], right_on=["call_id"], how="inner"
+                only_annotator_data,
+                left_on=["new_id"],
+                right_on=["call_id"],
+                how="inner",
             )
             .sort_values(by=["ConnectionID", "chunk_id"])
             .reset_index(drop=True)
@@ -666,8 +695,7 @@ def display_annotation_details(current_row):
         _, dcol, _ = st.columns([1, 2, 1])
 
         df = (
-            current_row
-            .filter(rename_columns.keys())
+            current_row.filter(rename_columns.keys())
             .reset_index(name="Details")
             .replace(rename_columns)
             .rename(columns={"index": "Columns"})

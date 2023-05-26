@@ -4,14 +4,12 @@ from helper_functions import *
 
 
 def get_reviewer_page(conn, cursor):
-
     st.markdown(
         "<h1 style='text-align: center;'>Sunlife Annotation Tool</h1>",
         unsafe_allow_html=True,
     )
 
     display_name_and_role()
-
 
     data, intents, mapping = read_dataframes()
     all_intents = get_all_intent_options(intent_df=intents)
@@ -43,7 +41,6 @@ def get_reviewer_page(conn, cursor):
         current_conn_id = current_row["ConnectionID"]
         current_chunk_id = current_row["chunk_id"]
 
-        
         if "conn_id_select" in st.session_state:
             st.session_state["conn_id_select"] = current_conn_id
 
@@ -51,7 +48,13 @@ def get_reviewer_page(conn, cursor):
             st.session_state["chunk_id_select"] = current_chunk_id
 
         conn_id_list = review_call_ids["ConnectionID"].unique().tolist()
-        chunk_id_list = review_call_ids[review_call_ids["ConnectionID"] == current_conn_id]["chunk_id"].unique().tolist()
+        chunk_id_list = (
+            review_call_ids[review_call_ids["ConnectionID"] == current_conn_id][
+                "chunk_id"
+            ]
+            .unique()
+            .tolist()
+        )
 
         _, fcol1, fcol2, _ = st.columns([1, 2, 2, 1])
         fcol1.selectbox(
@@ -75,8 +78,10 @@ def get_reviewer_page(conn, cursor):
             full_text = current_row["full_text"]
             st.text(full_text)
 
-            st.markdown("<style>div[data-testid='stText'] {background-color: lightyellow; border: 5px; padding: 10px}", unsafe_allow_html=True)
-
+            st.markdown(
+                "<style>div[data-testid='stText'] {background-color: lightyellow; border: 5px; padding: 10px}",
+                unsafe_allow_html=True,
+            )
 
         # Text display
         _, chunk_col, _ = st.columns([1, 2, 1])
@@ -88,9 +93,9 @@ def get_reviewer_page(conn, cursor):
 
         _, icol, _ = st.columns([1, 2, 1])
         icol.info("**Annotation Details**")
-        
+
         display_annotation_details(current_row=current_row)
-        
+
         review_status, reviewed_df = get_already_reviewed_calls(
             _conn=conn, connection_id=current_conn_id, chunk_id=current_chunk_id
         )
@@ -105,7 +110,6 @@ def get_reviewer_page(conn, cursor):
             scol.success(f"Reviewer Status: {review_status}")
 
         # st.table(reviewed_df)
-        
 
         # Dropdowns
         _, scol1, scol2, _ = st.columns([1, 1, 1, 1])
@@ -124,7 +128,9 @@ def get_reviewer_page(conn, cursor):
         if review_status == "Pending":
             default_subintents = get_default_options(current_row["subcase_type"])
         else:
-            default_subintents = get_default_options(reviewed_df.iloc[0]["subcase_type"])
+            default_subintents = get_default_options(
+                reviewed_df.iloc[0]["subcase_type"]
+            )
 
         final_default_subintents = list(
             set(valid_subintents).intersection(set(default_subintents))
