@@ -14,18 +14,23 @@ logging.basicConfig(filename="./logs/app.log", level=logging.DEBUG,
 
 
 def download_pdf(filepath):
+    try:
+        # Read the file content
+        with open(filepath, "rb") as file:
+            pdf_bytes = file.read()
 
-    # Read the file content
-    with open(filepath, "rb") as file:
-        pdf_bytes = file.read()
+        # Display the download button
+        st.download_button(
+            "Download Guideline PDF",
+            data=pdf_bytes,
+            file_name="Sunlife_Annotation_Tool_Guidelines.pdf",
+            mime="application/pdf",
+        )
+    except Exception as e:
+        # Log the error message and traceback
+        logging.error("An error occurred while downloading the PDF file:")
+        logging.error(traceback.format_exc())
 
-    # Display the download button
-    st.download_button(
-        "Download Guideline PDF", 
-        data=pdf_bytes, 
-        file_name="Sunlife_Annotation_Tool_Guidelines.pdf", 
-        mime="application/pdf",
-    )
 
 # Register a function to close the database connection.
 def close_database(cursor, connection):
