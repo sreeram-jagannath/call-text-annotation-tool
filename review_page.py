@@ -38,8 +38,8 @@ def get_reviewer_page(conn, cursor):
             st.session_state["annotated_idx"] = set()
 
         current_row = review_call_ids.iloc[st.session_state["current_idx"]]
-        current_conn_id = current_row["ConnectionID"]
-        current_chunk_id = current_row["chunk_id"]
+        current_conn_id = current_row[CONN_ID_COLNAME]
+        current_chunk_id = current_row[CHUNK_ID_COLNAME]
 
         if "conn_id_select" in st.session_state:
             st.session_state["conn_id_select"] = current_conn_id
@@ -47,10 +47,10 @@ def get_reviewer_page(conn, cursor):
         if "chunk_id_select" in st.session_state:
             st.session_state["chunk_id_select"] = current_chunk_id
 
-        conn_id_list = review_call_ids["ConnectionID"].unique().tolist()
+        conn_id_list = review_call_ids[CONN_ID_COLNAME].unique().tolist()
         chunk_id_list = (
-            review_call_ids[review_call_ids["ConnectionID"] == current_conn_id][
-                "chunk_id"
+            review_call_ids[review_call_ids[CONN_ID_COLNAME] == current_conn_id][
+                CHUNK_ID_COLNAME
             ]
             .unique()
             .tolist()
@@ -75,7 +75,7 @@ def get_reviewer_page(conn, cursor):
         with st.expander(
             label=f"Expand to see full conversation (ConnectionID: {current_conn_id})"
         ):
-            full_text = current_row["full_text"]
+            full_text = current_row[FULL_TEXT_COLNAME]
             st.text(full_text)
 
             st.markdown(
@@ -86,10 +86,10 @@ def get_reviewer_page(conn, cursor):
         # Text display
         _, chunk_col, _ = st.columns([1, 2, 1])
         chunk_col.markdown(
-            f"<p style='text-align: justify; padding: 10px; border: 1px solid black; border-radius: 5px; background-color: #D8D8D8;'>{current_row['text']}</p>",
+            f"<p style='text-align: justify; padding: 10px; border: 1px solid black; border-radius: 5px; background-color: #D8D8D8;'>{current_row[TEXT_COLNAME]}</p>",
             unsafe_allow_html=True,
         )
-        # st.write(f"ConnectionID: {current_conn_id} ChunkID: {current_row['chunk_id']}", )
+        # st.write(f"ConnectionID: {current_conn_id} ChunkID: {current_row[CHUNK_ID_COLNAME]}", )
 
         _, icol, _ = st.columns([1, 2, 1])
         icol.info("**Annotation Details**")

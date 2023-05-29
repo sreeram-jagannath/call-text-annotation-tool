@@ -8,12 +8,16 @@ from typing import Dict, List, Tuple
 import pandas as pd
 import streamlit as st
 
+from config import (CHUNK_ID_COLNAME, CONN_ID_COLNAME, FULL_TEXT_COLNAME,
+                    INTENT_COLNAME, SUB_INTENT_COLNAME, TEXT_COLNAME)
+
 # Configure logging
 logging.basicConfig(
     filename="./logs/app.log",
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
+
 
 def show_pdf(file_path: str) -> None:
     """
@@ -132,14 +136,14 @@ def get_unannotated_ids(
     """
     try:
         call_ids = (
-            pd.merge(call_data, user_call_mapping, on="ConnectionID", how="left")
+            pd.merge(call_data, user_call_mapping, on=CONN_ID_COLNAME, how="left")
             .query("Annotator == @username")
             .assign(
-                new_id=lambda x: x["ConnectionID"]
+                new_id=lambda x: x[CONN_ID_COLNAME]
                 + "_chunk_"
-                + x["chunk_id"].astype(str)
+                + x[CHUNK_ID_COLNAME].astype(str)
             )
-            .sort_values(by=["ConnectionID", "chunk_id"])
+            .sort_values(by=[CONN_ID_COLNAME, CHUNK_ID_COLNAME])
             .reset_index(drop=True)
         )
 
@@ -582,12 +586,12 @@ def get_call_ids_to_be_reviewed(
         only_annotator_data = annot_data.query("role == 'annotator'")
 
         call_ids = (
-            pd.merge(call_data, user_call_mapping, on="ConnectionID", how="left")
+            pd.merge(call_data, user_call_mapping, on=CONN_ID_COLNAME, how="left")
             .query("Reviewer == @rev_username")
             .assign(
-                new_id=lambda x: x["ConnectionID"]
+                new_id=lambda x: x[CONN_ID_COLNAME]
                 + "_chunk_"
-                + x["chunk_id"].astype(str)
+                + x[CHUNK_ID_COLNAME].astype(str)
             )
             .merge(
                 only_annotator_data,
@@ -595,7 +599,7 @@ def get_call_ids_to_be_reviewed(
                 right_on=["call_id"],
                 how="inner",
             )
-            .sort_values(by=["ConnectionID", "chunk_id"])
+            .sort_values(by=[CONN_ID_COLNAME, CHUNK_ID_COLNAME])
             .reset_index(drop=True)
         )
 
@@ -658,7 +662,7 @@ def reviewer_select_connid(review_df):
         conn_id_select = st.session_state.get("conn_id_select")
 
         if conn_id_select is not None:
-            idx = review_df[review_df["ConnectionID"] == conn_id_select].index[0]
+            idx = review_df[review_df[CONN_ID_COLNAME] == conn_id_select].index[0]
             st.session_state["current_idx"] = idx
     except Exception as e:
         logging.error(f"An error occurred in 'reviewer_select_connid': {e}")
@@ -681,8 +685,8 @@ def reviewer_select_chunkid(review_df):
 
         if conn_id_select is not None and chunk_id_select is not None:
             idx = review_df[
-                (review_df["ConnectionID"] == conn_id_select)
-                & (review_df["chunk_id"] == chunk_id_select)
+                (review_df[CONN_ID_COLNAME] == conn_id_select)
+                & (review_df[CHUNK_ID_COLNAME] == chunk_id_select)
             ].index[0]
             st.session_state["current_idx"] = idx
 
@@ -703,8 +707,8 @@ def display_annotation_details(current_row):
     """
     try:
         rename_columns = {
-            "ConnectionID": "Connection ID",
-            "chunk_id": "Chunk ID",
+            CONN_ID_COLNAME: "Connection ID",
+            CHUNK_ID_COLNAME: "Chunk ID",
             "Annotator": "Annotator",
             "case_type": "Intent",
             "subcase_type": "Sub-Intent",
