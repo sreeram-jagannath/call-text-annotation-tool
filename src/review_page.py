@@ -139,10 +139,23 @@ def get_reviewer_page(conn, cursor):
 
         if review_status == "Pending":
             default_subintents = get_default_options(current_row["subcase_type"])
+            conf_idx = 0
+            reviewer_comments = ''
+
         else:
             default_subintents = get_default_options(
                 reviewed_df.iloc[0]["subcase_type"]
             )
+
+            conf_idx_map = {
+                "High": 0,
+                "Medium": 1,
+                "Low": 2,
+            }
+            reviewer_confidence = reviewed_df.iloc[0]["confidence"]
+            conf_idx = conf_idx_map.get(reviewer_confidence)
+
+            reviewer_comments = reviewed_df.iloc[0]["comments"]
 
         final_default_subintents = list(
             set(valid_subintents).intersection(set(default_subintents))
@@ -160,14 +173,14 @@ def get_reviewer_page(conn, cursor):
         confidence_level = conf_col.selectbox(
             label="Confidence",
             options=["High", "Medium", "Low"],
+            index=conf_idx,
             key=f"conf_sel_{current_row['new_id']}",
         )
 
         _, textcol, _ = st.columns([1, 2, 1])
         reviewer_comments = textcol.text_area(
-            label="Reviewer Comments", key=f"comment_{current_row['new_id']}", height=10
+            label="Reviewer Comments", key=f"comment_{current_row['new_id']}", height=10, value=reviewer_comments,
         )
-
         # st.write(st.session_state)
 
         st.markdown(
@@ -210,6 +223,7 @@ def get_reviewer_page(conn, cursor):
         #     df = pd.read_sql_query(query, conn)
 
         #     st.write(df)
+        st.divider()
 
         with st.expander(label="Guidelines to use the dashboard"):
             show_pdf(file_path="../sample.pdf")

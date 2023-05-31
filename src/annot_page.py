@@ -1,7 +1,3 @@
-import sqlite3
-from collections import deque
-from datetime import datetime
-
 import pandas as pd
 import streamlit as st
 
@@ -184,12 +180,7 @@ def get_annotator_page(conn, cursor):
             ),
         )
 
-
-        # if st.button("Read database"):
-        #     query = f"SELECT * FROM call_annotation_table"
-        #     df = pd.read_sql_query(query, conn)
-
-        #     st.write(df)
+        st.divider()
 
         with st.expander(label="Guidelines to use the dashboard"):
             show_pdf(file_path="../sample.pdf")

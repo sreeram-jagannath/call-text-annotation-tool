@@ -8,7 +8,7 @@ from annot_page import get_annotator_page
 from helper_functions import *
 from review_page import get_reviewer_page
 
-page_icon_img = "images/sunlife.png"
+page_icon_img = "../images/sunlife.png"
 st.set_page_config(
     page_title="Intent Dectection | Data Labeling Testing",
     layout="wide",
@@ -53,5 +53,10 @@ if __name__ == "__main__":
         st.error("Username/password is incorrect")
 
     elif authentication_status is None:
-        st.cache_data.clear()
+        # clear the cache for these two functions
+        # so that the annotator doesn't see repeated
+        # chunks on reload of page or closing and 
+        # reopening the webpage
+        read_annotated_data.clear()
+        get_unannotated_ids.clear()
         st.warning("Please enter your username and password")
