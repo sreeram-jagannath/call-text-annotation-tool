@@ -140,7 +140,7 @@ def get_reviewer_page(conn, cursor):
         if review_status == "Pending":
             default_subintents = get_default_options(current_row["subcase_type"])
             conf_idx = 0
-            reviewer_comments = ''
+            reviewer_comments = ""
 
         else:
             default_subintents = get_default_options(
@@ -179,7 +179,10 @@ def get_reviewer_page(conn, cursor):
 
         _, textcol, _ = st.columns([1, 2, 1])
         reviewer_comments = textcol.text_area(
-            label="Reviewer Comments", key=f"comment_{current_row['new_id']}", height=10, value=reviewer_comments,
+            label="Reviewer Comments",
+            key=f"comment_{current_row['new_id']}",
+            height=10,
+            value=reviewer_comments,
         )
         # st.write(st.session_state)
 
@@ -216,7 +219,6 @@ def get_reviewer_page(conn, cursor):
                 reviewer_comments,
             ),
         )
-
 
         # if st.button("Read Database"):
         #     query = f"SELECT * FROM call_annotation_table"

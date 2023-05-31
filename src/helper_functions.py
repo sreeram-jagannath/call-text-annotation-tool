@@ -8,8 +8,14 @@ from typing import Dict, List, Tuple
 import pandas as pd
 import streamlit as st
 
-from config import (CHUNK_ID_COLNAME, CONN_ID_COLNAME, FULL_TEXT_COLNAME,
-                    INTENT_COLNAME, SUB_INTENT_COLNAME, TEXT_COLNAME)
+from config import (
+    CHUNK_ID_COLNAME,
+    CONN_ID_COLNAME,
+    FULL_TEXT_COLNAME,
+    INTENT_COLNAME,
+    SUB_INTENT_COLNAME,
+    TEXT_COLNAME,
+)
 
 # Configure logging
 logging.basicConfig(
@@ -726,7 +732,7 @@ def display_annotation_details(current_row):
         )
 
         # to remove the warning
-        df["Details"] = df["Details"].astype('str')
+        df["Details"] = df["Details"].astype("str")
 
         dcol.dataframe(df, use_container_width=True)
     except Exception as e:

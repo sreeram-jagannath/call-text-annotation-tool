@@ -28,7 +28,6 @@ def get_annotator_page(conn, cursor):
         username=st.session_state.get("name"),
     )
 
-
     if "all_done" not in st.session_state:
         st.session_state["all_done"] = False
 
@@ -156,7 +155,6 @@ def get_annotator_page(conn, cursor):
 
         st.title("")
         _, bcol1, bcol2, bcol3, _ = st.columns([1.5, 1, 1, 1, 1])
-
 
         # st.write(st.session_state)
         if st.session_state["current_idx"] > 0:

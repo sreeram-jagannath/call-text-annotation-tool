@@ -55,7 +55,7 @@ if __name__ == "__main__":
     elif authentication_status is None:
         # clear the cache for these two functions
         # so that the annotator doesn't see repeated
-        # chunks on reload of page or closing and 
+        # chunks on reload of page or closing and
         # reopening the webpage
         read_annotated_data.clear()
         get_unannotated_ids.clear()
