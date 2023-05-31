@@ -13,7 +13,7 @@ from config import (CHUNK_ID_COLNAME, CONN_ID_COLNAME, FULL_TEXT_COLNAME,
 
 # Configure logging
 logging.basicConfig(
-    filename="./logs/app.log",
+    filename="../logs/app.log",
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
@@ -94,7 +94,7 @@ def init_connection() -> Tuple[sqlite3.Connection, sqlite3.Cursor]:
     """
     try:
         # Connect to the database (creates a new database if it doesn't exist)
-        conn = sqlite3.connect("./outputs/annotations_db.db", check_same_thread=False)
+        conn = sqlite3.connect("../outputs/annotations_db.db", check_same_thread=False)
         cursor = conn.cursor()
 
         logging.info(
@@ -111,6 +111,50 @@ def init_connection() -> Tuple[sqlite3.Connection, sqlite3.Cursor]:
         logging.error(
             "An unexpected error occurred while initializing connection to the database."
         )
+        logging.error(traceback.format_exc())
+        raise
+
+
+@st.cache_data
+def read_dataframes() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """
+    Read the dataframes from parquet files.
+
+    Returns:
+        tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]: A tuple containing the dataframes (data, intents, mapping).
+    """
+    try:
+        data = pd.read_parquet("../inputs/data.parquet")
+        intents = pd.read_parquet("../inputs/intents.parquet")
+        mapping = pd.read_parquet("../inputs/mapping.parquet")
+
+        return data, intents, mapping
+
+    except Exception as e:
+        logging.error("An error occurred while reading the dataframes.")
+        logging.error(traceback.format_exc())
+        raise
+
+
+@st.cache_data
+def read_annotated_data(_conn) -> pd.DataFrame:
+    """
+    Read the annotated data from the call_annotation_table in the database.
+
+    Args:
+        _conn: The database connection object.
+
+    Returns:
+        pd.DataFrame: The dataframe containing the annotated data.
+    """
+    try:
+        select_data_query = "SELECT * FROM call_annotation_table"
+        df = pd.read_sql_query(select_data_query, _conn)
+
+        return df
+
+    except Exception as e:
+        logging.error("An error occurred while reading the annotated data.")
         logging.error(traceback.format_exc())
         raise
 
@@ -163,50 +207,6 @@ def get_unannotated_ids(
 
     except Exception as e:
         logging.error("An error occurred while retrieving unannotated IDs.")
-        logging.error(traceback.format_exc())
-        raise
-
-
-@st.cache_data
-def read_dataframes() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """
-    Read the dataframes from parquet files.
-
-    Returns:
-        tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]: A tuple containing the dataframes (data, intents, mapping).
-    """
-    try:
-        data = pd.read_parquet("./inputs/data.parquet")
-        intents = pd.read_parquet("./inputs/intents.parquet")
-        mapping = pd.read_parquet("./inputs/mapping.parquet")
-
-        return data, intents, mapping
-
-    except Exception as e:
-        logging.error("An error occurred while reading the dataframes.")
-        logging.error(traceback.format_exc())
-        raise
-
-
-@st.cache_data
-def read_annotated_data(_conn) -> pd.DataFrame:
-    """
-    Read the annotated data from the call_annotation_table in the database.
-
-    Args:
-        _conn: The database connection object.
-
-    Returns:
-        pd.DataFrame: The dataframe containing the annotated data.
-    """
-    try:
-        select_data_query = "SELECT * FROM call_annotation_table"
-        df = pd.read_sql_query(select_data_query, _conn)
-
-        return df
-
-    except Exception as e:
-        logging.error("An error occurred while reading the annotated data.")
         logging.error(traceback.format_exc())
         raise
 
@@ -724,6 +724,9 @@ def display_annotation_details(current_row):
             .replace(rename_columns)
             .rename(columns={"index": "Columns"})
         )
+
+        # to remove the warning
+        df["Details"] = df["Details"].astype('str')
 
         dcol.dataframe(df, use_container_width=True)
     except Exception as e:

@@ -32,6 +32,7 @@ def get_annotator_page(conn, cursor):
         username=st.session_state.get("name"),
     )
 
+
     if "all_done" not in st.session_state:
         st.session_state["all_done"] = False
 
@@ -59,7 +60,19 @@ def get_annotator_page(conn, cursor):
             st.text(full_text)
 
             st.markdown(
-                "<style>div[data-testid='stText'] {background-color: lightyellow; border: 5px; padding: 10px}",
+                """
+                <style>
+                div[data-testid='stText'] {
+                    background-color: lightyellow;
+                    border: 5px;
+                    padding: 10px;
+                    -webkit-user-select: none; /* Disable text selection on webkit browsers */
+                    -moz-user-select: none; /* Disable text selection on Firefox */
+                    -ms-user-select: none; /* Disable text selection on Microsoft Edge */
+                    user-select: none; /* Disable text selection on other browsers */
+                }
+                </style>
+                """,
                 unsafe_allow_html=True,
             )
 
@@ -90,13 +103,9 @@ def get_annotator_page(conn, cursor):
         # Text display
         _, chunk_col, _ = st.columns([1, 2, 1])
         chunk_col.markdown(
-            f"<p style='text-align: justify; padding: 10px; border: 1px solid black; border-radius: 5px; background-color: #D8D8D8;'>{current_row[TEXT_COLNAME]}</p>",
+            f"<p style='text-align: justify; padding: 10px; border: 1px solid black; border-radius: 5px; background-color: #D8D8D8; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>{current_row[TEXT_COLNAME]}</p>",
             unsafe_allow_html=True,
         )
-        # st.title("")
-
-        # st.write(current_row[INTENT_COLNAME].split(','), all_intents)
-        # st.write(all_intents, [] if current_row[INTENT_COLNAME] is None else current_row[INTENT_COLNAME].split(','))
 
         # Dropdowns
         _, scol1, scol2, _ = st.columns([1, 1, 1, 1])
@@ -152,12 +161,8 @@ def get_annotator_page(conn, cursor):
         st.title("")
         _, bcol1, bcol2, bcol3, _ = st.columns([1.5, 1, 1, 1, 1])
 
-        # st.write(
-        #     st.session_state["n_chunks"],
-        #     st.session_state["current_idx"],
-        #     st.session_state["annotated_idx"],
-        # )
 
+        # st.write(st.session_state)
         if st.session_state["current_idx"] > 0:
             bcol1.button("Previous", on_click=previous_button_clicked)
 
@@ -179,16 +184,12 @@ def get_annotator_page(conn, cursor):
             ),
         )
 
-        # if st.button("close_database"):
-        #     cursor.close()
-        #     conn.close()
-        #     st.stop()
 
-        if st.button("Read database"):
-            query = f"SELECT * FROM call_annotation_table"
-            df = pd.read_sql_query(query, conn)
+        # if st.button("Read database"):
+        #     query = f"SELECT * FROM call_annotation_table"
+        #     df = pd.read_sql_query(query, conn)
 
-            st.write(df)
+        #     st.write(df)
 
         with st.expander(label="Guidelines to use the dashboard"):
-            show_pdf(file_path="./sample.pdf")
+            show_pdf(file_path="../sample.pdf")

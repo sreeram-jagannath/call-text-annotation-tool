@@ -16,7 +16,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-with open("./utils/config.yaml") as file:
+with open("../utils/config.yaml") as file:
     config = yaml.load(file, Loader=SafeLoader)
 
 
@@ -53,9 +53,5 @@ if __name__ == "__main__":
         st.error("Username/password is incorrect")
 
     elif authentication_status is None:
+        st.cache_data.clear()
         st.warning("Please enter your username and password")
-
-    # st.markdown(
-    #     "<h3 style='text-align: center;'>Guidelines</h3>",
-    #     unsafe_allow_html=True,
-    # )

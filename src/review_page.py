@@ -79,14 +79,26 @@ def get_reviewer_page(conn, cursor):
             st.text(full_text)
 
             st.markdown(
-                "<style>div[data-testid='stText'] {background-color: lightyellow; border: 5px; padding: 10px}",
+                """
+                <style>
+                div[data-testid='stText'] {
+                    background-color: lightyellow;
+                    border: 5px;
+                    padding: 10px;
+                    -webkit-user-select: none; /* Disable text selection on webkit browsers */
+                    -moz-user-select: none; /* Disable text selection on Firefox */
+                    -ms-user-select: none; /* Disable text selection on Microsoft Edge */
+                    user-select: none; /* Disable text selection on other browsers */
+                }
+                </style>
+                """,
                 unsafe_allow_html=True,
             )
 
         # Text display
         _, chunk_col, _ = st.columns([1, 2, 1])
         chunk_col.markdown(
-            f"<p style='text-align: justify; padding: 10px; border: 1px solid black; border-radius: 5px; background-color: #D8D8D8;'>{current_row[TEXT_COLNAME]}</p>",
+            f"<p style='text-align: justify; padding: 10px; border: 1px solid black; border-radius: 5px; background-color: #D8D8D8; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;'>{current_row[TEXT_COLNAME]}</p>",
             unsafe_allow_html=True,
         )
         # st.write(f"ConnectionID: {current_conn_id} ChunkID: {current_row[CHUNK_ID_COLNAME]}", )
@@ -192,16 +204,12 @@ def get_reviewer_page(conn, cursor):
             ),
         )
 
-        # if st.button("close_database"):
-        #     cursor.close()
-        #     conn.close()
-        #     st.stop()
 
-        if st.button("Read Database"):
-            query = f"SELECT * FROM call_annotation_table"
-            df = pd.read_sql_query(query, conn)
+        # if st.button("Read Database"):
+        #     query = f"SELECT * FROM call_annotation_table"
+        #     df = pd.read_sql_query(query, conn)
 
-            st.write(df)
+        #     st.write(df)
 
         with st.expander(label="Guidelines to use the dashboard"):
-            show_pdf(file_path="./sample.pdf")
+            show_pdf(file_path="../sample.pdf")

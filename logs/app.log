@@ -1,0 +1,29 @@
+2023-05-29 13:49:34,773 - INFO - Connection to the database initialized. User: User C
+2023-05-29 15:42:08,148 - INFO - Connection to the database initialized. User: User B
+2023-05-29 15:43:25,932 - INFO - Connection to the database initialized. User: User D
+2023-05-31 10:24:44,897 - INFO - Connection to the database initialized. User: User A
+2023-05-31 10:26:27,737 - INFO - Connection to the database closed.
+2023-05-31 10:26:44,694 - INFO - Connection to the database initialized. User: User A
+2023-05-31 10:27:57,944 - INFO - Connection to the database closed.
+2023-05-31 10:28:30,166 - INFO - Connection to the database initialized. User: User A
+2023-05-31 13:10:08,964 - INFO - Connection to the database closed.
+2023-05-31 13:10:25,657 - INFO - Connection to the database initialized. User: User B
+2023-05-31 13:16:05,133 - INFO - Connection to the database closed.
+2023-05-31 13:16:37,251 - INFO - Connection to the database initialized. User: User A
+2023-05-31 13:38:51,607 - INFO - Connection to the database initialized. User: User A
+2023-05-31 13:40:12,104 - INFO - Connection to the database closed.
+2023-05-31 13:41:32,447 - INFO - Connection to the database initialized. User: User A
+2023-05-31 14:43:39,947 - INFO - Connection to the database closed.
+2023-05-31 14:43:54,848 - INFO - Connection to the database initialized. User: User A
+2023-05-31 16:17:47,156 - INFO - Connection to the database initialized. User: User A
+2023-05-31 16:21:52,788 - INFO - Connection to the database closed.
+2023-05-31 16:22:41,644 - INFO - Connection to the database initialized. User: User A
+2023-05-31 16:26:17,808 - INFO - Connection to the database initialized. User: User A
+2023-05-31 16:27:21,307 - INFO - Connection to the database initialized. User: User A
+2023-05-31 16:32:22,780 - INFO - Connection to the database initialized. User: User B
+2023-05-31 16:32:43,736 - INFO - Connection to the database initialized. User: User B
+2023-05-31 16:46:33,844 - INFO - Connection to the database initialized. User: User C
+2023-05-31 17:06:27,226 - INFO - Connection to the database closed.
+2023-05-31 17:13:06,612 - INFO - Connection to the database initialized. User: User C
+2023-05-31 17:14:09,438 - INFO - Connection to the database initialized. User: User C
+2023-05-31 17:15:50,085 - INFO - Connection to the database closed.
