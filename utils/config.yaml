@@ -14,12 +14,24 @@ credentials:
       password: $2b$12$xRxA8Ibvt4kay.r5oNXQ5e65LPELKhR1hVjjLQG5JqwebYvRhXBDe
     userd:
       name: User D
-      role: reviewer
+      role: annotator
       password: $2b$12$rS7.tBJBeNUUBJt23hWSFOUEsAkH1RMpDt0PSathTr55bJLDhXYXK
     usere:
       name: User E
-      role: reviewer
+      role: annotator
       password: $2b$12$TILeFJa.pp2JRY0H0Ko9puEFh8LLmbvz/rOVOYlEFngiVYLXJyawm
+    userf:
+      name: User F
+      role: reviewer
+      password: $2b$12$2jJIdPXnVgjGJNt/O8ILweR7LNTTfWn0Ku6bD1.FYSRWFPKe1G.BG
+    userg:
+      name: User G
+      role: reviewer
+      password: $2b$12$psEC8XNqwExo0tCMaeq8HevtjgO7iNgsZJBWoF2E.QoBXRm1xfIDG
+    userh:
+      name: User H
+      role: reviewer
+      password: $2b$12$R3KAQkCaPS8iLwoqfO0yFuzC/sjzESlhnJnjSbpfac9Hdan7Zw5RS
 cookie:
   expiry_days: 0
   key: some_signature_key
