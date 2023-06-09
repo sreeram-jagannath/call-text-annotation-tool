@@ -32,6 +32,14 @@ credentials:
       name: User H
       role: reviewer
       password: $2b$12$R3KAQkCaPS8iLwoqfO0yFuzC/sjzESlhnJnjSbpfac9Hdan7Zw5RS
+    useri:
+      name: User I
+      role: admin
+      password: $2b$12$aMev8ZHSrB2I4i2YI6CG2.lkNn23NJGN6x8GHXbU/mK1dgb9j8Qp2
+    userj:
+      name: User J
+      role: admin
+      password: $2b$12$CfK4AbCBX91PirWCUG2MheLN2T./6RVdJkhPV.3uNTIfFaw1YySSi
 cookie:
   expiry_days: 0
   key: some_signature_key

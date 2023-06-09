@@ -34,6 +34,7 @@ if __name__ == "__main__":
     if authentication_status:
         # authenticator.logout("Logout", "main", )
         role = config.get("credentials").get("usernames").get(username).get("role")
+        # logging.info(f"Welcome {name}!")
 
         st.session_state["name"] = name
         st.session_state["role"] = role
@@ -42,7 +43,7 @@ if __name__ == "__main__":
 
         if role == "annotator":
             get_annotator_page(conn=conn, cursor=cursor)
-        elif role == "reviewer":
+        elif role == "reviewer" or role == "admin":
             get_reviewer_page(conn=conn, cursor=cursor)
 
         @atexit.register

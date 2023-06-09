@@ -594,7 +594,6 @@ def get_call_ids_to_be_reviewed(
 
         call_ids = (
             pd.merge(call_data, user_call_mapping, on=CONN_ID_COLNAME, how="left")
-            .query("Reviewer == @rev_username")
             .assign(
                 new_id=lambda x: x[CONN_ID_COLNAME]
                 + "_chunk_"
@@ -610,7 +609,12 @@ def get_call_ids_to_be_reviewed(
             .reset_index(drop=True)
         )
 
-        return call_ids
+        if st.session_state.get("role") == "admin":
+            final_call_ids = call_ids.copy()
+        elif st.session_state.get("role") == "reviewer":
+            final_call_ids = call_ids.query("Reviewer == @rev_username")
+
+        return final_call_ids
 
     except Exception as e:
         logging.error("An error occurred while retrieving call IDs to be reviewed.")
