@@ -450,7 +450,8 @@ def previous_button_clicked():
 
         while True:
             if idx == -1:
-                idx = st.session_state["n_chunks"] - 1
+                # idx = st.session_state["n_chunks"] - 1
+                break
             if idx not in st.session_state["annotated_idx"]:
                 st.session_state["current_idx"] = idx
                 break
