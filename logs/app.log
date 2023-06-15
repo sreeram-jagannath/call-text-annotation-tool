@@ -6,3 +6,49 @@
 2023-06-09 17:26:33,299 - INFO - Welcome user: User B
 2023-06-09 17:27:35,867 - INFO - Welcome user: User I
 2023-06-09 17:27:36,237 - INFO - Welcome user: User I
+2023-06-09 18:51:58,688 - INFO - Connection to the database closed.
+2023-06-09 18:52:15,731 - INFO - Connection to the database initialized. User: User C
+2023-06-09 18:52:33,865 - INFO - Welcome User C!
+2023-06-09 18:52:47,495 - INFO - Welcome User D!
+2023-06-09 18:52:47,794 - INFO - Welcome User D!
+2023-06-09 18:52:58,811 - INFO - Welcome User E!
+2023-06-09 18:52:59,031 - INFO - Welcome User E!
+2023-06-14 18:22:32,176 - INFO - Welcome User A!
+2023-06-14 18:22:32,194 - INFO - Connection to the database initialized. User: User A
+2023-06-14 18:22:32,378 - INFO - Welcome User A!
+2023-06-14 18:22:40,930 - INFO - Welcome User A!
+2023-06-14 18:46:49,101 - INFO - Welcome User A!
+2023-06-14 18:46:50,909 - INFO - Welcome User A!
+2023-06-14 18:46:55,943 - INFO - Welcome User A!
+2023-06-14 18:46:58,710 - INFO - Welcome User A!
+2023-06-14 18:47:01,414 - INFO - Welcome User A!
+2023-06-14 18:47:01,605 - INFO - Welcome User A!
+2023-06-14 18:47:01,760 - INFO - Welcome User A!
+2023-06-14 19:09:34,946 - INFO - Welcome User A!
+2023-06-14 19:09:37,058 - INFO - Welcome User A!
+2023-06-14 19:46:41,554 - INFO - Welcome User A!
+2023-06-14 19:46:42,711 - INFO - Welcome User A!
+2023-06-14 19:46:46,106 - INFO - Welcome User A!
+2023-06-14 19:46:48,768 - INFO - Welcome User A!
+2023-06-14 19:46:50,961 - INFO - Welcome User A!
+2023-06-14 19:46:52,955 - INFO - Welcome User A!
+2023-06-14 19:46:55,326 - INFO - Welcome User A!
+2023-06-14 21:06:21,539 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-11618' coro=<WebSocketProtocol13.write_message.<locals>.wrapper() done, defined at C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\tornado\websocket.py:1085> exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\tornado\websocket.py", line 1087, in wrapper
+    await fut
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\tornado\websocket.py", line 1089, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+2023-06-14 21:06:23,009 - INFO - Welcome User A!
+2023-06-14 21:06:23,778 - INFO - Welcome User A!
+2023-06-14 21:07:29,964 - INFO - Welcome User A!
+2023-06-14 21:07:30,682 - INFO - Welcome User A!
+2023-06-14 23:14:00,074 - INFO - Welcome User A!
+2023-06-14 23:14:00,407 - INFO - Welcome User A!

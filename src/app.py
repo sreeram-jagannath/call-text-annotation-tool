@@ -34,7 +34,7 @@ if __name__ == "__main__":
     if authentication_status:
         # authenticator.logout("Logout", "main", )
         role = config.get("credentials").get("usernames").get(username).get("role")
-        # logging.info(f"Welcome {name}!")
+        logging.info(f"Welcome {name}!")
 
         st.session_state["name"] = name
         st.session_state["role"] = role
