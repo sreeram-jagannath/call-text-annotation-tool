@@ -10,7 +10,7 @@ from review_page import get_reviewer_page
 
 page_icon_img = "../images/sunlife.png"
 st.set_page_config(
-    page_title="Intent Dectection | Data Labeling Testing",
+    page_title="Intent Detection | Data Labeling Testing",
     layout="wide",
     page_icon=page_icon_img,
     initial_sidebar_state="collapsed",

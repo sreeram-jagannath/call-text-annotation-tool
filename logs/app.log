@@ -52,3 +52,10 @@ tornado.websocket.WebSocketClosedError
 2023-06-14 21:07:30,682 - INFO - Welcome User A!
 2023-06-14 23:14:00,074 - INFO - Welcome User A!
 2023-06-14 23:14:00,407 - INFO - Welcome User A!
+2023-06-15 11:44:02,364 - INFO - Welcome User A!
+2023-06-15 11:44:02,394 - INFO - Connection to the database initialized. User: User A
+2023-06-15 11:44:02,675 - INFO - Welcome User A!
+2023-06-15 11:44:13,577 - INFO - Welcome User A!
+2023-06-15 11:44:25,224 - INFO - Welcome User A!
+2023-06-15 11:44:32,955 - INFO - Welcome User A!
+2023-06-15 11:44:35,049 - INFO - Welcome User A!
