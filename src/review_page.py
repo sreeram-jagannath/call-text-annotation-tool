@@ -12,7 +12,6 @@ def get_reviewer_page(conn, cursor):
     display_name_and_role()
 
     data, intents, mapping = read_dataframes()
-    data = data.groupby("ConnectionID").head(4).reset_index(drop=True)
 
     all_intents = get_all_intent_options(intent_df=intents)
     all_subintents = get_all_subintent_options(intent_df=intents)
@@ -27,6 +26,11 @@ def get_reviewer_page(conn, cursor):
         rev_username=st.session_state.get("name"),
     )
 
+    # if DEBUG:
+    #     st.dataframe(already_annotated_df)
+    #     st.dataframe(all_review_call_ids)
+
+    
     _, cf1, _ = st.columns([2, 2, 1])
     cf1.checkbox(
         "Filter only calls with Low/Medium confidence",
@@ -35,13 +39,21 @@ def get_reviewer_page(conn, cursor):
         on_change=conf_checkbox_func,
     )
     if st.session_state["conf_filter"]:
-        review_call_ids = all_review_call_ids[
-            all_review_call_ids["confidence"] != "High"
-        ].reset_index(drop=True)
+        select_data_query = "SELECT * FROM call_annotation_table"
+        # filter out the calls with low, medium confidence
+        not_high_conf_df = (
+            pd.read_sql_query(select_data_query, conn)
+            .sort_values(by=["date", "time"], ascending=False)
+            .groupby("call_id")
+            .head(1)
+            .query("confidence != 'High'")
+        )
+        # if DEBUG:
+        #     st.dataframe(not_high_conf_df)
+        review_call_ids = all_review_call_ids.merge(not_high_conf_df[["call_id"]], on="call_id", how="inner",).reset_index(drop=True)
     else:
         review_call_ids = all_review_call_ids.copy()
 
-    # st.dataframe(review_call_ids, use_container_width=True)
 
     # store the already annotated data in session state,
     # check if the data has changed due to clearing cache
@@ -60,7 +72,9 @@ def get_reviewer_page(conn, cursor):
         st.session_state["current_idx"] = 0
         st.session_state["call_ids_shape"] = all_review_call_ids.shape[0]
 
-    # st.write(st.session_state)
+
+    # if DEBUG:
+    #     st.write(st.session_state)
 
     # st.write(st.session_state.get("current_idx"), "after reset_session")
 
@@ -68,6 +82,21 @@ def get_reviewer_page(conn, cursor):
         st.success("You don't have any texts to review!")
         st.balloons()
     else:
+
+        st.session_state["n_rows"] = review_call_ids.shape[0]
+        if DEBUG:
+            st.write("review_call_ids")
+            st.dataframe(review_call_ids, use_container_width=True)
+
+            st.write(f"{st.session_state.get('call_ids_shape')=}")
+            st.write(f"{st.session_state.get('n_rows')=}")
+            st.write(f"{st.session_state.get('current_idx')=}")
+            st.write(f"{st.session_state.get('current_conn_id')=}")
+            st.write(f"{st.session_state.get('current_chunk_id')=}")
+            st.write(f"{st.session_state.get('conn_id_select')=}")
+            st.write(f"{st.session_state.get('chunk_id_select')=}")
+
+
         current_row = review_call_ids.iloc[st.session_state["current_idx"]]
         current_conn_id = current_row[CONN_ID_COLNAME]
         current_chunk_id = current_row[CHUNK_ID_COLNAME]
@@ -91,21 +120,16 @@ def get_reviewer_page(conn, cursor):
             .tolist()
         )
 
-        # st.write(f"{st.session_state.get('current_idx')=}")
-        # st.write(f"{st.session_state.get('current_conn_id')=}")
-        # st.write(f"{st.session_state.get('current_chunk_id')=}")
-        # st.write(f"{st.session_state.get('conn_id_select')=}")
-        # st.write(f"{st.session_state.get('chunk_id_select')=}")
-
 
 
         # conn_sel_idx = conn_id_list.index()
-        # print(
-        #     conn_id_list,
-        #     chunk_id_list,
-        #     conn_id_list.index(current_conn_id),
-        #     chunk_id_list.index(current_chunk_id),
-        # )
+        if DEBUG:
+            print(
+                conn_id_list,
+                chunk_id_list,
+                conn_id_list.index(current_conn_id),
+                chunk_id_list.index(current_chunk_id),
+            )
         _, fcol1, fcol2, _ = st.columns([1, 2, 2, 1])
         fcol1.selectbox(
             "Connection ID",
@@ -171,11 +195,11 @@ def get_reviewer_page(conn, cursor):
         _, scol, _ = st.columns([1, 2, 1])
         if review_status == "Pending":
             default_intents = get_default_options(current_row["case_type"])
-            scol.warning(f"Reviewer Status: {review_status}")
+            scol.warning(f"Status: {review_status}")
 
         else:
             default_intents = get_default_options(reviewed_df.iloc[0]["case_type"])
-            scol.success(f"Reviewer Status: {review_status}")
+            scol.success(f"Status: {review_status}")
 
         # st.table(reviewed_df)
 
@@ -283,14 +307,17 @@ def get_reviewer_page(conn, cursor):
         #     st.write(df)
         st.divider()
 
-        select_data_query = "SELECT * FROM call_annotation_table"
-        df = pd.read_sql_query(select_data_query, conn).sort_values(
-            by=["date", "time"], ascending=False
-        )
-        st.subheader("Database")
-        st.dataframe(df, use_container_width=True)
-
         with st.expander(label="Guidelines to use the dashboard"):
             show_pdf(file_path="../sample.pdf")
 
-        # print("*" * 20)
+        
+        if DEBUG:
+            st.subheader("Database")
+            select_data_query = "SELECT * FROM call_annotation_table"
+            df = pd.read_sql_query(select_data_query, conn).sort_values(
+                by=["date", "time"], ascending=False
+            )
+            st.dataframe(df, use_container_width=True)
+
+            print("*" * 20)
+        

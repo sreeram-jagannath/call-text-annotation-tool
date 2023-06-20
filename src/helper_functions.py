@@ -15,6 +15,7 @@ from config import (
     INTENT_COLNAME,
     SUB_INTENT_COLNAME,
     TEXT_COLNAME,
+    DEBUG,
 )
 
 # Configure logging
@@ -29,7 +30,9 @@ def reset_session_state(calls_df):
     # find the current connection id and chunk id of the
     # user
     try:
-        print(calls_df)
+        if DEBUG:
+            print("in reset_session_state_function")
+            print(calls_df)
         idx = calls_df[
             (calls_df[CONN_ID_COLNAME] == st.session_state["current_conn_id"])
             & (calls_df[CHUNK_ID_COLNAME] == st.session_state["current_chunk_id"])
@@ -44,11 +47,11 @@ def reset_session_state(calls_df):
     # catching the "save and next" exception when the cache
     # is cleared, only for annotator
     except Exception as e:
-        print("Exception caught!")
-        st.session_state["current_idx"] -= len(st.session_state["annotated_idx"])
+        # print("Exception caught!")
+        st.session_state["current_idx"] -= len(st.session_state.get("annotated_idx", []))
 
     st.session_state["annotated_idx"] = set()
-    print(st.session_state["current_idx"], "reset_session_function")
+    # print(st.session_state["current_idx"], "reset_session_function")
 
 
 def show_pdf(file_path: str) -> None:
@@ -159,6 +162,8 @@ def read_dataframes() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         data = pd.read_parquet("../inputs/data.parquet")
         intents = pd.read_parquet("../inputs/intents.parquet")
         mapping = pd.read_parquet("../inputs/mapping.parquet")
+
+        data = data.groupby("ConnectionID").head(10).reset_index(drop=True)
 
         return data, intents, mapping
 
@@ -381,7 +386,8 @@ def previous_button_clicked_reviewer():
         idx = st.session_state["current_idx"] - 1
 
         if idx == -1:
-            idx = st.session_state["call_ids_shape"] - 1
+            # idx = st.session_state["call_ids_shape"] - 1
+            return
 
         st.session_state["current_idx"] = idx
 
@@ -400,7 +406,7 @@ def next_button_clicked_reviewer():
     try:
         idx = st.session_state["current_idx"] + 1
 
-        if idx == st.session_state["call_ids_shape"]:
+        if idx == st.session_state["n_rows"]:
             idx = 0
 
         st.session_state["current_idx"] = idx
@@ -454,7 +460,7 @@ def save_next_button_clicked_reviewer(
 
         idx = st.session_state["current_idx"] + 1
 
-        if idx == st.session_state["call_ids_shape"]:
+        if idx >= st.session_state["n_rows"]:
             idx = 0
 
         st.session_state["current_idx"] = idx
@@ -498,7 +504,7 @@ def next_button_clicked():
         idx = st.session_state["current_idx"] + 1
 
         while True:
-            if idx == st.session_state["call_ids_shape"]:
+            if idx == st.session_state["n_rows"]:
                 idx = 0
             if idx not in st.session_state["annotated_idx"]:
                 st.session_state["current_idx"] = idx
@@ -553,7 +559,7 @@ def save_next_button_clicked(
 
         st.session_state["annotated_idx"].add(st.session_state["current_idx"])
 
-        if len(st.session_state["annotated_idx"]) == st.session_state["call_ids_shape"]:
+        if len(st.session_state["annotated_idx"]) == st.session_state["n_rows"]:
             st.session_state["all_done"] = True
             return
 
@@ -616,7 +622,10 @@ def get_call_ids_to_be_reviewed(
     """
 
     try:
-        only_annotator_data = annot_data.query("role == 'annotator'")
+        if st.session_state["role"] == "reviewer":
+            only_annotator_data = annot_data.query("role == 'annotator'")
+        elif st.session_state["role"] == "admin":
+            only_annotator_data = annot_data.query("role == 'reviewer'")
 
         call_ids = (
             pd.merge(call_data, user_call_mapping, on=CONN_ID_COLNAME, how="left")
@@ -698,9 +707,11 @@ def reviewer_select_connid(review_df):
         None
     """
     try:
-        if review_df.shape[0] == st.session_state["call_ids_shape"]:
-            print("conn selectbox changed!")
-            print(review_df)
+        # print("conn selectbox changed!")
+        # print(review_df.shape[0])
+        # print(st.session_state["call_ids_shape"], st.session_state["n_rows"])
+        if review_df.shape[0] == st.session_state["n_rows"]:
+            # print(review_df)
             conn_id_select = st.session_state.get("conn_id_select")
 
             if conn_id_select is not None:
@@ -724,8 +735,8 @@ def reviewer_select_chunkid(review_df):
     try:
         # print("chunk selectbox changed!")
         # print(review_df.shape[0])
-        # print(st.session_state["call_ids_shape"])
-        if review_df.shape[0] == st.session_state["call_ids_shape"]:
+        # print(st.session_state["call_ids_shape"], st.session_state["n_rows"])
+        if review_df.shape[0] == st.session_state["n_rows"]:
             conn_id_select = st.session_state.get("conn_id_select")
             chunk_id_select = st.session_state.get("chunk_id_select")
 
@@ -763,6 +774,8 @@ def display_annotation_details(current_row):
             CONN_ID_COLNAME: "Connection ID",
             CHUNK_ID_COLNAME: "Chunk ID",
             "Annotator": "Annotator",
+            "Reviewer": "Reviewer",
+            # ""
             "case_type": "Intent",
             "subcase_type": "Sub-Intent",
             "confidence": "Confidence Level",

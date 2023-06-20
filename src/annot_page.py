@@ -14,8 +14,6 @@ def get_annotator_page(conn, cursor):
     display_name_and_role()
 
     data, intents, mapping = read_dataframes()
-    # data = data[data["ConnectionID"] == "c_202201271611026714"].head()
-    data = data.groupby("ConnectionID").head(4).reset_index(drop=True)
 
     all_intents = get_all_intent_options(intent_df=intents)
     all_subintents = get_all_subintent_options(intent_df=intents)
@@ -63,6 +61,9 @@ def get_annotator_page(conn, cursor):
             st.session_state["current_idx"] = 0
             st.session_state["annotated_idx"] = set()
 
+        st.session_state["n_rows"] = call_ids.shape[0]
+
+        # st.write(st.session_state)
         current_row = call_ids.iloc[st.session_state["current_idx"]]
         current_conn_id = current_row[CONN_ID_COLNAME]
 
@@ -205,12 +206,13 @@ def get_annotator_page(conn, cursor):
 
         st.divider()
 
-        select_data_query = "SELECT * FROM call_annotation_table"
-        df = pd.read_sql_query(select_data_query, conn).sort_values(
-            by=["date", "time"], ascending=False
-        )
-        st.subheader("Database")
-        st.dataframe(df, use_container_width=True)
+        if DEBUG:
+            select_data_query = "SELECT * FROM call_annotation_table"
+            df = pd.read_sql_query(select_data_query, conn).sort_values(
+                by=["date", "time"], ascending=False
+            )
+            st.subheader("Database")
+            st.dataframe(df, use_container_width=True)
 
         with st.expander(label="Guidelines to use the dashboard"):
             show_pdf(file_path="../sample.pdf")
