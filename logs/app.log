@@ -59,3 +59,2075 @@ tornado.websocket.WebSocketClosedError
 2023-06-15 11:44:25,224 - INFO - Welcome User A!
 2023-06-15 11:44:32,955 - INFO - Welcome User A!
 2023-06-15 11:44:35,049 - INFO - Welcome User A!
+2023-06-16 16:00:05,235 - INFO - Welcome User A!
+2023-06-16 16:00:05,327 - INFO - Connection to the database initialized. User: User A
+2023-06-16 16:00:05,431 - INFO - Welcome User A!
+2023-06-16 16:00:54,542 - INFO - Welcome User B!
+2023-06-16 16:00:55,112 - INFO - Welcome User B!
+2023-06-16 16:01:09,729 - INFO - Welcome User C!
+2023-06-16 16:01:10,339 - INFO - Welcome User C!
+2023-06-16 16:02:43,152 - INFO - Welcome User C!
+2023-06-16 16:02:48,695 - INFO - Welcome User C!
+2023-06-16 16:03:08,816 - INFO - Welcome User B!
+2023-06-16 16:03:13,199 - INFO - Welcome User B!
+2023-06-16 16:03:36,123 - INFO - Welcome User B!
+2023-06-16 16:03:46,668 - INFO - Welcome User B!
+2023-06-16 16:03:46,671 - INFO - Welcome User C!
+2023-06-16 16:03:49,144 - INFO - Welcome User B!
+2023-06-16 16:03:49,371 - INFO - Welcome User C!
+2023-06-16 16:03:54,025 - INFO - Welcome User B!
+2023-06-16 16:03:56,161 - INFO - Welcome User B!
+2023-06-16 16:04:00,640 - INFO - Welcome User C!
+2023-06-16 16:04:00,662 - INFO - Welcome User B!
+2023-06-16 16:04:02,312 - INFO - Welcome User B!
+2023-06-16 16:04:03,541 - INFO - Welcome User C!
+2023-06-16 16:04:13,383 - INFO - Welcome User B!
+2023-06-16 16:04:16,237 - INFO - Welcome User B!
+2023-06-16 16:04:22,073 - INFO - Welcome User B!
+2023-06-16 16:04:34,241 - INFO - Welcome User B!
+2023-06-16 16:04:37,833 - INFO - Welcome User B!
+2023-06-16 16:05:14,247 - INFO - Welcome User C!
+2023-06-16 16:05:14,247 - INFO - Welcome User B!
+2023-06-16 16:05:25,677 - INFO - Welcome User C!
+2023-06-16 16:05:36,658 - INFO - Welcome User C!
+2023-06-16 16:05:45,808 - INFO - Welcome User C!
+2023-06-16 16:06:29,689 - INFO - Welcome User B!
+2023-06-16 16:06:52,855 - INFO - Welcome User C!
+2023-06-16 16:06:53,286 - INFO - Welcome User C!
+2023-06-16 16:07:11,910 - INFO - Welcome User C!
+2023-06-16 16:08:50,553 - INFO - Welcome User B!
+2023-06-16 16:08:52,370 - INFO - Welcome User B!
+2023-06-16 16:08:58,112 - INFO - Welcome User C!
+2023-06-16 16:08:58,690 - INFO - Welcome User C!
+2023-06-16 16:09:17,847 - INFO - Welcome User C!
+2023-06-16 16:09:26,410 - INFO - Welcome User A!
+2023-06-16 16:09:45,972 - INFO - Welcome User A!
+2023-06-16 16:09:55,114 - INFO - Welcome User A!
+2023-06-16 16:10:11,837 - INFO - Welcome User B!
+2023-06-16 16:10:11,842 - INFO - Welcome User A!
+2023-06-16 16:10:24,718 - INFO - Welcome User A!
+2023-06-16 16:10:25,145 - INFO - Welcome User A!
+2023-06-16 16:10:25,760 - INFO - Welcome User A!
+2023-06-16 16:10:26,735 - INFO - Welcome User A!
+2023-06-16 16:10:27,055 - INFO - Welcome User A!
+2023-06-16 16:10:57,920 - INFO - Welcome User C!
+2023-06-16 16:10:59,126 - INFO - Welcome User C!
+2023-06-16 16:11:14,932 - INFO - Welcome User C!
+2023-06-16 16:11:18,788 - INFO - Welcome User C!
+2023-06-16 16:11:19,512 - INFO - Welcome User C!
+2023-06-16 16:11:51,866 - INFO - Welcome User B!
+2023-06-16 16:11:56,975 - INFO - Welcome User B!
+2023-06-16 16:12:02,811 - INFO - Welcome User B!
+2023-06-16 16:12:08,517 - INFO - Welcome User B!
+2023-06-16 16:12:09,881 - INFO - Welcome User B!
+2023-06-16 16:12:10,455 - INFO - Welcome User B!
+2023-06-16 16:12:27,286 - INFO - Welcome User A!
+2023-06-16 16:12:36,760 - INFO - Welcome User A!
+2023-06-16 16:12:40,096 - INFO - Welcome User A!
+2023-06-16 16:13:04,110 - INFO - Welcome User B!
+2023-06-16 16:13:15,055 - INFO - Welcome User B!
+2023-06-16 16:13:47,582 - INFO - Welcome User B!
+2023-06-16 16:14:05,583 - INFO - Welcome User C!
+2023-06-16 16:14:16,127 - INFO - Welcome User C!
+2023-06-16 23:08:02,378 - INFO - Welcome User A!
+2023-06-16 23:08:02,381 - INFO - Connection to the database initialized. User: User A
+2023-06-16 23:08:02,554 - INFO - Welcome User A!
+2023-06-16 23:08:08,103 - INFO - Welcome User B!
+2023-06-16 23:08:08,835 - INFO - Welcome User B!
+2023-06-16 23:08:13,007 - INFO - Welcome User C!
+2023-06-16 23:08:13,640 - INFO - Welcome User C!
+2023-06-16 23:09:04,628 - INFO - Welcome User B!
+2023-06-16 23:09:24,893 - INFO - Welcome User B!
+2023-06-16 23:09:29,054 - INFO - Welcome User A!
+2023-06-16 23:09:31,022 - INFO - Welcome User C!
+2023-06-16 23:09:48,276 - INFO - Welcome User A!
+2023-06-16 23:09:51,275 - INFO - Welcome User A!
+2023-06-16 23:09:51,536 - INFO - Welcome User A!
+2023-06-16 23:09:51,701 - INFO - Welcome User A!
+2023-06-16 23:09:52,204 - INFO - Welcome User A!
+2023-06-16 23:09:52,643 - INFO - Welcome User A!
+2023-06-16 23:09:57,233 - INFO - Welcome User A!
+2023-06-16 23:10:06,144 - INFO - Welcome User B!
+2023-06-16 23:10:07,461 - INFO - Welcome User B!
+2023-06-16 23:10:09,870 - INFO - Welcome User B!
+2023-06-16 23:10:12,695 - INFO - Welcome User B!
+2023-06-16 23:10:24,632 - INFO - Welcome User C!
+2023-06-16 23:10:28,295 - INFO - Welcome User C!
+2023-06-16 23:10:41,565 - INFO - Welcome User D!
+2023-06-16 23:10:41,828 - INFO - Welcome User D!
+2023-06-16 23:10:53,135 - INFO - Welcome User E!
+2023-06-16 23:10:53,344 - INFO - Welcome User E!
+2023-06-16 23:11:04,437 - INFO - Welcome User F!
+2023-06-16 23:11:04,823 - INFO - Welcome User F!
+2023-06-16 23:11:38,879 - INFO - Welcome User B!
+2023-06-16 23:11:39,057 - INFO - Welcome User B!
+2023-06-16 23:12:40,435 - INFO - Welcome User B!
+2023-06-16 23:12:40,437 - INFO - Welcome User C!
+2023-06-16 23:12:40,438 - INFO - Welcome User A!
+2023-06-16 23:12:41,540 - INFO - Welcome User A!
+2023-06-16 23:12:41,660 - INFO - Welcome User C!
+2023-06-16 23:27:56,880 - INFO - Welcome User A!
+2023-06-16 23:27:56,882 - INFO - Connection to the database initialized. User: User A
+2023-06-16 23:27:57,149 - INFO - Welcome User A!
+2023-06-16 23:28:05,033 - INFO - Welcome User B!
+2023-06-16 23:28:05,704 - INFO - Welcome User B!
+2023-06-16 23:28:10,158 - INFO - Welcome User C!
+2023-06-16 23:28:10,902 - INFO - Welcome User C!
+2023-06-16 23:28:36,049 - INFO - Welcome User A!
+2023-06-16 23:28:40,550 - INFO - Welcome User A!
+2023-06-16 23:28:51,153 - INFO - Welcome User B!
+2023-06-16 23:29:06,306 - INFO - Welcome User C!
+2023-06-16 23:29:13,350 - INFO - Welcome User A!
+2023-06-16 23:29:15,203 - INFO - Welcome User A!
+2023-06-16 23:29:18,814 - INFO - Welcome User A!
+2023-06-16 23:30:02,883 - INFO - Welcome User B!
+2023-06-16 23:30:03,038 - INFO - Welcome User B!
+2023-06-16 23:30:03,220 - INFO - Welcome User B!
+2023-06-16 23:30:11,054 - INFO - Welcome User B!
+2023-06-16 23:30:19,769 - INFO - Welcome User C!
+2023-06-16 23:30:20,089 - INFO - Welcome User C!
+2023-06-16 23:30:20,439 - INFO - Welcome User C!
+2023-06-16 23:30:23,699 - INFO - Welcome User C!
+2023-06-16 23:30:33,609 - INFO - Welcome User C!
+2023-06-16 23:30:41,989 - INFO - Welcome User C!
+2023-06-16 23:30:52,408 - INFO - Welcome User A!
+2023-06-16 23:30:52,624 - INFO - Welcome User A!
+2023-06-16 23:30:52,849 - INFO - Welcome User A!
+2023-06-16 23:32:04,564 - INFO - Welcome User A!
+2023-06-16 23:32:11,983 - INFO - Welcome User A!
+2023-06-16 23:32:19,810 - INFO - Welcome User B!
+2023-06-16 23:33:01,599 - INFO - Welcome User C!
+2023-06-16 23:33:11,979 - INFO - Welcome User A!
+2023-06-16 23:33:12,993 - INFO - Welcome User A!
+2023-06-16 23:33:13,532 - INFO - Welcome User A!
+2023-06-16 23:33:13,858 - INFO - Welcome User A!
+2023-06-16 23:33:20,824 - INFO - Welcome User A!
+2023-06-16 23:33:24,998 - INFO - Welcome User A!
+2023-06-16 23:33:32,129 - INFO - Welcome User A!
+2023-06-16 23:33:44,461 - INFO - Welcome User A!
+2023-06-16 23:33:51,195 - INFO - Welcome User B!
+2023-06-16 23:33:54,364 - INFO - Welcome User B!
+2023-06-16 23:33:54,721 - INFO - Welcome User B!
+2023-06-16 23:33:54,903 - INFO - Welcome User B!
+2023-06-16 23:33:55,801 - INFO - Welcome User B!
+2023-06-16 23:33:58,408 - INFO - Welcome User B!
+2023-06-16 23:34:10,680 - INFO - Welcome User C!
+2023-06-16 23:34:10,857 - INFO - Welcome User C!
+2023-06-16 23:34:11,014 - INFO - Welcome User C!
+2023-06-16 23:34:11,442 - INFO - Welcome User C!
+2023-06-16 23:34:11,649 - INFO - Welcome User C!
+2023-06-16 23:34:11,830 - INFO - Welcome User C!
+2023-06-16 23:34:12,943 - INFO - Welcome User C!
+2023-06-16 23:34:13,988 - INFO - Welcome User C!
+2023-06-16 23:34:20,870 - INFO - Welcome User C!
+2023-06-16 23:34:32,408 - INFO - Welcome User A!
+2023-06-16 23:35:08,393 - INFO - Welcome User A!
+2023-06-16 23:35:12,073 - INFO - Welcome User A!
+2023-06-16 23:35:12,584 - INFO - Welcome User A!
+2023-06-16 23:35:14,330 - INFO - Welcome User A!
+2023-06-16 23:35:25,087 - INFO - Welcome User B!
+2023-06-16 23:35:36,884 - INFO - Welcome User C!
+2023-06-16 23:35:40,329 - INFO - Welcome User C!
+2023-06-16 23:36:22,776 - INFO - Welcome User D!
+2023-06-16 23:36:23,103 - INFO - Welcome User D!
+2023-06-16 23:36:36,636 - INFO - Welcome User A!
+2023-06-16 23:36:36,827 - INFO - Welcome User A!
+2023-06-16 23:36:45,521 - INFO - Welcome User B!
+2023-06-16 23:36:45,705 - INFO - Welcome User B!
+2023-06-16 23:36:49,064 - INFO - Welcome User C!
+2023-06-16 23:36:49,300 - INFO - Welcome User C!
+2023-06-16 23:39:27,716 - INFO - Welcome User A!
+2023-06-16 23:39:27,718 - INFO - Connection to the database initialized. User: User A
+2023-06-16 23:39:27,897 - INFO - Welcome User A!
+2023-06-16 23:39:28,003 - INFO - Welcome User A!
+2023-06-16 23:39:33,267 - INFO - Welcome User A!
+2023-06-16 23:39:50,436 - INFO - Welcome User A!
+2023-06-16 23:40:21,080 - INFO - Welcome User A!
+2023-06-16 23:40:21,471 - INFO - Welcome User A!
+2023-06-16 23:40:21,907 - INFO - Welcome User A!
+2023-06-16 23:40:24,594 - INFO - Welcome User A!
+2023-06-16 23:40:41,616 - INFO - Welcome User A!
+2023-06-16 23:40:58,679 - INFO - Welcome User A!
+2023-06-16 23:41:02,755 - INFO - Connection to the database closed.
+2023-06-16 23:41:14,764 - INFO - Welcome User A!
+2023-06-16 23:41:14,768 - INFO - Connection to the database initialized. User: User A
+2023-06-16 23:42:43,834 - INFO - Welcome User A!
+2023-06-16 23:42:43,838 - INFO - Connection to the database initialized. User: User A
+2023-06-16 23:43:01,764 - INFO - Welcome User A!
+2023-06-16 23:43:06,607 - INFO - Welcome User A!
+2023-06-16 23:44:11,477 - INFO - Welcome User A!
+2023-06-16 23:44:43,233 - INFO - Welcome User B!
+2023-06-16 23:44:43,470 - INFO - Welcome User B!
+2023-06-16 23:45:02,942 - INFO - Welcome User C!
+2023-06-16 23:45:03,299 - INFO - Welcome User C!
+2023-06-16 23:45:13,351 - INFO - Welcome User A!
+2023-06-16 23:45:13,536 - INFO - Welcome User A!
+2023-06-16 23:45:52,878 - INFO - Welcome User D!
+2023-06-16 23:45:53,212 - INFO - Welcome User D!
+2023-06-16 23:46:25,852 - INFO - Welcome User A!
+2023-06-16 23:46:26,039 - INFO - Welcome User A!
+2023-06-16 23:47:19,313 - INFO - Welcome User B!
+2023-06-16 23:47:19,521 - INFO - Welcome User B!
+2023-06-16 23:47:24,453 - INFO - Welcome User B!
+2023-06-16 23:47:29,693 - INFO - Welcome User B!
+2023-06-16 23:47:33,473 - INFO - Welcome User B!
+2023-06-16 23:47:36,097 - INFO - Welcome User B!
+2023-06-16 23:47:41,113 - INFO - Welcome User C!
+2023-06-16 23:47:41,305 - INFO - Welcome User C!
+2023-06-16 23:47:44,347 - INFO - Welcome User C!
+2023-06-16 23:47:46,678 - INFO - Welcome User C!
+2023-06-16 23:55:29,991 - INFO - Welcome User A!
+2023-06-16 23:55:30,615 - INFO - Welcome User A!
+2023-06-16 23:58:07,955 - INFO - Welcome User A!
+2023-06-16 23:58:08,702 - INFO - Welcome User A!
+2023-06-16 23:58:14,636 - INFO - Welcome User A!
+2023-06-16 23:58:20,005 - INFO - Welcome User A!
+2023-06-16 23:58:21,442 - INFO - Welcome User A!
+2023-06-16 23:59:38,630 - INFO - Welcome User C!
+2023-06-16 23:59:38,828 - INFO - Welcome User C!
+2023-06-17 00:00:21,813 - INFO - Welcome User C!
+2023-06-17 00:00:22,374 - INFO - Welcome User C!
+2023-06-17 00:00:37,911 - INFO - Welcome User C!
+2023-06-17 00:00:52,892 - INFO - Welcome User A!
+2023-06-17 00:00:53,076 - INFO - Welcome User A!
+2023-06-17 00:00:59,809 - INFO - Welcome User A!
+2023-06-17 00:01:31,055 - INFO - Welcome User A!
+2023-06-17 00:02:09,254 - INFO - Welcome User A!
+2023-06-17 00:02:15,939 - INFO - Welcome User A!
+2023-06-17 00:02:19,180 - INFO - Welcome User A!
+2023-06-17 00:02:24,286 - INFO - Welcome User B!
+2023-06-17 00:02:24,467 - INFO - Welcome User B!
+2023-06-17 00:03:24,323 - INFO - Welcome User B!
+2023-06-17 00:03:26,734 - INFO - Welcome User B!
+2023-06-17 00:03:29,279 - INFO - Welcome User B!
+2023-06-17 00:03:30,911 - INFO - Welcome User B!
+2023-06-17 00:03:33,595 - INFO - Welcome User B!
+2023-06-17 00:03:35,558 - INFO - Welcome User B!
+2023-06-17 00:03:41,222 - INFO - Welcome User A!
+2023-06-17 00:03:42,416 - INFO - Welcome User A!
+2023-06-17 00:03:45,808 - INFO - Welcome User A!
+2023-06-17 00:03:46,295 - INFO - Welcome User A!
+2023-06-17 00:03:50,714 - INFO - Welcome User A!
+2023-06-17 00:03:55,562 - INFO - Welcome User A!
+2023-06-17 00:03:55,745 - INFO - Welcome User A!
+2023-06-17 00:03:55,933 - INFO - Welcome User A!
+2023-06-17 00:03:56,648 - INFO - Welcome User A!
+2023-06-17 00:03:58,802 - INFO - Welcome User A!
+2023-06-17 00:04:01,299 - INFO - Welcome User A!
+2023-06-17 00:04:03,924 - INFO - Welcome User A!
+2023-06-17 00:04:06,603 - INFO - Welcome User A!
+2023-06-17 00:04:12,292 - INFO - Welcome User A!
+2023-06-17 00:04:24,586 - INFO - Welcome User C!
+2023-06-17 00:04:28,010 - INFO - Welcome User C!
+2023-06-17 00:04:30,010 - INFO - Welcome User C!
+2023-06-17 00:04:32,551 - INFO - Welcome User C!
+2023-06-17 00:04:32,804 - INFO - Welcome User C!
+2023-06-17 00:04:32,952 - INFO - Welcome User C!
+2023-06-17 00:04:33,113 - INFO - Welcome User C!
+2023-06-17 00:04:33,446 - INFO - Welcome User C!
+2023-06-17 00:04:33,809 - INFO - Welcome User C!
+2023-06-17 00:04:36,266 - INFO - Welcome User C!
+2023-06-17 00:04:38,069 - INFO - Welcome User C!
+2023-06-17 00:04:38,630 - INFO - Welcome User C!
+2023-06-17 00:04:39,072 - INFO - Welcome User C!
+2023-06-17 00:04:41,234 - INFO - Welcome User C!
+2023-06-17 00:04:50,426 - INFO - Welcome User A!
+2023-06-17 00:04:51,773 - INFO - Welcome User A!
+2023-06-17 00:04:57,196 - INFO - Welcome User A!
+2023-06-17 00:05:03,271 - INFO - Welcome User A!
+2023-06-17 00:05:06,434 - INFO - Welcome User A!
+2023-06-17 00:05:08,315 - INFO - Welcome User A!
+2023-06-17 00:05:09,007 - INFO - Welcome User A!
+2023-06-17 00:05:15,507 - INFO - Welcome User A!
+2023-06-17 00:05:17,222 - INFO - Welcome User A!
+2023-06-17 00:05:17,432 - INFO - Welcome User A!
+2023-06-17 00:05:17,649 - INFO - Welcome User A!
+2023-06-17 00:05:57,149 - INFO - Welcome User A!
+2023-06-17 00:06:05,754 - INFO - Welcome User B!
+2023-06-17 00:06:05,927 - INFO - Welcome User B!
+2023-06-17 00:06:06,196 - INFO - Welcome User B!
+2023-06-17 00:06:11,112 - INFO - Welcome User B!
+2023-06-17 00:06:15,752 - INFO - Welcome User B!
+2023-06-17 00:06:41,588 - INFO - Welcome User E!
+2023-06-17 00:06:41,955 - INFO - Welcome User E!
+2023-06-17 00:06:47,510 - INFO - Welcome User A!
+2023-06-17 00:06:48,023 - INFO - Welcome User A!
+2023-06-17 00:07:06,642 - INFO - Welcome User B!
+2023-06-17 00:07:06,893 - INFO - Welcome User B!
+2023-06-17 00:07:14,611 - INFO - Welcome User C!
+2023-06-17 00:07:14,849 - INFO - Welcome User C!
+2023-06-17 00:07:19,451 - INFO - Welcome User D!
+2023-06-17 00:07:19,585 - INFO - Welcome User D!
+2023-06-17 00:08:17,294 - INFO - Welcome User A!
+2023-06-17 00:08:17,298 - INFO - Connection to the database initialized. User: User A
+2023-06-17 00:08:17,524 - INFO - Welcome User A!
+2023-06-17 00:08:34,371 - INFO - Connection to the database closed.
+2023-06-17 00:09:01,241 - INFO - Welcome User A!
+2023-06-17 00:09:01,246 - INFO - Connection to the database initialized. User: User A
+2023-06-17 00:09:01,889 - INFO - Welcome User A!
+2023-06-17 00:09:09,402 - INFO - Welcome User A!
+2023-06-17 00:09:13,772 - INFO - Welcome User A!
+2023-06-17 00:09:25,699 - INFO - Welcome User A!
+2023-06-17 00:09:25,926 - INFO - Welcome User A!
+2023-06-17 00:09:38,618 - INFO - Welcome User A!
+2023-06-17 00:09:39,925 - INFO - Welcome User A!
+2023-06-17 00:09:49,011 - INFO - Welcome User A!
+2023-06-17 00:09:49,195 - INFO - Welcome User A!
+2023-06-17 00:09:59,831 - INFO - Welcome User A!
+2023-06-17 00:10:07,381 - INFO - Welcome User A!
+2023-06-17 00:10:07,552 - INFO - Welcome User A!
+2023-06-17 00:14:26,229 - INFO - Welcome User A!
+2023-06-17 00:14:46,471 - INFO - Welcome User A!
+2023-06-17 00:14:48,397 - INFO - Welcome User A!
+2023-06-17 00:15:03,109 - INFO - Welcome User A!
+2023-06-17 00:15:24,842 - INFO - Welcome User A!
+2023-06-17 00:15:25,024 - INFO - Welcome User A!
+2023-06-17 00:15:50,798 - INFO - Welcome User B!
+2023-06-17 00:15:51,008 - INFO - Welcome User B!
+2023-06-17 00:16:32,997 - INFO - Welcome User B!
+2023-06-17 00:16:35,426 - INFO - Welcome User B!
+2023-06-17 00:16:47,740 - INFO - Welcome User A!
+2023-06-17 00:16:49,265 - INFO - Welcome User A!
+2023-06-17 00:16:50,241 - INFO - Welcome User A!
+2023-06-17 00:16:55,161 - INFO - Welcome User B!
+2023-06-17 00:17:08,140 - INFO - Welcome User B!
+2023-06-17 00:17:08,340 - INFO - Welcome User B!
+2023-06-17 00:17:22,372 - INFO - Welcome User A!
+2023-06-17 00:17:22,636 - INFO - Welcome User A!
+2023-06-17 00:23:10,079 - INFO - Welcome User A!
+2023-06-17 00:25:47,178 - INFO - Welcome User A!
+2023-06-17 00:25:56,131 - INFO - Welcome User B!
+2023-06-17 00:26:02,145 - INFO - Welcome User B!
+2023-06-17 00:26:03,496 - INFO - Welcome User B!
+2023-06-17 00:26:06,498 - INFO - Welcome User B!
+2023-06-17 00:26:15,143 - INFO - Welcome User B!
+2023-06-17 00:26:15,331 - INFO - Welcome User B!
+2023-06-17 00:27:56,100 - INFO - Welcome User A!
+2023-06-17 00:27:56,770 - INFO - Welcome User A!
+2023-06-17 00:27:58,873 - INFO - Welcome User B!
+2023-06-17 00:28:00,949 - INFO - Welcome User B!
+2023-06-17 00:28:11,571 - INFO - Welcome User B!
+2023-06-17 00:28:11,788 - INFO - Welcome User B!
+2023-06-17 00:28:19,939 - INFO - Welcome User B!
+2023-06-17 00:28:26,500 - INFO - Welcome User B!
+2023-06-17 00:28:33,086 - INFO - Welcome User B!
+2023-06-17 00:28:33,279 - INFO - Welcome User B!
+2023-06-17 00:30:35,495 - INFO - Welcome User A!
+2023-06-17 00:30:35,572 - INFO - Welcome User B!
+2023-06-17 00:30:37,238 - INFO - Welcome User A!
+2023-06-17 00:32:20,474 - INFO - Welcome User A!
+2023-06-17 00:32:21,245 - INFO - Welcome User B!
+2023-06-17 23:23:25,252 - INFO - Welcome User A!
+2023-06-17 23:23:25,271 - INFO - Connection to the database initialized. User: User A
+2023-06-17 23:23:25,472 - INFO - Welcome User A!
+2023-06-17 23:23:44,414 - INFO - Welcome User A!
+2023-06-17 23:24:41,528 - INFO - Welcome User B!
+2023-06-17 23:24:41,760 - INFO - Welcome User B!
+2023-06-17 23:24:49,862 - INFO - Welcome User A!
+2023-06-17 23:24:50,065 - INFO - Welcome User A!
+2023-06-17 23:30:46,229 - INFO - Welcome User A!
+2023-06-17 23:30:56,692 - INFO - Welcome User A!
+2023-06-17 23:31:10,524 - INFO - Welcome User A!
+2023-06-17 23:31:10,697 - INFO - Welcome User A!
+2023-06-17 23:34:34,419 - INFO - Welcome User A!
+2023-06-17 23:34:35,262 - INFO - Welcome User A!
+2023-06-17 23:38:34,768 - INFO - Welcome User A!
+2023-06-17 23:38:39,052 - INFO - Welcome User A!
+2023-06-17 23:38:50,232 - INFO - Welcome User A!
+2023-06-17 23:41:16,900 - INFO - Welcome User A!
+2023-06-17 23:41:17,602 - INFO - Welcome User A!
+2023-06-17 23:41:36,650 - INFO - Welcome User A!
+2023-06-17 23:41:44,079 - INFO - Welcome User A!
+2023-06-17 23:41:53,959 - INFO - Welcome User A!
+2023-06-17 23:42:03,594 - INFO - Welcome User A!
+2023-06-17 23:42:08,776 - INFO - Welcome User A!
+2023-06-17 23:42:24,089 - INFO - Welcome User A!
+2023-06-17 23:42:51,476 - INFO - Welcome User A!
+2023-06-17 23:42:51,667 - INFO - Welcome User A!
+2023-06-17 23:43:57,869 - INFO - Welcome User A!
+2023-06-17 23:43:59,407 - INFO - Welcome User A!
+2023-06-17 23:44:01,817 - INFO - Welcome User A!
+2023-06-17 23:44:10,772 - INFO - Welcome User A!
+2023-06-17 23:44:10,962 - INFO - Welcome User A!
+2023-06-17 23:49:49,037 - INFO - Welcome User A!
+2023-06-17 23:51:25,267 - INFO - Welcome User A!
+2023-06-17 23:55:42,737 - INFO - Welcome User A!
+2023-06-17 23:55:54,968 - INFO - Welcome User A!
+2023-06-17 23:55:59,488 - INFO - Welcome User A!
+2023-06-17 23:56:01,006 - INFO - Welcome User A!
+2023-06-17 23:56:07,190 - INFO - Welcome User A!
+2023-06-17 23:56:07,842 - INFO - Welcome User A!
+2023-06-17 23:56:08,545 - INFO - Welcome User A!
+2023-06-17 23:56:18,240 - INFO - Welcome User A!
+2023-06-17 23:56:18,401 - INFO - Welcome User A!
+2023-06-17 23:57:09,598 - INFO - Welcome User A!
+2023-06-17 23:57:16,181 - INFO - Welcome User A!
+2023-06-17 23:57:25,050 - INFO - Welcome User A!
+2023-06-17 23:57:25,219 - INFO - Welcome User A!
+2023-06-17 23:57:26,148 - INFO - Welcome User A!
+2023-06-17 23:57:29,518 - INFO - Welcome User A!
+2023-06-17 23:57:32,945 - INFO - Welcome User A!
+2023-06-17 23:57:35,597 - INFO - Welcome User A!
+2023-06-17 23:57:45,230 - INFO - Welcome User A!
+2023-06-17 23:57:45,472 - INFO - Welcome User A!
+2023-06-17 23:57:51,468 - INFO - Welcome User A!
+2023-06-17 23:58:21,868 - INFO - Welcome User A!
+2023-06-17 23:58:34,961 - INFO - Welcome User A!
+2023-06-17 23:58:35,141 - INFO - Welcome User A!
+2023-06-17 23:59:13,965 - INFO - Welcome User A!
+2023-06-17 23:59:17,940 - INFO - Welcome User A!
+2023-06-17 23:59:24,212 - INFO - Welcome User A!
+2023-06-17 23:59:24,413 - INFO - Welcome User A!
+2023-06-17 23:59:40,262 - INFO - Welcome User A!
+2023-06-17 23:59:42,165 - INFO - Welcome User A!
+2023-06-17 23:59:47,315 - INFO - Welcome User A!
+2023-06-17 23:59:47,513 - INFO - Welcome User A!
+2023-06-18 00:04:05,910 - INFO - Welcome User A!
+2023-06-18 00:04:20,820 - INFO - Welcome User A!
+2023-06-18 00:04:21,784 - INFO - Welcome User A!
+2023-06-18 00:04:26,613 - INFO - Welcome User A!
+2023-06-18 00:04:28,913 - INFO - Welcome User A!
+2023-06-18 00:04:30,403 - INFO - Welcome User A!
+2023-06-18 00:04:30,567 - INFO - Welcome User A!
+2023-06-18 00:04:42,710 - INFO - Welcome User A!
+2023-06-18 00:04:42,933 - INFO - Welcome User A!
+2023-06-18 00:05:47,388 - INFO - Welcome User A!
+2023-06-18 00:05:51,547 - INFO - Welcome User A!
+2023-06-18 00:06:27,331 - INFO - Connection to the database closed.
+2023-06-18 00:06:46,122 - INFO - Welcome User A!
+2023-06-18 00:06:46,126 - INFO - Connection to the database initialized. User: User A
+2023-06-18 00:06:46,302 - INFO - Welcome User A!
+2023-06-18 00:06:57,849 - INFO - Welcome User A!
+2023-06-18 00:07:00,253 - INFO - Welcome User A!
+2023-06-18 00:07:03,228 - INFO - Welcome User A!
+2023-06-18 00:07:04,200 - INFO - Welcome User A!
+2023-06-18 00:07:05,349 - INFO - Welcome User A!
+2023-06-18 00:07:20,809 - INFO - Welcome User A!
+2023-06-18 00:07:21,008 - INFO - Welcome User A!
+2023-06-18 00:08:18,732 - INFO - Welcome User A!
+2023-06-18 00:08:20,918 - INFO - Welcome User A!
+2023-06-18 00:08:23,451 - INFO - Welcome User A!
+2023-06-18 00:08:34,049 - INFO - Welcome User A!
+2023-06-18 00:08:36,918 - INFO - Welcome User A!
+2023-06-18 00:08:38,592 - INFO - Welcome User A!
+2023-06-18 00:08:39,729 - INFO - Welcome User A!
+2023-06-18 00:08:40,143 - INFO - Welcome User A!
+2023-06-18 00:08:46,071 - INFO - Welcome User A!
+2023-06-18 00:08:46,276 - INFO - Welcome User A!
+2023-06-18 00:09:02,789 - INFO - Welcome User A!
+2023-06-18 00:09:07,232 - INFO - Welcome User A!
+2023-06-18 00:09:37,223 - INFO - Welcome User A!
+2023-06-18 00:09:38,962 - INFO - Welcome User A!
+2023-06-18 00:09:42,696 - INFO - Welcome User A!
+2023-06-18 00:09:46,270 - INFO - Welcome User A!
+2023-06-18 00:09:46,731 - INFO - Welcome User A!
+2023-06-18 00:09:47,698 - INFO - Welcome User A!
+2023-06-18 00:09:54,636 - INFO - Welcome User A!
+2023-06-18 00:09:54,827 - INFO - Welcome User A!
+2023-06-18 00:10:11,151 - INFO - Welcome User A!
+2023-06-18 00:10:16,020 - INFO - Welcome User A!
+2023-06-18 00:10:18,266 - INFO - Welcome User A!
+2023-06-18 00:10:19,163 - INFO - Welcome User A!
+2023-06-18 00:10:24,231 - INFO - Welcome User A!
+2023-06-18 00:10:25,240 - INFO - Welcome User A!
+2023-06-18 00:10:27,255 - INFO - Welcome User A!
+2023-06-18 00:10:29,091 - INFO - Welcome User A!
+2023-06-18 00:10:31,083 - INFO - Welcome User A!
+2023-06-18 00:10:34,340 - INFO - Welcome User A!
+2023-06-18 00:10:34,519 - INFO - Welcome User A!
+2023-06-18 00:10:35,279 - INFO - Welcome User A!
+2023-06-18 00:10:41,517 - INFO - Welcome User A!
+2023-06-18 00:10:41,701 - INFO - Welcome User A!
+2023-06-18 00:10:49,494 - INFO - Welcome User A!
+2023-06-18 00:10:51,729 - INFO - Welcome User A!
+2023-06-18 00:12:52,358 - INFO - Welcome User A!
+2023-06-18 00:12:59,081 - INFO - Welcome User A!
+2023-06-18 00:13:01,252 - INFO - Welcome User A!
+2023-06-18 00:13:04,446 - INFO - Welcome User A!
+2023-06-18 00:13:16,243 - INFO - Welcome User A!
+2023-06-18 00:13:16,429 - INFO - Welcome User A!
+2023-06-18 00:20:28,371 - INFO - Welcome User A!
+2023-06-18 00:22:29,946 - INFO - Welcome User A!
+2023-06-18 00:22:48,594 - INFO - Welcome User A!
+2023-06-18 00:22:48,800 - INFO - Welcome User A!
+2023-06-18 00:23:00,064 - INFO - Welcome User A!
+2023-06-18 00:23:01,380 - INFO - Welcome User A!
+2023-06-18 00:23:02,815 - INFO - Welcome User A!
+2023-06-18 00:23:03,966 - INFO - Welcome User A!
+2023-06-18 00:23:18,878 - INFO - Welcome User A!
+2023-06-18 00:23:19,050 - INFO - Welcome User A!
+2023-06-18 00:23:56,510 - INFO - Welcome User A!
+2023-06-18 00:24:05,658 - INFO - Welcome User A!
+2023-06-18 00:24:06,888 - INFO - Welcome User A!
+2023-06-18 00:24:12,560 - INFO - Welcome User A!
+2023-06-18 00:24:20,210 - INFO - Welcome User A!
+2023-06-18 00:24:20,392 - INFO - Welcome User A!
+2023-06-18 00:24:26,525 - INFO - Welcome User A!
+2023-06-18 00:24:27,996 - INFO - Welcome User A!
+2023-06-18 00:24:44,549 - INFO - Welcome User A!
+2023-06-18 00:24:44,724 - INFO - Welcome User A!
+2023-06-18 00:25:13,333 - INFO - Welcome User B!
+2023-06-18 00:25:13,552 - INFO - Welcome User B!
+2023-06-18 00:25:22,032 - INFO - Welcome User B!
+2023-06-18 00:25:23,580 - INFO - Welcome User B!
+2023-06-18 00:25:28,206 - INFO - Welcome User B!
+2023-06-18 00:25:29,109 - INFO - Welcome User B!
+2023-06-18 00:25:29,886 - INFO - Welcome User B!
+2023-06-18 00:25:30,804 - INFO - Welcome User B!
+2023-06-18 00:25:31,632 - INFO - Welcome User B!
+2023-06-18 00:25:31,819 - INFO - Welcome User B!
+2023-06-18 00:25:35,190 - INFO - Welcome User B!
+2023-06-18 00:25:39,728 - INFO - Welcome User B!
+2023-06-18 00:25:54,268 - INFO - Welcome User A!
+2023-06-18 00:25:57,983 - INFO - Welcome User A!
+2023-06-18 00:26:09,841 - INFO - Welcome User A!
+2023-06-18 00:26:11,914 - INFO - Welcome User A!
+2023-06-18 00:26:12,965 - INFO - Welcome User A!
+2023-06-18 00:26:16,447 - INFO - Welcome User A!
+2023-06-18 00:26:18,021 - INFO - Welcome User A!
+2023-06-18 00:26:26,003 - INFO - Welcome User B!
+2023-06-18 00:26:29,807 - INFO - Welcome User B!
+2023-06-18 00:26:32,246 - INFO - Welcome User B!
+2023-06-18 00:26:36,384 - INFO - Welcome User A!
+2023-06-18 00:26:48,675 - INFO - Welcome User B!
+2023-06-18 00:26:48,872 - INFO - Welcome User B!
+2023-06-18 00:27:02,562 - INFO - Welcome User A!
+2023-06-18 00:27:02,750 - INFO - Welcome User A!
+2023-06-18 00:27:51,108 - INFO - Welcome User A!
+2023-06-18 00:27:51,303 - INFO - Welcome User A!
+2023-06-18 00:27:56,811 - INFO - Welcome User B!
+2023-06-18 00:27:57,009 - INFO - Welcome User B!
+2023-06-18 00:28:03,784 - INFO - Welcome User C!
+2023-06-18 00:28:04,007 - INFO - Welcome User C!
+2023-06-18 00:28:08,726 - INFO - Welcome User C!
+2023-06-18 00:28:10,564 - INFO - Welcome User C!
+2023-06-18 00:28:13,018 - INFO - Welcome User C!
+2023-06-18 00:28:19,606 - INFO - Welcome User C!
+2023-06-18 00:28:20,865 - INFO - Welcome User C!
+2023-06-18 00:28:25,472 - INFO - Welcome User B!
+2023-06-18 00:28:29,322 - INFO - Welcome User B!
+2023-06-18 00:28:31,253 - INFO - Welcome User B!
+2023-06-18 00:28:33,273 - INFO - Welcome User B!
+2023-06-18 00:28:39,352 - INFO - Welcome User C!
+2023-06-18 00:28:53,411 - INFO - Welcome User C!
+2023-06-18 00:28:53,572 - INFO - Welcome User C!
+2023-06-18 00:28:56,287 - INFO - Welcome User C!
+2023-06-18 00:29:01,354 - INFO - Welcome User B!
+2023-06-18 00:29:01,587 - INFO - Welcome User B!
+2023-06-18 00:29:12,463 - INFO - Welcome User A!
+2023-06-18 00:29:12,682 - INFO - Welcome User A!
+2023-06-19 11:12:53,772 - INFO - Welcome User E!
+2023-06-19 11:12:53,810 - INFO - Connection to the database initialized. User: User E
+2023-06-19 11:12:54,014 - INFO - Welcome User E!
+2023-06-19 11:13:10,998 - INFO - Welcome User A!
+2023-06-19 11:13:11,469 - INFO - Welcome User A!
+2023-06-19 11:13:34,233 - INFO - Welcome User D!
+2023-06-19 11:13:34,763 - INFO - Welcome User D!
+2023-06-19 11:13:39,184 - INFO - Welcome User A!
+2023-06-19 11:13:39,525 - INFO - Welcome User A!
+2023-06-19 11:13:48,846 - ERROR - An error occurred in 'save_next_button_clicked': 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+2023-06-19 11:13:48,852 - ERROR - Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 376, in __getitem__
+    return self._getitem(widget_id, key)
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 421, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 548, in save_next_button_clicked
+    if len(st.session_state["annotated_idx"]) == st.session_state["n_chunks"]:
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\safe_session_state.py", line 113, in __getitem__
+    return self._state[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 378, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+2023-06-19 11:13:48,885 - INFO - Welcome User A!
+2023-06-19 11:14:07,843 - INFO - Welcome User F!
+2023-06-19 11:14:08,176 - INFO - Welcome User F!
+2023-06-19 11:14:56,088 - INFO - Welcome User A!
+2023-06-19 11:14:56,394 - INFO - Welcome User A!
+2023-06-19 11:15:03,270 - ERROR - An error occurred in 'save_next_button_clicked': 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+2023-06-19 11:15:03,270 - ERROR - Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 376, in __getitem__
+    return self._getitem(widget_id, key)
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 421, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 548, in save_next_button_clicked
+    if len(st.session_state["annotated_idx"]) == st.session_state["n_chunks"]:
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\safe_session_state.py", line 113, in __getitem__
+    return self._state[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 378, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+2023-06-19 11:15:03,295 - INFO - Welcome User A!
+2023-06-19 11:15:18,118 - ERROR - An error occurred in 'save_next_button_clicked': 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+2023-06-19 11:15:18,118 - ERROR - Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 376, in __getitem__
+    return self._getitem(widget_id, key)
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 421, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 548, in save_next_button_clicked
+    if len(st.session_state["annotated_idx"]) == st.session_state["n_chunks"]:
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\safe_session_state.py", line 113, in __getitem__
+    return self._state[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 378, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+2023-06-19 11:15:18,151 - INFO - Welcome User A!
+2023-06-19 11:16:00,338 - INFO - Welcome User F!
+2023-06-19 11:16:03,904 - INFO - Welcome User F!
+2023-06-19 11:16:08,864 - INFO - Welcome User A!
+2023-06-19 11:16:15,307 - INFO - Welcome User F!
+2023-06-19 11:16:17,404 - INFO - Welcome User F!
+2023-06-19 11:20:35,432 - INFO - Connection to the database closed.
+2023-06-19 11:21:05,646 - INFO - Welcome User A!
+2023-06-19 11:21:05,656 - INFO - Connection to the database initialized. User: User A
+2023-06-19 11:21:05,883 - INFO - Welcome User A!
+2023-06-19 11:21:13,601 - ERROR - An error occurred in 'save_next_button_clicked': 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+2023-06-19 11:21:13,603 - ERROR - Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 376, in __getitem__
+    return self._getitem(widget_id, key)
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 421, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 548, in save_next_button_clicked
+    if len(st.session_state["annotated_idx"]) == st.session_state["n_chunks"]:
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\safe_session_state.py", line 113, in __getitem__
+    return self._state[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 378, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+2023-06-19 11:21:13,615 - INFO - Welcome User A!
+2023-06-19 11:22:53,378 - INFO - Welcome User A!
+2023-06-19 11:22:58,507 - INFO - Welcome User A!
+2023-06-19 11:23:05,937 - ERROR - An error occurred in 'next_button_clicked': 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+2023-06-19 11:23:05,939 - ERROR - Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 376, in __getitem__
+    return self._getitem(widget_id, key)
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 421, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 493, in next_button_clicked
+    if idx == st.session_state["n_chunks"]:
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\safe_session_state.py", line 113, in __getitem__
+    return self._state[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 378, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+2023-06-19 11:23:05,947 - INFO - Welcome User A!
+2023-06-19 11:23:07,273 - ERROR - An error occurred in 'next_button_clicked': 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+2023-06-19 11:23:07,274 - ERROR - Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 376, in __getitem__
+    return self._getitem(widget_id, key)
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 421, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 493, in next_button_clicked
+    if idx == st.session_state["n_chunks"]:
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\safe_session_state.py", line 113, in __getitem__
+    return self._state[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 378, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+2023-06-19 11:23:07,280 - INFO - Welcome User A!
+2023-06-19 11:23:59,011 - ERROR - An error occurred in 'next_button_clicked': 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+2023-06-19 11:23:59,013 - ERROR - Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 376, in __getitem__
+    return self._getitem(widget_id, key)
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 421, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 493, in next_button_clicked
+    if idx == st.session_state["n_chunks"]:
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\safe_session_state.py", line 113, in __getitem__
+    return self._state[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 378, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+2023-06-19 11:23:59,024 - INFO - Welcome User A!
+2023-06-19 11:23:59,635 - ERROR - An error occurred in 'next_button_clicked': 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+2023-06-19 11:23:59,637 - ERROR - Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 376, in __getitem__
+    return self._getitem(widget_id, key)
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 421, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 493, in next_button_clicked
+    if idx == st.session_state["n_chunks"]:
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\safe_session_state.py", line 113, in __getitem__
+    return self._state[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 378, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+2023-06-19 11:23:59,647 - INFO - Welcome User A!
+2023-06-19 11:23:59,855 - ERROR - An error occurred in 'next_button_clicked': 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+2023-06-19 11:23:59,858 - ERROR - Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 376, in __getitem__
+    return self._getitem(widget_id, key)
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 421, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 493, in next_button_clicked
+    if idx == st.session_state["n_chunks"]:
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\safe_session_state.py", line 113, in __getitem__
+    return self._state[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 378, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+2023-06-19 11:23:59,875 - INFO - Welcome User A!
+2023-06-19 11:24:00,070 - ERROR - An error occurred in 'next_button_clicked': 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+2023-06-19 11:24:00,073 - ERROR - Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 376, in __getitem__
+    return self._getitem(widget_id, key)
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 421, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 493, in next_button_clicked
+    if idx == st.session_state["n_chunks"]:
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\safe_session_state.py", line 113, in __getitem__
+    return self._state[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 378, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+2023-06-19 11:24:00,083 - INFO - Welcome User A!
+2023-06-19 11:24:01,447 - ERROR - An error occurred in 'next_button_clicked': 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+2023-06-19 11:24:01,448 - ERROR - Traceback (most recent call last):
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 376, in __getitem__
+    return self._getitem(widget_id, key)
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 421, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 493, in next_button_clicked
+    if idx == st.session_state["n_chunks"]:
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\safe_session_state.py", line 113, in __getitem__
+    return self._state[key]
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\streamlit\runtime\state\session_state.py", line 378, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "n_chunks". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+2023-06-19 11:24:01,460 - INFO - Welcome User A!
+2023-06-19 11:25:58,582 - INFO - Welcome User A!
+2023-06-19 11:26:23,504 - INFO - Welcome User A!
+2023-06-19 11:26:28,483 - INFO - Welcome User A!
+2023-06-19 11:26:29,924 - INFO - Welcome User A!
+2023-06-19 11:26:35,110 - INFO - Welcome User A!
+2023-06-19 11:26:36,245 - INFO - Welcome User A!
+2023-06-19 11:26:40,515 - INFO - Welcome User A!
+2023-06-19 11:26:41,316 - INFO - Welcome User A!
+2023-06-19 11:26:42,116 - INFO - Welcome User A!
+2023-06-19 11:26:42,361 - INFO - Welcome User A!
+2023-06-19 11:26:42,537 - INFO - Welcome User A!
+2023-06-19 11:26:42,706 - INFO - Welcome User A!
+2023-06-19 11:26:43,446 - INFO - Welcome User A!
+2023-06-19 11:27:00,176 - INFO - Welcome User A!
+2023-06-19 11:27:00,381 - INFO - Welcome User A!
+2023-06-19 11:27:06,269 - INFO - Welcome User A!
+2023-06-19 11:27:08,349 - INFO - Welcome User A!
+2023-06-19 11:29:03,822 - INFO - Welcome User F!
+2023-06-19 11:29:04,064 - INFO - Welcome User F!
+2023-06-19 11:29:16,233 - INFO - Welcome User E!
+2023-06-19 11:29:16,571 - INFO - Welcome User E!
+2023-06-19 11:29:38,257 - INFO - Welcome User G!
+2023-06-19 11:29:38,609 - INFO - Welcome User G!
+2023-06-19 11:29:50,144 - INFO - Welcome User A!
+2023-06-19 11:29:50,315 - INFO - Welcome User A!
+2023-06-19 11:29:52,673 - INFO - Welcome User A!
+2023-06-19 11:29:53,123 - INFO - Welcome User A!
+2023-06-19 11:29:53,297 - INFO - Welcome User A!
+2023-06-19 11:29:53,660 - INFO - Welcome User A!
+2023-06-19 11:29:54,633 - INFO - Welcome User A!
+2023-06-19 11:29:54,802 - INFO - Welcome User A!
+2023-06-19 11:29:54,996 - INFO - Welcome User A!
+2023-06-19 11:29:57,363 - INFO - Welcome User A!
+2023-06-19 11:29:59,776 - INFO - Welcome User A!
+2023-06-19 11:29:59,989 - INFO - Welcome User A!
+2023-06-19 11:30:01,658 - INFO - Welcome User A!
+2023-06-19 11:30:02,115 - INFO - Welcome User A!
+2023-06-19 11:30:02,645 - INFO - Welcome User A!
+2023-06-19 11:30:03,535 - INFO - Welcome User A!
+2023-06-19 11:30:14,526 - INFO - Welcome User A!
+2023-06-19 11:30:20,677 - INFO - Welcome User G!
+2023-06-19 11:30:39,561 - INFO - Welcome User A!
+2023-06-19 11:30:49,253 - INFO - Welcome User G!
+2023-06-19 11:30:51,561 - INFO - Welcome User G!
+2023-06-19 11:31:04,126 - INFO - Welcome User G!
+2023-06-19 11:31:04,603 - INFO - Welcome User G!
+2023-06-19 11:31:30,953 - INFO - Welcome User A!
+2023-06-19 11:31:31,168 - INFO - Welcome User A!
+2023-06-19 11:31:39,247 - INFO - Welcome User G!
+2023-06-19 11:31:48,129 - INFO - Welcome User G!
+2023-06-19 11:31:52,794 - INFO - Welcome User G!
+2023-06-19 11:31:53,650 - INFO - Welcome User G!
+2023-06-19 11:32:01,458 - INFO - Welcome User G!
+2023-06-19 11:32:02,586 - INFO - Welcome User G!
+2023-06-19 11:32:03,612 - INFO - Welcome User G!
+2023-06-19 11:32:09,349 - INFO - Welcome User G!
+2023-06-19 11:32:10,862 - INFO - Welcome User G!
+2023-06-19 11:32:14,482 - INFO - Welcome User G!
+2023-06-19 11:32:22,250 - INFO - Welcome User G!
+2023-06-19 11:32:24,578 - INFO - Welcome User G!
+2023-06-19 11:32:26,125 - INFO - Welcome User G!
+2023-06-19 11:32:27,108 - INFO - Welcome User G!
+2023-06-19 11:32:29,220 - INFO - Welcome User G!
+2023-06-19 11:32:49,816 - INFO - Welcome User H!
+2023-06-19 11:32:50,068 - INFO - Welcome User H!
+2023-06-19 11:32:53,653 - INFO - Welcome User G!
+2023-06-19 11:32:53,850 - INFO - Welcome User G!
+2023-06-19 11:32:59,478 - INFO - Welcome User G!
+2023-06-19 11:37:46,794 - INFO - Welcome User A!
+2023-06-19 11:37:46,985 - INFO - Welcome User A!
+2023-06-19 11:37:51,095 - INFO - Welcome User A!
+2023-06-19 11:38:02,531 - INFO - Welcome User G!
+2023-06-19 11:38:02,868 - INFO - Welcome User G!
+2023-06-19 11:38:09,985 - INFO - Welcome User G!
+2023-06-19 11:38:10,920 - INFO - Welcome User G!
+2023-06-19 11:38:12,100 - INFO - Welcome User G!
+2023-06-19 11:38:13,037 - INFO - Welcome User G!
+2023-06-19 11:38:14,153 - INFO - Welcome User G!
+2023-06-19 11:38:15,047 - INFO - Welcome User G!
+2023-06-19 11:38:16,336 - INFO - Welcome User G!
+2023-06-19 11:38:30,141 - INFO - Welcome User A!
+2023-06-19 11:38:30,329 - INFO - Welcome User A!
+2023-06-19 11:38:53,766 - INFO - Welcome User A!
+2023-06-19 11:39:22,742 - INFO - Welcome User A!
+2023-06-19 11:39:23,919 - INFO - Welcome User A!
+2023-06-19 11:39:27,971 - INFO - Welcome User A!
+2023-06-19 11:39:29,950 - INFO - Welcome User A!
+2023-06-19 11:39:31,842 - INFO - Welcome User A!
+2023-06-19 11:39:33,280 - INFO - Welcome User A!
+2023-06-19 11:39:35,975 - INFO - Welcome User A!
+2023-06-19 11:40:00,404 - INFO - Welcome User I!
+2023-06-19 11:40:00,899 - INFO - Welcome User I!
+2023-06-19 11:40:11,440 - INFO - Welcome User G!
+2023-06-19 11:40:11,605 - ERROR - An error occurred in 'reviewer_select_chunkid': index 0 is out of bounds for axis 0 with size 0
+2023-06-19 11:40:11,623 - ERROR - Traceback (most recent call last):
+  File "D:\projects\office_work\sunlife\streamlit_app\src\helper_functions.py", line 716, in reviewer_select_chunkid
+    idx = review_df[
+  File "C:\Users\sreeram.subbaray\Miniconda3\envs\sunlife-streamlit-dashboard\lib\site-packages\pandas\core\indexes\base.py", line 5174, in __getitem__
+    return getitem(key)
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+2023-06-19 11:40:11,636 - INFO - Welcome User G!
+2023-06-19 11:42:52,118 - INFO - Welcome User A!
+2023-06-19 11:42:52,678 - INFO - Welcome User A!
+2023-06-19 11:42:58,569 - INFO - Welcome User I!
+2023-06-19 11:44:09,578 - INFO - Welcome User B!
+2023-06-19 11:44:09,788 - INFO - Welcome User B!
+2023-06-19 11:44:22,703 - INFO - Welcome User B!
+2023-06-19 11:44:23,977 - INFO - Welcome User B!
+2023-06-19 11:44:37,578 - INFO - Welcome User I!
+2023-06-19 11:44:37,771 - INFO - Welcome User I!
+2023-06-19 11:44:54,200 - INFO - Welcome User I!
+2023-06-19 11:45:58,777 - INFO - Welcome User A!
+2023-06-19 11:45:59,319 - INFO - Welcome User A!
+2023-06-19 11:50:43,704 - INFO - Welcome User A!
+2023-06-19 11:58:47,824 - INFO - Welcome User A!
+2023-06-19 12:00:29,397 - INFO - Welcome User A!
+2023-06-19 12:00:42,713 - INFO - Welcome User I!
+2023-06-19 12:01:01,943 - INFO - Welcome User I!
+2023-06-19 12:01:02,361 - INFO - Welcome User I!
+2023-06-19 12:01:57,886 - INFO - Welcome User I!
+2023-06-19 12:58:24,793 - INFO - Welcome User A!
+2023-06-19 12:58:25,429 - INFO - Welcome User A!
+2023-06-19 13:06:40,229 - INFO - Welcome User A!
+2023-06-19 13:06:40,237 - INFO - Connection to the database initialized. User: User A
+2023-06-19 13:06:40,388 - INFO - Welcome User A!
+2023-06-19 13:06:46,184 - INFO - Welcome User A!
+2023-06-19 13:06:48,613 - INFO - Welcome User A!
+2023-06-19 13:06:50,694 - INFO - Welcome User A!
+2023-06-19 13:06:52,370 - INFO - Welcome User A!
+2023-06-19 13:06:52,531 - INFO - Welcome User A!
+2023-06-19 13:06:52,870 - INFO - Welcome User A!
+2023-06-19 13:06:54,232 - INFO - Welcome User A!
+2023-06-19 13:06:54,405 - INFO - Welcome User A!
+2023-06-19 13:06:54,768 - INFO - Welcome User A!
+2023-06-19 13:06:56,721 - INFO - Welcome User A!
+2023-06-19 13:07:01,755 - INFO - Welcome User A!
+2023-06-19 13:07:01,933 - INFO - Welcome User A!
+2023-06-19 13:07:02,219 - INFO - Welcome User A!
+2023-06-19 13:07:03,439 - INFO - Welcome User A!
+2023-06-19 13:07:03,690 - INFO - Welcome User A!
+2023-06-19 13:07:05,470 - INFO - Welcome User A!
+2023-06-19 13:07:16,627 - INFO - Welcome User B!
+2023-06-19 13:07:16,841 - INFO - Welcome User B!
+2023-06-19 13:08:07,519 - INFO - Welcome User A!
+2023-06-19 13:08:07,779 - INFO - Welcome User A!
+2023-06-19 13:08:33,452 - INFO - Welcome User A!
+2023-06-19 13:08:36,950 - INFO - Welcome User A!
+2023-06-19 13:08:39,294 - INFO - Welcome User A!
+2023-06-19 13:08:41,185 - INFO - Welcome User A!
+2023-06-19 13:08:43,327 - INFO - Welcome User A!
+2023-06-19 13:08:45,085 - INFO - Welcome User A!
+2023-06-19 13:08:45,943 - INFO - Welcome User A!
+2023-06-19 13:08:46,904 - INFO - Welcome User A!
+2023-06-19 13:08:54,078 - INFO - Welcome User B!
+2023-06-19 13:08:54,903 - INFO - Welcome User B!
+2023-06-19 13:08:58,193 - INFO - Welcome User B!
+2023-06-19 13:09:00,550 - INFO - Welcome User B!
+2023-06-19 13:09:07,184 - INFO - Welcome User B!
+2023-06-19 13:09:31,201 - INFO - Welcome User F!
+2023-06-19 13:09:31,502 - INFO - Welcome User F!
+2023-06-19 13:10:11,496 - INFO - Welcome User B!
+2023-06-19 13:10:11,711 - INFO - Welcome User B!
+2023-06-19 13:10:42,257 - INFO - Welcome User I!
+2023-06-19 13:10:42,704 - INFO - Welcome User I!
+2023-06-19 13:10:49,962 - INFO - Welcome User I!
+2023-06-19 13:11:05,662 - INFO - Welcome User I!
+2023-06-19 13:11:44,988 - INFO - Welcome User A!
+2023-06-19 13:11:45,241 - INFO - Welcome User A!
+2023-06-19 13:11:47,376 - INFO - Welcome User A!
+2023-06-19 13:11:49,894 - INFO - Welcome User A!
+2023-06-19 13:11:56,627 - INFO - Welcome User A!
+2023-06-19 13:12:05,932 - INFO - Welcome User C!
+2023-06-19 13:12:06,399 - INFO - Welcome User C!
+2023-06-19 13:12:14,965 - INFO - Welcome User I!
+2023-06-19 13:12:15,147 - INFO - Welcome User I!
+2023-06-19 13:12:25,943 - INFO - Welcome User I!
+2023-06-19 13:12:35,368 - INFO - Welcome User I!
+2023-06-19 13:12:39,139 - INFO - Welcome User I!
+2023-06-19 13:12:41,462 - INFO - Welcome User I!
+2023-06-19 13:13:04,624 - INFO - Welcome User B!
+2023-06-19 13:13:04,821 - INFO - Welcome User B!
+2023-06-19 13:13:08,496 - INFO - Welcome User B!
+2023-06-19 13:13:09,448 - INFO - Welcome User B!
+2023-06-19 13:13:16,395 - INFO - Welcome User B!
+2023-06-19 13:13:19,074 - INFO - Welcome User B!
+2023-06-19 13:13:21,066 - INFO - Welcome User B!
+2023-06-19 13:13:21,240 - INFO - Welcome User B!
+2023-06-19 13:13:21,405 - INFO - Welcome User B!
+2023-06-19 13:13:21,590 - INFO - Welcome User B!
+2023-06-19 13:13:23,332 - INFO - Welcome User B!
+2023-06-19 13:13:25,164 - INFO - Welcome User B!
+2023-06-19 13:13:37,237 - INFO - Welcome User I!
+2023-06-19 13:13:37,426 - INFO - Welcome User I!
+2023-06-19 13:52:02,479 - INFO - Welcome User A!
+2023-06-19 13:52:02,697 - INFO - Welcome User A!
+2023-06-19 13:53:10,195 - INFO - Welcome User A!
+2023-06-19 13:54:35,636 - INFO - Welcome User A!
+2023-06-19 13:54:35,829 - INFO - Welcome User A!
+2023-06-19 13:56:01,653 - INFO - Welcome User A!
+2023-06-19 13:56:01,662 - INFO - Connection to the database initialized. User: User A
+2023-06-19 13:56:01,830 - INFO - Welcome User A!
+2023-06-19 13:56:16,827 - INFO - Welcome User A!
+2023-06-19 13:56:21,407 - INFO - Welcome User A!
+2023-06-19 13:56:22,994 - INFO - Welcome User A!
+2023-06-19 13:56:25,921 - INFO - Welcome User A!
+2023-06-19 13:56:26,855 - INFO - Welcome User A!
+2023-06-19 13:56:54,782 - INFO - Welcome User B!
+2023-06-19 13:56:54,978 - INFO - Welcome User B!
+2023-06-19 13:57:12,306 - INFO - Welcome User A!
+2023-06-19 13:57:12,600 - INFO - Welcome User A!
+2023-06-19 13:58:33,555 - INFO - Welcome User G!
+2023-06-19 13:58:34,103 - INFO - Welcome User G!
+2023-06-19 13:59:02,239 - INFO - Welcome User I!
+2023-06-19 13:59:02,470 - INFO - Welcome User I!
+2023-06-19 14:18:40,851 - INFO - Connection to the database closed.
+2023-06-19 14:40:08,091 - INFO - Welcome User A!
+2023-06-19 14:40:08,094 - INFO - Connection to the database initialized. User: User A
+2023-06-19 14:40:08,275 - INFO - Welcome User A!
+2023-06-19 14:40:47,955 - INFO - Welcome User A!
+2023-06-19 14:40:49,218 - INFO - Welcome User A!
+2023-06-19 14:40:51,727 - INFO - Welcome User A!
+2023-06-19 14:40:52,716 - INFO - Welcome User A!
+2023-06-19 14:40:54,536 - INFO - Welcome User A!
+2023-06-19 14:40:56,391 - INFO - Welcome User A!
+2023-06-19 14:40:58,442 - INFO - Welcome User A!
+2023-06-19 14:40:58,604 - INFO - Welcome User A!
+2023-06-19 14:40:59,100 - INFO - Welcome User A!
+2023-06-19 14:41:00,695 - INFO - Welcome User A!
+2023-06-19 14:41:26,962 - INFO - Welcome User G!
+2023-06-19 14:41:27,320 - INFO - Welcome User G!
+2023-06-19 14:41:38,122 - INFO - Welcome User A!
+2023-06-19 14:41:38,288 - INFO - Welcome User A!
+2023-06-19 14:41:54,465 - INFO - Welcome User A!
+2023-06-19 14:41:55,355 - INFO - Welcome User A!
+2023-06-19 14:41:56,650 - INFO - Welcome User A!
+2023-06-19 14:41:57,458 - INFO - Welcome User A!
+2023-06-19 14:41:58,281 - INFO - Welcome User A!
+2023-06-19 14:42:01,021 - INFO - Welcome User A!
+2023-06-19 14:42:05,898 - INFO - Welcome User G!
+2023-06-19 14:42:15,541 - INFO - Welcome User G!
+2023-06-19 14:42:15,703 - INFO - Welcome User G!
+2023-06-19 14:42:58,244 - INFO - Welcome User G!
+2023-06-19 14:43:07,367 - INFO - Welcome User G!
+2023-06-19 14:43:38,460 - INFO - Welcome User G!
+2023-06-19 14:43:38,621 - INFO - Welcome User G!
+2023-06-19 14:43:45,492 - INFO - Welcome User G!
+2023-06-19 14:43:48,416 - INFO - Welcome User G!
+2023-06-19 14:43:54,704 - INFO - Welcome User G!
+2023-06-19 14:43:54,908 - INFO - Welcome User G!
+2023-06-19 14:44:08,273 - INFO - Welcome User A!
+2023-06-19 14:44:08,459 - INFO - Welcome User A!
+2023-06-19 14:44:08,546 - INFO - Welcome User A!
+2023-06-19 14:44:08,690 - INFO - Welcome User A!
+2023-06-19 14:44:12,915 - INFO - Welcome User A!
+2023-06-19 14:44:22,885 - INFO - Welcome User G!
+2023-06-19 14:44:23,096 - INFO - Welcome User G!
+2023-06-19 14:49:14,727 - INFO - Welcome User G!
+2023-06-19 14:51:17,007 - INFO - Welcome User G!
+2023-06-19 14:51:25,064 - INFO - Welcome User G!
+2023-06-19 14:51:29,630 - INFO - Welcome User A!
+2023-06-19 14:51:29,775 - INFO - Welcome User A!
+2023-06-19 14:51:33,204 - INFO - Welcome User A!
+2023-06-19 14:51:40,844 - INFO - Welcome User G!
+2023-06-19 14:51:41,023 - INFO - Welcome User G!
+2023-06-19 14:57:57,258 - INFO - Welcome User A!
+2023-06-19 14:57:57,268 - INFO - Welcome User G!
+2023-06-19 14:57:57,747 - INFO - Welcome User A!
+2023-06-19 14:58:12,275 - INFO - Welcome User G!
+2023-06-19 14:58:12,457 - INFO - Welcome User G!
+2023-06-19 14:58:20,513 - INFO - Welcome User A!
+2023-06-19 14:58:20,717 - INFO - Welcome User A!
+2023-06-19 14:58:25,998 - INFO - Welcome User G!
+2023-06-19 14:58:26,178 - INFO - Welcome User G!
+2023-06-19 14:58:36,507 - INFO - Welcome User G!
+2023-06-19 14:58:37,153 - INFO - Welcome User G!
+2023-06-19 14:58:46,370 - INFO - Welcome User A!
+2023-06-19 14:58:46,549 - INFO - Welcome User A!
+2023-06-19 14:58:59,956 - INFO - Welcome User G!
+2023-06-19 14:59:00,207 - INFO - Welcome User G!
+2023-06-19 14:59:48,467 - INFO - Welcome User A!
+2023-06-19 14:59:48,481 - INFO - Welcome User G!
+2023-06-19 14:59:49,129 - INFO - Welcome User A!
+2023-06-19 15:00:22,417 - INFO - Welcome User G!
+2023-06-19 15:00:22,437 - INFO - Welcome User A!
+2023-06-19 15:00:37,605 - INFO - Connection to the database closed.
+2023-06-19 15:01:16,770 - INFO - Welcome User A!
+2023-06-19 15:01:16,772 - INFO - Connection to the database initialized. User: User A
+2023-06-19 15:01:17,413 - INFO - Welcome User A!
+2023-06-19 15:01:21,838 - INFO - Welcome User A!
+2023-06-19 15:01:22,525 - INFO - Welcome User A!
+2023-06-19 15:01:23,273 - INFO - Welcome User A!
+2023-06-19 15:01:24,209 - INFO - Welcome User A!
+2023-06-19 15:01:24,977 - INFO - Welcome User A!
+2023-06-19 15:01:26,432 - INFO - Welcome User A!
+2023-06-19 15:01:28,718 - INFO - Welcome User A!
+2023-06-19 15:01:30,660 - INFO - Welcome User A!
+2023-06-19 15:01:40,973 - INFO - Welcome User G!
+2023-06-19 15:01:41,415 - INFO - Welcome User G!
+2023-06-19 15:02:43,068 - INFO - Welcome User G!
+2023-06-19 15:02:58,961 - INFO - Welcome User G!
+2023-06-19 15:02:59,137 - INFO - Welcome User G!
+2023-06-19 15:03:10,019 - INFO - Welcome User A!
+2023-06-19 15:03:10,237 - INFO - Welcome User A!
+2023-06-19 15:03:10,389 - INFO - Welcome User A!
+2023-06-19 15:03:10,619 - INFO - Welcome User A!
+2023-06-19 15:03:11,325 - INFO - Welcome User A!
+2023-06-19 15:03:11,521 - INFO - Welcome User A!
+2023-06-19 15:03:12,294 - INFO - Welcome User A!
+2023-06-19 15:03:25,913 - INFO - Welcome User A!
+2023-06-19 15:03:42,683 - INFO - Welcome User G!
+2023-06-19 15:03:42,899 - INFO - Welcome User G!
+2023-06-19 15:04:21,560 - INFO - Welcome User G!
+2023-06-19 15:04:30,347 - INFO - Welcome User G!
+2023-06-19 15:04:35,118 - INFO - Welcome User G!
+2023-06-19 15:04:52,770 - INFO - Welcome User G!
+2023-06-19 15:04:53,635 - INFO - Welcome User G!
+2023-06-19 15:05:21,855 - INFO - Welcome User G!
+2023-06-19 15:05:23,007 - INFO - Welcome User G!
+2023-06-19 15:05:37,097 - INFO - Welcome User A!
+2023-06-19 15:05:37,253 - INFO - Welcome User A!
+2023-06-19 15:05:41,239 - INFO - Welcome User A!
+2023-06-19 15:05:50,158 - INFO - Welcome User G!
+2023-06-19 15:05:50,326 - INFO - Welcome User G!
+2023-06-19 15:05:53,413 - INFO - Welcome User G!
+2023-06-19 15:05:53,905 - INFO - Welcome User G!
+2023-06-19 15:05:57,272 - INFO - Welcome User G!
+2023-06-19 15:06:08,687 - INFO - Welcome User G!
+2023-06-19 15:06:08,857 - INFO - Welcome User G!
+2023-06-19 15:06:15,165 - INFO - Welcome User A!
+2023-06-19 15:06:15,366 - INFO - Welcome User A!
+2023-06-19 15:06:21,844 - INFO - Welcome User G!
+2023-06-19 15:06:22,099 - INFO - Welcome User G!
+2023-06-19 15:10:08,379 - INFO - Welcome User G!
+2023-06-19 15:10:08,387 - INFO - Welcome User A!
+2023-06-19 15:10:08,770 - INFO - Welcome User A!
+2023-06-19 15:10:47,792 - INFO - Welcome User A!
+2023-06-19 15:10:59,075 - INFO - Welcome User G!
+2023-06-19 15:10:59,340 - INFO - Welcome User G!
+2023-06-19 15:12:04,477 - INFO - Welcome User A!
+2023-06-19 15:12:04,489 - INFO - Welcome User G!
+2023-06-19 15:12:05,125 - INFO - Welcome User A!
+2023-06-19 15:12:10,016 - INFO - Welcome User G!
+2023-06-19 15:12:30,455 - INFO - Welcome User A!
+2023-06-19 15:12:30,470 - INFO - Welcome User G!
+2023-06-19 15:12:37,063 - INFO - Welcome User G!
+2023-06-19 15:12:43,670 - INFO - Welcome User A!
+2023-06-19 15:12:52,146 - INFO - Welcome User G!
+2023-06-19 15:12:52,396 - INFO - Welcome User G!
+2023-06-19 15:13:28,066 - INFO - Welcome User A!
+2023-06-19 15:13:28,418 - INFO - Welcome User A!
+2023-06-19 15:13:33,306 - INFO - Welcome User A!
+2023-06-19 15:13:33,892 - INFO - Welcome User A!
+2023-06-19 15:13:35,454 - INFO - Welcome User A!
+2023-06-19 15:13:37,166 - INFO - Welcome User A!
+2023-06-19 15:13:37,842 - INFO - Welcome User A!
+2023-06-19 15:13:39,334 - INFO - Welcome User A!
+2023-06-19 15:13:40,533 - INFO - Welcome User A!
+2023-06-19 15:13:42,954 - INFO - Welcome User A!
+2023-06-19 15:13:44,373 - INFO - Welcome User A!
+2023-06-19 15:13:53,352 - INFO - Welcome User G!
+2023-06-19 15:13:53,770 - INFO - Welcome User G!
+2023-06-19 15:14:23,129 - INFO - Welcome User A!
+2023-06-19 15:14:23,316 - INFO - Welcome User A!
+2023-06-19 15:14:25,636 - INFO - Welcome User A!
+2023-06-19 15:14:27,811 - INFO - Welcome User A!
+2023-06-19 15:14:35,666 - INFO - Welcome User G!
+2023-06-19 15:14:35,874 - INFO - Welcome User G!
+2023-06-19 15:14:55,027 - INFO - Welcome User A!
+2023-06-19 15:14:55,175 - INFO - Welcome User A!
+2023-06-19 15:15:09,199 - INFO - Welcome User A!
+2023-06-19 15:15:14,464 - INFO - Welcome User A!
+2023-06-19 15:15:28,254 - INFO - Welcome User G!
+2023-06-19 15:15:28,482 - INFO - Welcome User G!
+2023-06-19 15:16:39,033 - INFO - Welcome User G!
+2023-06-19 15:18:13,576 - INFO - Welcome User G!
+2023-06-19 15:18:31,561 - INFO - Welcome User G!
+2023-06-19 15:19:02,279 - INFO - Welcome User G!
+2023-06-19 15:19:30,429 - INFO - Welcome User A!
+2023-06-19 15:19:30,583 - INFO - Welcome User A!
+2023-06-19 15:19:40,221 - INFO - Welcome User A!
+2023-06-19 15:19:44,463 - INFO - Welcome User A!
+2023-06-19 15:19:54,941 - INFO - Welcome User G!
+2023-06-19 15:19:55,146 - INFO - Welcome User G!
+2023-06-19 15:20:52,585 - INFO - Welcome User G!
+2023-06-19 15:21:06,127 - INFO - Welcome User A!
+2023-06-19 15:21:06,301 - INFO - Welcome User A!
+2023-06-19 15:21:09,058 - INFO - Welcome User A!
+2023-06-19 15:21:12,482 - INFO - Welcome User A!
+2023-06-19 15:21:21,658 - INFO - Welcome User G!
+2023-06-19 15:21:22,011 - INFO - Welcome User G!
+2023-06-19 15:23:19,429 - INFO - Welcome User A!
+2023-06-19 15:23:19,578 - INFO - Welcome User A!
+2023-06-19 15:25:51,049 - INFO - Welcome User A!
+2023-06-19 15:25:51,060 - INFO - Welcome User G!
+2023-06-19 15:27:51,132 - INFO - Welcome User G!
+2023-06-19 15:27:51,134 - INFO - Welcome User A!
+2023-06-19 15:29:29,053 - INFO - Welcome User G!
+2023-06-19 15:29:29,054 - INFO - Welcome User A!
+2023-06-19 15:29:41,457 - INFO - Welcome User A!
+2023-06-19 15:29:44,934 - INFO - Welcome User A!
+2023-06-19 15:29:53,673 - INFO - Welcome User G!
+2023-06-19 15:29:53,925 - INFO - Welcome User G!
+2023-06-19 16:11:49,136 - INFO - Welcome User G!
+2023-06-19 16:11:49,136 - INFO - Welcome User A!
+2023-06-19 16:11:49,666 - INFO - Welcome User A!
+2023-06-19 16:20:20,322 - INFO - Welcome User G!
+2023-06-19 16:20:20,342 - INFO - Welcome User A!
+2023-06-19 16:20:21,978 - INFO - Welcome User G!
+2023-06-19 16:20:22,023 - INFO - Welcome User A!
+2023-06-19 16:20:24,932 - INFO - Welcome User G!
+2023-06-19 16:20:26,644 - INFO - Welcome User G!
+2023-06-19 16:20:48,893 - INFO - Welcome User A!
+2023-06-19 16:20:49,226 - INFO - Welcome User A!
+2023-06-19 16:20:52,841 - INFO - Welcome User G!
+2023-06-19 16:20:53,002 - INFO - Welcome User G!
+2023-06-19 16:21:08,493 - INFO - Welcome User A!
+2023-06-19 16:21:09,307 - INFO - Welcome User A!
+2023-06-19 16:21:10,085 - INFO - Welcome User A!
+2023-06-19 16:21:10,551 - INFO - Welcome User A!
+2023-06-19 16:21:11,499 - INFO - Welcome User A!
+2023-06-19 16:21:12,682 - INFO - Welcome User A!
+2023-06-19 16:21:13,444 - INFO - Welcome User A!
+2023-06-19 16:21:14,442 - INFO - Welcome User A!
+2023-06-19 16:21:15,424 - INFO - Welcome User A!
+2023-06-19 16:21:16,111 - INFO - Welcome User A!
+2023-06-19 16:21:17,157 - INFO - Welcome User A!
+2023-06-19 16:21:18,123 - INFO - Welcome User A!
+2023-06-19 16:21:18,920 - INFO - Welcome User A!
+2023-06-19 16:21:21,678 - INFO - Welcome User A!
+2023-06-19 16:21:26,844 - INFO - Welcome User A!
+2023-06-19 16:21:28,930 - INFO - Welcome User A!
+2023-06-19 16:21:31,611 - INFO - Welcome User A!
+2023-06-19 16:21:32,957 - INFO - Welcome User A!
+2023-06-19 16:21:37,700 - INFO - Welcome User A!
+2023-06-19 16:21:39,962 - INFO - Welcome User A!
+2023-06-19 16:21:55,616 - INFO - Welcome User G!
+2023-06-19 16:21:55,748 - INFO - Welcome User G!
+2023-06-19 16:24:13,701 - INFO - Welcome User G!
+2023-06-19 16:25:11,739 - INFO - Welcome User G!
+2023-06-19 16:25:23,394 - INFO - Welcome User G!
+2023-06-19 16:25:54,380 - INFO - Welcome User G!
+2023-06-19 16:30:35,861 - INFO - Welcome User G!
+2023-06-19 16:30:37,529 - INFO - Connection to the database closed.
+2023-06-19 16:31:32,193 - INFO - Welcome User G!
+2023-06-19 16:31:32,203 - INFO - Connection to the database initialized. User: User G
+2023-06-19 16:31:32,508 - INFO - Welcome User G!
+2023-06-19 16:31:37,760 - INFO - Welcome User G!
+2023-06-19 16:32:18,646 - INFO - Welcome User G!
+2023-06-19 16:32:27,447 - INFO - Welcome User G!
+2023-06-19 16:32:30,927 - INFO - Welcome User G!
+2023-06-19 16:32:48,240 - INFO - Welcome User G!
+2023-06-19 16:32:55,776 - INFO - Welcome User G!
+2023-06-19 16:33:01,450 - INFO - Welcome User G!
+2023-06-19 16:33:08,722 - INFO - Welcome User G!
+2023-06-19 16:35:25,705 - INFO - Welcome User G!
+2023-06-19 16:35:31,590 - INFO - Welcome User G!
+2023-06-19 16:35:32,937 - INFO - Welcome User G!
+2023-06-19 16:35:35,188 - INFO - Welcome User G!
+2023-06-19 16:35:39,412 - INFO - Welcome User G!
+2023-06-19 16:35:40,642 - INFO - Welcome User G!
+2023-06-19 16:35:47,343 - INFO - Welcome User G!
+2023-06-19 16:35:53,633 - INFO - Welcome User G!
+2023-06-19 16:35:56,670 - INFO - Welcome User G!
+2023-06-19 16:35:58,312 - INFO - Welcome User G!
+2023-06-19 16:36:10,107 - INFO - Welcome User G!
+2023-06-19 16:36:13,642 - INFO - Welcome User G!
+2023-06-19 16:36:15,608 - INFO - Welcome User G!
+2023-06-19 16:36:21,297 - INFO - Welcome User G!
+2023-06-19 16:38:38,843 - INFO - Welcome User G!
+2023-06-19 16:38:51,577 - INFO - Welcome User G!
+2023-06-19 16:38:52,331 - INFO - Welcome User G!
+2023-06-19 16:39:07,151 - INFO - Welcome User G!
+2023-06-19 16:39:07,863 - INFO - Welcome User G!
+2023-06-19 16:39:09,901 - INFO - Welcome User G!
+2023-06-19 16:41:23,818 - INFO - Welcome User G!
+2023-06-19 16:41:25,057 - INFO - Welcome User G!
+2023-06-19 16:41:31,606 - INFO - Welcome User G!
+2023-06-19 16:41:35,110 - INFO - Welcome User G!
+2023-06-19 16:42:16,339 - INFO - Welcome User G!
+2023-06-19 16:42:54,301 - INFO - Welcome User G!
+2023-06-19 16:43:19,753 - INFO - Welcome User G!
+2023-06-19 16:43:20,804 - INFO - Welcome User G!
+2023-06-19 16:43:21,471 - INFO - Welcome User G!
+2023-06-19 16:43:22,481 - INFO - Welcome User G!
+2023-06-19 16:43:37,640 - INFO - Welcome User G!
+2023-06-19 16:43:40,811 - INFO - Welcome User G!
+2023-06-19 16:43:41,812 - INFO - Welcome User G!
+2023-06-19 16:44:05,613 - INFO - Welcome User A!
+2023-06-19 16:44:06,104 - INFO - Welcome User A!
+2023-06-19 16:44:52,903 - INFO - Welcome User A!
+2023-06-19 16:45:01,809 - INFO - Welcome User G!
+2023-06-19 16:45:02,007 - INFO - Welcome User G!
+2023-06-19 16:45:05,540 - INFO - Welcome User G!
+2023-06-19 16:45:09,909 - INFO - Welcome User G!
+2023-06-19 16:45:27,355 - INFO - Welcome User G!
+2023-06-19 16:45:27,591 - INFO - Welcome User G!
+2023-06-19 17:01:10,551 - INFO - Welcome User G!
+2023-06-19 17:01:16,947 - INFO - Welcome User G!
+2023-06-19 17:01:46,333 - INFO - Welcome User G!
+2023-06-19 17:01:46,413 - INFO - Welcome User G!
+2023-06-19 17:02:02,541 - INFO - Welcome User G!
+2023-06-19 17:02:12,304 - INFO - Welcome User G!
+2023-06-19 17:02:18,967 - INFO - Welcome User G!
+2023-06-19 17:02:25,001 - INFO - Welcome User G!
+2023-06-19 17:02:34,870 - INFO - Welcome User G!
+2023-06-19 17:02:43,779 - INFO - Welcome User G!
+2023-06-19 17:02:47,583 - INFO - Welcome User G!
+2023-06-19 17:02:54,919 - INFO - Welcome User G!
+2023-06-19 17:03:47,918 - INFO - Welcome User A!
+2023-06-19 17:03:48,090 - INFO - Welcome User A!
+2023-06-19 17:03:55,475 - INFO - Welcome User A!
+2023-06-19 17:08:07,187 - INFO - Welcome User A!
+2023-06-19 17:08:07,329 - INFO - Welcome User A!
+2023-06-19 17:08:50,871 - INFO - Welcome User A!
+2023-06-19 17:08:50,874 - INFO - Welcome User G!
+2023-06-19 17:08:51,446 - INFO - Welcome User G!
+2023-06-19 17:11:31,914 - INFO - Welcome User A!
+2023-06-19 17:11:32,547 - INFO - Welcome User A!
+2023-06-19 17:11:34,982 - INFO - Welcome User A!
+2023-06-19 17:11:43,065 - INFO - Welcome User A!
+2023-06-19 17:11:43,865 - INFO - Welcome User A!
+2023-06-19 17:13:48,760 - INFO - Welcome User A!
+2023-06-19 17:13:55,058 - INFO - Welcome User A!
+2023-06-19 17:13:57,180 - INFO - Welcome User A!
+2023-06-19 17:14:17,504 - INFO - Welcome User A!
+2023-06-19 17:14:17,706 - INFO - Welcome User A!
+2023-06-19 17:14:25,930 - INFO - Welcome User A!
+2023-06-19 17:14:28,269 - INFO - Welcome User A!
+2023-06-19 17:14:35,736 - INFO - Welcome User A!
+2023-06-19 17:14:36,760 - INFO - Welcome User A!
+2023-06-19 17:14:38,220 - INFO - Welcome User A!
+2023-06-19 17:15:49,002 - INFO - Welcome User A!
+2023-06-19 17:15:53,263 - INFO - Welcome User A!
+2023-06-19 17:15:54,609 - INFO - Welcome User A!
+2023-06-19 17:16:15,226 - INFO - Welcome User A!
+2023-06-19 17:16:15,435 - INFO - Welcome User A!
+2023-06-19 17:17:41,536 - INFO - Welcome User G!
+2023-06-19 17:17:41,697 - INFO - Welcome User G!
+2023-06-19 17:18:17,670 - INFO - Welcome User A!
+2023-06-19 17:18:17,681 - INFO - Welcome User G!
+2023-06-19 17:21:26,664 - INFO - Welcome User G!
+2023-06-19 17:21:26,687 - INFO - Welcome User A!
+2023-06-19 17:22:59,713 - INFO - Welcome User A!
+2023-06-19 17:22:59,724 - INFO - Welcome User G!
+2023-06-19 17:23:15,142 - INFO - Welcome User G!
+2023-06-19 17:23:38,723 - INFO - Welcome User G!
+2023-06-19 17:23:50,568 - INFO - Welcome User G!
+2023-06-19 17:23:51,300 - INFO - Welcome User G!
+2023-06-19 17:23:52,229 - INFO - Welcome User G!
+2023-06-19 17:23:56,880 - INFO - Welcome User G!
+2023-06-19 17:23:57,939 - INFO - Welcome User G!
+2023-06-19 17:24:06,782 - INFO - Welcome User G!
+2023-06-19 17:24:12,926 - INFO - Welcome User G!
+2023-06-19 17:24:24,626 - INFO - Welcome User G!
+2023-06-19 17:24:24,788 - INFO - Welcome User G!
+2023-06-19 17:24:28,622 - INFO - Welcome User G!
+2023-06-19 17:24:29,564 - INFO - Welcome User G!
+2023-06-19 17:24:33,109 - INFO - Welcome User G!
+2023-06-19 17:24:34,157 - INFO - Welcome User G!
+2023-06-19 17:25:13,173 - INFO - Welcome User G!
+2023-06-19 17:25:22,597 - INFO - Welcome User A!
+2023-06-19 17:25:22,792 - INFO - Welcome User A!
+2023-06-19 17:25:30,383 - INFO - Welcome User G!
+2023-06-19 17:25:34,721 - INFO - Welcome User G!
+2023-06-19 17:25:51,361 - INFO - Welcome User G!
+2023-06-19 17:25:51,565 - INFO - Welcome User G!
+2023-06-19 17:26:21,974 - INFO - Welcome User G!
+2023-06-19 17:26:22,134 - INFO - Welcome User G!
+2023-06-19 17:26:22,349 - INFO - Welcome User G!
+2023-06-19 17:26:23,864 - INFO - Welcome User G!
+2023-06-19 17:26:27,994 - INFO - Welcome User G!
+2023-06-19 17:26:41,558 - INFO - Welcome User G!
+2023-06-19 17:26:41,714 - INFO - Welcome User G!
+2023-06-19 17:26:46,446 - INFO - Welcome User G!
+2023-06-19 17:28:14,191 - INFO - Welcome User A!
+2023-06-19 17:28:14,191 - INFO - Welcome User G!
+2023-06-19 17:28:14,792 - INFO - Welcome User A!
+2023-06-19 17:28:58,339 - INFO - Welcome User G!
+2023-06-19 17:28:58,350 - INFO - Welcome User A!
+2023-06-19 17:29:07,577 - INFO - Welcome User G!
+2023-06-19 17:29:11,598 - INFO - Welcome User G!
+2023-06-19 17:29:15,182 - INFO - Welcome User G!
+2023-06-19 17:29:18,180 - INFO - Welcome User G!
+2023-06-19 17:29:26,178 - INFO - Welcome User A!
+2023-06-19 17:29:27,285 - INFO - Welcome User A!
+2023-06-19 17:29:39,635 - INFO - Welcome User G!
+2023-06-19 17:29:39,828 - INFO - Welcome User G!
+2023-06-19 17:29:43,381 - INFO - Welcome User G!
+2023-06-19 17:29:47,065 - INFO - Welcome User G!
+2023-06-19 17:29:49,403 - INFO - Welcome User G!
+2023-06-19 17:29:52,247 - INFO - Welcome User G!
+2023-06-19 17:29:53,709 - INFO - Welcome User G!
+2023-06-19 17:29:57,268 - INFO - Welcome User G!
+2023-06-19 17:30:08,045 - INFO - Welcome User A!
+2023-06-19 17:30:08,245 - INFO - Welcome User A!
+2023-06-19 17:30:10,099 - INFO - Welcome User A!
+2023-06-19 17:30:20,989 - INFO - Welcome User G!
+2023-06-19 17:30:21,186 - INFO - Welcome User G!
+2023-06-19 17:32:28,089 - INFO - Welcome User G!
+2023-06-19 17:32:28,101 - INFO - Welcome User A!
+2023-06-19 17:32:28,709 - INFO - Welcome User A!
+2023-06-19 17:34:28,791 - INFO - Welcome User A!
+2023-06-19 17:34:28,793 - INFO - Welcome User G!
+2023-06-19 17:35:05,428 - INFO - Welcome User A!
+2023-06-19 17:35:05,430 - INFO - Welcome User G!
+2023-06-19 17:37:51,127 - INFO - Welcome User G!
+2023-06-19 17:37:51,129 - INFO - Welcome User A!
+2023-06-19 17:38:39,592 - INFO - Welcome User G!
+2023-06-19 17:38:39,602 - INFO - Welcome User A!
+2023-06-19 17:38:48,578 - INFO - Welcome User A!
+2023-06-19 17:38:50,667 - INFO - Welcome User A!
+2023-06-19 17:39:03,146 - INFO - Welcome User G!
+2023-06-19 17:39:03,349 - INFO - Welcome User G!
+2023-06-19 17:39:15,011 - INFO - Welcome User G!
+2023-06-19 17:39:24,004 - INFO - Welcome User G!
+2023-06-19 17:40:44,504 - INFO - Welcome User G!
+2023-06-19 17:40:44,506 - INFO - Welcome User A!
+2023-06-19 17:40:45,512 - INFO - Welcome User A!
+2023-06-19 17:40:49,232 - INFO - Welcome User G!
+2023-06-19 17:40:57,745 - INFO - Welcome User A!
+2023-06-19 17:41:04,382 - INFO - Welcome User G!
+2023-06-19 17:41:04,590 - INFO - Welcome User G!
+2023-06-19 19:07:44,147 - INFO - Welcome User A!
+2023-06-19 19:07:44,635 - INFO - Welcome User A!
+2023-06-19 20:34:26,809 - INFO - Connection to the database closed.
+2023-06-19 20:39:10,658 - INFO - Welcome User A!
+2023-06-19 20:39:10,667 - INFO - Connection to the database initialized. User: User A
+2023-06-19 20:39:10,842 - INFO - Welcome User A!
+2023-06-19 21:43:09,159 - INFO - Welcome User A!
+2023-06-19 21:43:09,361 - INFO - Welcome User A!
+2023-06-19 21:43:23,848 - INFO - Welcome User A!
+2023-06-19 21:43:26,481 - INFO - Welcome User A!
+2023-06-19 21:43:28,392 - INFO - Welcome User A!
+2023-06-19 21:43:29,460 - INFO - Welcome User A!
+2023-06-19 21:43:29,898 - INFO - Welcome User A!
+2023-06-19 21:43:37,315 - INFO - Welcome User A!
+2023-06-19 21:43:38,664 - INFO - Welcome User A!
+2023-06-19 21:43:40,017 - INFO - Welcome User A!
+2023-06-19 21:43:43,795 - INFO - Welcome User A!
+2023-06-19 21:43:45,696 - INFO - Welcome User A!
+2023-06-19 21:43:47,518 - INFO - Welcome User A!
+2023-06-19 21:43:49,615 - INFO - Welcome User A!
+2023-06-19 21:43:53,304 - INFO - Welcome User A!
+2023-06-19 21:43:56,009 - INFO - Welcome User A!
+2023-06-19 21:43:56,216 - INFO - Welcome User A!
+2023-06-19 21:43:57,074 - INFO - Welcome User A!
+2023-06-19 21:43:57,920 - INFO - Welcome User A!
+2023-06-19 21:43:58,682 - INFO - Welcome User A!
+2023-06-19 21:43:59,465 - INFO - Welcome User A!
+2023-06-19 21:44:00,800 - INFO - Welcome User A!
+2023-06-19 21:44:01,565 - INFO - Welcome User A!
+2023-06-19 21:44:06,243 - INFO - Welcome User A!
+2023-06-19 21:44:06,413 - INFO - Welcome User A!
+2023-06-19 21:44:06,639 - INFO - Welcome User A!
+2023-06-19 21:44:10,170 - INFO - Welcome User A!
+2023-06-19 21:44:22,699 - INFO - Welcome User A!
+2023-06-19 21:44:22,951 - INFO - Welcome User A!
+2023-06-19 21:44:40,161 - INFO - Welcome User A!
+2023-06-19 21:44:49,995 - INFO - Welcome User A!
+2023-06-19 21:45:46,065 - INFO - Welcome User A!
+2023-06-19 21:45:46,422 - INFO - Welcome User A!
+2023-06-19 21:45:52,783 - INFO - Welcome User A!
+2023-06-19 21:45:54,238 - INFO - Welcome User A!
+2023-06-19 21:45:55,548 - INFO - Welcome User A!
+2023-06-19 21:45:58,848 - INFO - Welcome User A!
+2023-06-19 21:46:07,215 - INFO - Welcome User A!
+2023-06-19 21:46:07,425 - INFO - Welcome User A!
+2023-06-19 21:46:56,282 - INFO - Welcome User A!
+2023-06-19 21:49:36,445 - INFO - Welcome User A!
+2023-06-19 21:49:36,727 - INFO - Welcome User A!
+2023-06-19 21:50:35,987 - INFO - Welcome User A!
+2023-06-19 21:50:38,929 - INFO - Welcome User A!
+2023-06-19 21:53:38,225 - INFO - Welcome User A!
+2023-06-19 21:53:49,822 - INFO - Welcome User A!
+2023-06-19 21:53:50,262 - INFO - Welcome User A!
+2023-06-19 21:53:59,808 - INFO - Welcome User A!
+2023-06-19 21:54:01,125 - INFO - Welcome User A!
+2023-06-19 21:54:02,405 - INFO - Welcome User A!
+2023-06-19 21:54:03,596 - INFO - Welcome User A!
+2023-06-19 21:54:05,110 - INFO - Welcome User A!
+2023-06-19 21:54:06,754 - INFO - Welcome User A!
+2023-06-19 21:54:08,323 - INFO - Welcome User A!
+2023-06-19 21:54:10,129 - INFO - Welcome User A!
+2023-06-19 21:54:11,778 - INFO - Welcome User A!
+2023-06-19 21:54:14,684 - INFO - Welcome User A!
+2023-06-19 21:54:19,323 - INFO - Welcome User A!
+2023-06-19 21:54:23,922 - INFO - Welcome User A!
+2023-06-19 21:54:25,607 - INFO - Welcome User A!
+2023-06-19 21:54:45,008 - INFO - Welcome User A!
+2023-06-19 21:54:45,382 - INFO - Welcome User A!
+2023-06-19 21:55:10,097 - INFO - Welcome User A!
+2023-06-19 21:55:11,977 - INFO - Welcome User A!
+2023-06-19 21:55:13,386 - INFO - Welcome User A!
+2023-06-19 21:55:18,159 - INFO - Welcome User A!
+2023-06-19 21:55:20,465 - INFO - Welcome User A!
+2023-06-19 21:55:23,351 - INFO - Welcome User A!
+2023-06-19 21:56:26,629 - INFO - Welcome User A!
+2023-06-19 21:56:27,994 - INFO - Welcome User A!
+2023-06-19 21:56:39,345 - INFO - Welcome User A!
+2023-06-19 21:56:39,624 - INFO - Welcome User A!
+2023-06-19 22:13:50,172 - INFO - Welcome User A!
+2023-06-19 22:14:00,449 - INFO - Welcome User A!
+2023-06-19 22:14:00,882 - INFO - Welcome User A!
+2023-06-19 22:14:18,099 - INFO - Welcome User A!
+2023-06-19 22:14:32,291 - INFO - Welcome User A!
+2023-06-19 22:14:32,646 - INFO - Welcome User A!
+2023-06-19 22:14:57,307 - INFO - Welcome User A!
+2023-06-19 22:15:00,227 - INFO - Welcome User A!
+2023-06-19 22:15:10,435 - INFO - Welcome User A!
+2023-06-19 22:15:10,693 - INFO - Welcome User A!
+2023-06-19 22:15:23,253 - INFO - Welcome User A!
+2023-06-19 22:15:25,959 - INFO - Welcome User A!
+2023-06-19 22:15:26,994 - INFO - Welcome User A!
+2023-06-19 22:15:27,813 - INFO - Welcome User A!
+2023-06-19 22:15:28,281 - INFO - Welcome User A!
+2023-06-19 22:15:28,675 - INFO - Welcome User A!
+2023-06-19 22:15:28,827 - INFO - Welcome User A!
+2023-06-19 22:16:55,302 - INFO - Welcome User A!
+2023-06-19 22:17:32,490 - INFO - Welcome User A!
+2023-06-19 22:17:42,681 - INFO - Welcome User A!
+2023-06-19 22:17:45,216 - INFO - Welcome User A!
+2023-06-19 22:17:47,367 - INFO - Welcome User A!
+2023-06-19 22:17:51,982 - INFO - Welcome User A!
+2023-06-19 22:17:53,270 - INFO - Welcome User A!
+2023-06-19 22:17:55,797 - INFO - Welcome User A!
+2023-06-19 22:17:57,986 - INFO - Welcome User A!
+2023-06-19 22:17:59,632 - INFO - Welcome User A!
+2023-06-19 22:19:27,462 - INFO - Welcome User A!
+2023-06-19 22:19:27,771 - INFO - Welcome User A!
+2023-06-19 22:21:11,464 - INFO - Welcome User A!
+2023-06-19 22:21:18,037 - INFO - Welcome User A!
+2023-06-19 22:21:20,338 - INFO - Welcome User A!
+2023-06-19 22:21:32,001 - INFO - Welcome User A!
+2023-06-19 22:21:32,418 - INFO - Welcome User A!
+2023-06-19 22:22:55,527 - INFO - Welcome User A!
+2023-06-19 22:22:55,858 - INFO - Welcome User A!
+2023-06-19 22:23:01,181 - INFO - Welcome User A!
+2023-06-19 22:23:02,409 - INFO - Welcome User A!
+2023-06-19 22:23:03,878 - INFO - Welcome User A!
+2023-06-19 22:23:05,541 - INFO - Welcome User A!
+2023-06-19 22:23:18,827 - INFO - Welcome User A!
+2023-06-19 22:23:20,193 - INFO - Welcome User A!
+2023-06-19 22:23:23,815 - INFO - Welcome User A!
+2023-06-19 22:23:25,306 - INFO - Welcome User A!
+2023-06-19 22:25:45,233 - INFO - Welcome User A!
+2023-06-19 22:25:45,584 - INFO - Welcome User A!
+2023-06-19 22:27:00,985 - INFO - Welcome User A!
+2023-06-19 22:27:16,013 - INFO - Welcome User A!
+2023-06-19 22:27:30,790 - INFO - Welcome User A!
+2023-06-19 22:27:31,140 - INFO - Welcome User A!
+2023-06-19 22:27:37,373 - INFO - Welcome User A!
+2023-06-19 22:27:38,763 - INFO - Welcome User A!
+2023-06-19 22:27:41,253 - INFO - Welcome User A!
+2023-06-19 22:27:43,481 - INFO - Welcome User A!
+2023-06-19 22:28:08,526 - INFO - Welcome User A!
+2023-06-19 22:28:08,890 - INFO - Welcome User A!
+2023-06-19 22:28:23,131 - INFO - Welcome User A!
+2023-06-19 22:28:24,498 - INFO - Welcome User A!
+2023-06-19 22:28:26,081 - INFO - Welcome User A!
+2023-06-19 22:28:27,491 - INFO - Welcome User A!
+2023-06-19 22:28:28,957 - INFO - Welcome User A!
+2023-06-19 22:28:30,455 - INFO - Welcome User A!
+2023-06-19 22:28:32,064 - INFO - Welcome User A!
+2023-06-19 22:28:33,725 - INFO - Welcome User A!
+2023-06-19 22:28:54,893 - INFO - Welcome User A!
+2023-06-19 22:29:03,536 - INFO - Welcome User A!
+2023-06-19 22:29:06,156 - INFO - Welcome User A!
+2023-06-19 22:29:16,877 - INFO - Welcome User A!
+2023-06-19 22:29:23,686 - INFO - Welcome User A!
+2023-06-19 22:29:31,603 - INFO - Welcome User A!
+2023-06-19 22:29:32,026 - INFO - Welcome User A!
+2023-06-19 22:29:34,962 - INFO - Welcome User A!
+2023-06-19 22:58:36,603 - INFO - Connection to the database closed.
+2023-06-19 23:00:34,323 - INFO - Welcome User A!
+2023-06-19 23:00:34,332 - INFO - Connection to the database initialized. User: User A
+2023-06-19 23:00:34,539 - INFO - Welcome User A!
+2023-06-19 23:00:45,090 - INFO - Welcome User A!
+2023-06-19 23:00:48,422 - INFO - Welcome User A!
+2023-06-19 23:00:49,866 - INFO - Welcome User A!
+2023-06-19 23:00:51,038 - INFO - Welcome User A!
+2023-06-19 23:01:05,338 - INFO - Welcome User A!
+2023-06-19 23:01:05,577 - INFO - Welcome User A!
+2023-06-19 23:01:52,825 - INFO - Welcome User A!
+2023-06-19 23:01:56,010 - INFO - Welcome User A!
+2023-06-19 23:04:59,801 - INFO - Welcome User A!
+2023-06-19 23:05:00,208 - INFO - Welcome User A!
+2023-06-19 23:05:07,284 - INFO - Welcome User A!
+2023-06-19 23:05:08,920 - INFO - Welcome User A!
+2023-06-19 23:05:10,621 - INFO - Welcome User A!
+2023-06-19 23:05:16,860 - INFO - Welcome User A!
+2023-06-19 23:05:19,130 - INFO - Welcome User A!
+2023-06-19 23:05:25,114 - INFO - Welcome User A!
+2023-06-19 23:05:27,037 - INFO - Welcome User A!
+2023-06-19 23:05:28,740 - INFO - Welcome User A!
+2023-06-19 23:05:47,556 - INFO - Welcome User A!
+2023-06-19 23:05:47,880 - INFO - Welcome User A!
+2023-06-19 23:06:35,818 - INFO - Welcome User A!
+2023-06-19 23:06:35,981 - INFO - Welcome User A!
+2023-06-19 23:06:46,608 - INFO - Welcome User A!
+2023-06-19 23:06:46,860 - INFO - Welcome User A!
+2023-06-19 23:07:17,745 - INFO - Welcome User A!
+2023-06-19 23:07:18,144 - INFO - Welcome User A!
+2023-06-19 23:07:22,283 - INFO - Welcome User A!
+2023-06-19 23:07:23,275 - INFO - Welcome User A!
+2023-06-19 23:07:24,497 - INFO - Welcome User A!
+2023-06-19 23:07:25,566 - INFO - Welcome User A!
+2023-06-19 23:07:32,509 - INFO - Welcome User A!
+2023-06-19 23:07:32,700 - INFO - Welcome User A!
+2023-06-19 23:07:32,863 - INFO - Welcome User A!
+2023-06-19 23:07:41,863 - INFO - Welcome User A!
+2023-06-19 23:07:45,109 - INFO - Welcome User A!
+2023-06-19 23:07:47,846 - INFO - Welcome User A!
+2023-06-19 23:07:50,088 - INFO - Welcome User A!
+2023-06-19 23:07:51,928 - INFO - Welcome User A!
+2023-06-19 23:08:02,093 - INFO - Welcome User A!
+2023-06-19 23:08:04,530 - INFO - Welcome User A!
+2023-06-19 23:08:07,748 - INFO - Welcome User A!
+2023-06-19 23:08:16,768 - INFO - Welcome User A!
+2023-06-19 23:08:16,931 - INFO - Welcome User A!
+2023-06-19 23:08:17,028 - INFO - Welcome User A!
+2023-06-19 23:08:20,813 - INFO - Welcome User A!
+2023-06-19 23:08:30,618 - INFO - Welcome User A!
+2023-06-19 23:08:30,781 - INFO - Welcome User A!
+2023-06-19 23:09:37,572 - INFO - Welcome User A!
+2023-06-19 23:09:38,043 - INFO - Welcome User A!
+2023-06-19 23:09:43,900 - INFO - Welcome User A!
+2023-06-19 23:09:45,540 - INFO - Welcome User A!
+2023-06-19 23:09:46,635 - INFO - Welcome User A!
+2023-06-19 23:09:47,183 - INFO - Welcome User A!
+2023-06-19 23:09:47,332 - INFO - Welcome User A!
+2023-06-19 23:09:47,534 - INFO - Welcome User A!
+2023-06-19 23:09:48,820 - INFO - Welcome User A!
+2023-06-19 23:09:50,015 - INFO - Welcome User A!
+2023-06-19 23:09:51,355 - INFO - Welcome User A!
+2023-06-19 23:09:54,589 - INFO - Welcome User A!
+2023-06-19 23:10:04,066 - INFO - Welcome User A!
+2023-06-19 23:10:04,205 - INFO - Welcome User A!
+2023-06-19 23:10:04,358 - INFO - Welcome User A!
+2023-06-19 23:10:07,386 - INFO - Welcome User A!
+2023-06-19 23:10:16,539 - INFO - Welcome User A!
+2023-06-19 23:10:21,154 - INFO - Welcome User A!
+2023-06-19 23:10:28,768 - INFO - Welcome User A!
+2023-06-19 23:10:32,109 - INFO - Welcome User A!
+2023-06-19 23:10:34,551 - INFO - Welcome User A!
+2023-06-19 23:10:35,405 - INFO - Welcome User A!
+2023-06-19 23:10:36,489 - INFO - Welcome User A!
+2023-06-19 23:10:38,026 - INFO - Welcome User A!
+2023-06-19 23:10:41,491 - INFO - Welcome User A!
+2023-06-19 23:10:42,691 - INFO - Welcome User A!
+2023-06-19 23:10:46,114 - INFO - Welcome User A!
+2023-06-19 23:10:48,288 - INFO - Welcome User A!
+2023-06-19 23:10:51,047 - INFO - Welcome User A!
+2023-06-19 23:14:43,371 - INFO - Welcome User A!
+2023-06-19 23:14:43,990 - INFO - Welcome User A!
+2023-06-19 23:15:00,154 - INFO - Welcome User I!
+2023-06-19 23:15:00,605 - INFO - Welcome User I!
+2023-06-19 23:15:05,400 - INFO - Welcome User A!
+2023-06-19 23:15:06,823 - INFO - Welcome User A!
+2023-06-19 23:15:17,865 - INFO - Welcome User A!
+2023-06-19 23:15:18,283 - INFO - Welcome User A!
+2023-06-19 23:15:25,079 - INFO - Welcome User A!
+2023-06-19 23:15:30,255 - INFO - Welcome User A!
+2023-06-19 23:15:32,299 - INFO - Welcome User A!
+2023-06-19 23:15:34,816 - INFO - Welcome User A!
+2023-06-19 23:15:35,975 - INFO - Welcome User A!
+2023-06-19 23:15:43,635 - INFO - Welcome User I!
+2023-06-19 23:15:43,974 - INFO - Welcome User I!
+2023-06-19 23:15:52,417 - INFO - Welcome User I!
+2023-06-19 23:16:09,539 - INFO - Welcome User I!
+2023-06-19 23:16:09,945 - INFO - Welcome User I!
+2023-06-19 23:16:57,021 - INFO - Welcome User I!
+2023-06-19 23:17:03,253 - INFO - Welcome User I!
+2023-06-19 23:17:06,829 - INFO - Welcome User I!
+2023-06-19 23:17:15,084 - INFO - Welcome User I!
+2023-06-19 23:17:19,071 - INFO - Welcome User I!
+2023-06-19 23:59:23,909 - INFO - Welcome User I!
+2023-06-19 23:59:27,930 - INFO - Welcome User A!
+2023-06-19 23:59:28,090 - INFO - Welcome User A!
+2023-06-20 00:00:01,696 - INFO - Welcome User A!
+2023-06-20 00:00:02,117 - INFO - Welcome User A!
+2023-06-20 00:00:13,286 - INFO - Welcome User A!
+2023-06-20 00:00:16,375 - INFO - Welcome User A!
+2023-06-20 00:00:16,584 - INFO - Welcome User A!
+2023-06-20 00:00:19,053 - INFO - Welcome User A!
+2023-06-20 00:00:24,458 - INFO - Welcome User A!
+2023-06-20 00:00:25,520 - INFO - Welcome User A!
+2023-06-20 00:00:29,553 - INFO - Welcome User A!
+2023-06-20 00:00:31,073 - INFO - Welcome User A!
+2023-06-20 00:00:53,215 - INFO - Welcome User I!
+2023-06-20 00:00:53,427 - INFO - Welcome User I!
+2023-06-20 00:01:08,265 - INFO - Welcome User I!
+2023-06-20 00:01:09,132 - INFO - Welcome User I!
+2023-06-20 00:01:09,629 - INFO - Welcome User I!
+2023-06-20 00:01:10,476 - INFO - Welcome User I!
+2023-06-20 00:01:19,237 - INFO - Welcome User I!
+2023-06-20 00:01:23,768 - INFO - Welcome User I!
+2023-06-20 00:01:29,201 - INFO - Welcome User I!
+2023-06-20 00:01:33,883 - INFO - Welcome User I!
+2023-06-20 00:02:30,717 - INFO - Welcome User A!
+2023-06-20 00:02:30,963 - INFO - Welcome User A!
+2023-06-20 00:02:32,812 - INFO - Welcome User A!
+2023-06-20 00:02:32,986 - INFO - Welcome User A!
+2023-06-20 00:02:34,425 - INFO - Welcome User A!
+2023-06-20 00:02:37,845 - INFO - Welcome User A!
+2023-06-20 00:02:38,780 - INFO - Welcome User A!
+2023-06-20 00:02:52,372 - INFO - Welcome User I!
+2023-06-20 00:02:54,829 - INFO - Welcome User I!
+2023-06-20 00:02:55,045 - INFO - Welcome User I!
+2023-06-20 00:02:56,764 - INFO - Welcome User I!
+2023-06-20 00:02:56,987 - INFO - Welcome User I!
+2023-06-20 00:02:57,654 - INFO - Welcome User I!
+2023-06-20 00:02:57,895 - INFO - Welcome User I!
+2023-06-20 00:03:13,403 - INFO - Welcome User I!
+2023-06-20 00:03:13,649 - INFO - Welcome User I!
+2023-06-20 00:05:20,847 - INFO - Welcome User A!
+2023-06-20 00:05:21,166 - INFO - Welcome User A!
+2023-06-20 00:05:29,233 - INFO - Welcome User I!
+2023-06-20 00:05:29,500 - INFO - Welcome User I!
+2023-06-20 00:05:34,255 - INFO - Welcome User I!
+2023-06-20 00:05:40,743 - INFO - Welcome User A!
+2023-06-20 00:05:40,985 - INFO - Welcome User A!
+2023-06-20 00:05:49,377 - INFO - Welcome User I!
+2023-06-20 00:05:49,626 - INFO - Welcome User I!
+2023-06-20 00:05:58,257 - INFO - Welcome User I!
+2023-06-20 00:06:05,128 - INFO - Welcome User I!
+2023-06-20 00:06:10,048 - INFO - Welcome User I!
+2023-06-20 00:06:54,403 - INFO - Welcome User I!
+2023-06-20 00:06:56,296 - INFO - Welcome User I!
+2023-06-20 00:07:02,676 - INFO - Welcome User A!
+2023-06-20 00:07:02,924 - INFO - Welcome User A!
+2023-06-20 00:07:05,483 - INFO - Welcome User A!
+2023-06-20 00:07:07,184 - INFO - Welcome User A!
+2023-06-20 00:07:15,940 - INFO - Welcome User I!
+2023-06-20 00:07:16,217 - INFO - Welcome User I!
+2023-06-20 00:07:28,156 - INFO - Welcome User I!
+2023-06-20 00:07:36,662 - INFO - Welcome User I!
+2023-06-20 00:07:47,006 - INFO - Welcome User A!
+2023-06-20 00:07:47,326 - INFO - Welcome User A!
+2023-06-20 00:12:29,069 - INFO - Welcome User I!
+2023-06-20 00:12:32,580 - INFO - Welcome User I!
+2023-06-20 00:12:57,095 - INFO - Welcome User A!
+2023-06-20 00:12:57,731 - INFO - Welcome User A!
+2023-06-20 00:13:01,791 - INFO - Welcome User A!
+2023-06-20 00:13:01,981 - INFO - Welcome User A!
+2023-06-20 00:13:58,933 - INFO - Welcome User I!
+2023-06-20 00:13:59,310 - INFO - Welcome User I!
+2023-06-20 00:14:12,983 - INFO - Welcome User I!
+2023-06-20 00:14:36,409 - INFO - Welcome User A!
+2023-06-20 00:14:36,862 - INFO - Welcome User A!
+2023-06-20 00:14:53,496 - INFO - Welcome User A!
+2023-06-20 00:14:54,462 - INFO - Welcome User A!
+2023-06-20 00:14:55,565 - INFO - Welcome User A!
+2023-06-20 00:14:58,531 - INFO - Welcome User A!
+2023-06-20 00:15:00,536 - INFO - Welcome User A!
+2023-06-20 00:15:19,156 - INFO - Welcome User A!
+2023-06-20 00:15:19,399 - INFO - Welcome User A!
+2023-06-20 00:15:33,565 - INFO - Welcome User A!
+2023-06-20 00:15:36,908 - INFO - Welcome User A!
+2023-06-20 00:15:44,268 - INFO - Welcome User I!
+2023-06-20 00:15:44,543 - INFO - Welcome User I!
+2023-06-20 00:15:46,885 - INFO - Welcome User I!
+2023-06-20 00:16:00,722 - INFO - Welcome User I!
+2023-06-20 00:16:00,956 - INFO - Welcome User I!
+2023-06-20 00:16:03,614 - INFO - Welcome User I!
+2023-06-20 00:16:18,353 - INFO - Welcome User I!
+2023-06-20 00:16:19,817 - INFO - Welcome User I!
+2023-06-20 00:16:25,185 - INFO - Welcome User A!
+2023-06-20 00:16:25,394 - INFO - Welcome User A!
+2023-06-20 00:16:26,260 - INFO - Welcome User A!
+2023-06-20 00:16:28,400 - INFO - Welcome User A!
+2023-06-20 00:16:29,133 - INFO - Welcome User A!
+2023-06-20 00:16:30,728 - INFO - Welcome User A!
+2023-06-20 00:16:32,644 - INFO - Welcome User A!
+2023-06-20 00:16:45,965 - INFO - Welcome User I!
+2023-06-20 00:16:46,213 - INFO - Welcome User I!
+2023-06-20 00:23:41,532 - INFO - Welcome User I!
+2023-06-20 00:24:54,213 - INFO - Welcome User I!
+2023-06-20 00:25:15,193 - INFO - Welcome User I!
+2023-06-20 00:25:18,498 - INFO - Welcome User I!
+2023-06-20 00:25:38,655 - INFO - Welcome User A!
+2023-06-20 00:25:38,966 - INFO - Welcome User A!
+2023-06-20 00:25:51,977 - INFO - Welcome User A!
+2023-06-20 00:25:53,851 - INFO - Welcome User A!
+2023-06-20 00:25:55,801 - INFO - Welcome User A!
+2023-06-20 00:26:30,433 - INFO - Welcome User I!
+2023-06-20 00:26:50,570 - INFO - Welcome User I!
+2023-06-20 00:26:50,783 - INFO - Welcome User I!
+2023-06-20 00:27:26,075 - INFO - Welcome User I!
+2023-06-20 00:27:30,212 - INFO - Welcome User I!
+2023-06-20 00:27:46,150 - INFO - Welcome User A!
+2023-06-20 00:27:46,407 - INFO - Welcome User A!
+2023-06-20 00:28:27,276 - INFO - Welcome User A!
+2023-06-20 00:28:30,535 - INFO - Welcome User A!
+2023-06-20 00:28:32,071 - INFO - Welcome User A!
+2023-06-20 00:28:34,475 - INFO - Welcome User A!
+2023-06-20 00:28:36,868 - INFO - Welcome User A!
+2023-06-20 00:28:45,961 - INFO - Welcome User A!
+2023-06-20 00:28:46,228 - INFO - Welcome User A!
+2023-06-20 00:29:03,048 - INFO - Welcome User A!
+2023-06-20 00:29:06,785 - INFO - Welcome User A!
+2023-06-20 00:29:22,099 - INFO - Welcome User A!
+2023-06-20 00:29:22,893 - INFO - Welcome User A!
+2023-06-20 00:29:24,873 - INFO - Welcome User A!
+2023-06-20 00:29:38,654 - INFO - Welcome User I!
+2023-06-20 00:29:38,845 - INFO - Welcome User I!
+2023-06-20 00:29:43,374 - INFO - Welcome User I!
+2023-06-20 00:29:48,285 - INFO - Welcome User I!
+2023-06-20 00:29:51,855 - INFO - Welcome User I!
+2023-06-20 00:30:11,430 - INFO - Welcome User A!
+2023-06-20 00:30:11,689 - INFO - Welcome User A!
+2023-06-20 00:30:28,938 - INFO - Welcome User I!
+2023-06-20 00:30:29,203 - INFO - Welcome User I!
+2023-06-20 00:30:44,562 - INFO - Welcome User I!
+2023-06-20 00:30:44,867 - INFO - Welcome User I!
+2023-06-20 00:30:47,293 - INFO - Welcome User I!
+2023-06-20 00:31:27,242 - INFO - Welcome User I!
+2023-06-20 00:33:22,924 - INFO - Connection to the database closed.
+2023-06-20 00:33:42,025 - INFO - Welcome User A!
+2023-06-20 00:33:42,034 - INFO - Connection to the database initialized. User: User A
+2023-06-20 00:33:42,248 - INFO - Welcome User A!
+2023-06-20 00:33:49,420 - INFO - Welcome User A!
+2023-06-20 00:33:51,218 - INFO - Welcome User A!
+2023-06-20 00:33:52,263 - INFO - Welcome User A!
+2023-06-20 00:33:53,086 - INFO - Welcome User A!
+2023-06-20 00:33:53,953 - INFO - Welcome User A!
+2023-06-20 00:33:56,610 - INFO - Welcome User A!
+2023-06-20 00:33:57,388 - INFO - Welcome User A!
+2023-06-20 00:33:58,343 - INFO - Welcome User A!
+2023-06-20 00:33:59,962 - INFO - Welcome User A!
+2023-06-20 00:34:01,666 - INFO - Welcome User A!
+2023-06-20 00:34:10,071 - INFO - Welcome User I!
+2023-06-20 00:34:11,094 - INFO - Welcome User I!
+2023-06-20 00:34:13,607 - INFO - Welcome User I!
+2023-06-20 00:34:22,138 - INFO - Welcome User I!
+2023-06-20 00:34:22,272 - INFO - Welcome User I!
+2023-06-20 00:34:32,064 - INFO - Welcome User I!
+2023-06-20 00:34:32,357 - INFO - Welcome User I!
+2023-06-20 00:34:34,415 - INFO - Welcome User I!
+2023-06-20 00:34:43,249 - INFO - Welcome User A!
+2023-06-20 00:34:43,749 - INFO - Welcome User A!
+2023-06-20 00:34:50,736 - INFO - Welcome User I!
+2023-06-20 00:34:51,413 - INFO - Welcome User I!
+2023-06-20 00:35:00,477 - INFO - Welcome User J!
+2023-06-20 00:35:00,742 - INFO - Welcome User J!
+2023-06-20 00:35:02,667 - INFO - Welcome User J!
+2023-06-20 00:35:24,692 - INFO - Welcome User I!
+2023-06-20 00:35:35,108 - INFO - Welcome User I!
+2023-06-20 00:35:35,358 - INFO - Welcome User I!
+2023-06-20 00:35:38,286 - INFO - Welcome User I!
+2023-06-20 00:35:43,629 - INFO - Welcome User I!
+2023-06-20 00:35:45,425 - INFO - Welcome User I!
+2023-06-20 00:35:50,487 - INFO - Welcome User I!
+2023-06-20 00:36:01,524 - INFO - Welcome User A!
+2023-06-20 00:36:01,744 - INFO - Welcome User A!
+2023-06-20 00:36:24,695 - INFO - Welcome User I!
+2023-06-20 00:36:24,964 - INFO - Welcome User I!
+2023-06-20 00:37:27,388 - INFO - Welcome User I!
+2023-06-20 00:37:33,733 - INFO - Welcome User I!
+2023-06-20 00:37:46,081 - INFO - Welcome User A!
+2023-06-20 00:37:47,030 - INFO - Welcome User A!
+2023-06-20 00:38:59,411 - INFO - Welcome User A!
+2023-06-20 00:39:01,163 - INFO - Welcome User A!
+2023-06-20 00:39:02,796 - INFO - Welcome User A!
+2023-06-20 00:39:05,875 - INFO - Welcome User A!
+2023-06-20 00:39:30,315 - INFO - Welcome User I!
+2023-06-20 00:39:31,243 - INFO - Welcome User I!
+2023-06-20 00:41:47,612 - INFO - Welcome User A!
+2023-06-20 00:41:47,884 - INFO - Welcome User A!
+2023-06-20 00:41:52,025 - INFO - Welcome User A!
+2023-06-20 00:41:57,425 - INFO - Welcome User A!
+2023-06-20 00:42:28,767 - INFO - Welcome User I!
+2023-06-20 00:42:29,046 - INFO - Welcome User I!
+2023-06-20 00:45:37,745 - INFO - Welcome User I!
+2023-06-20 00:45:48,315 - INFO - Welcome User A!
+2023-06-20 00:45:48,640 - INFO - Welcome User A!
+2023-06-20 00:45:51,866 - INFO - Welcome User A!
+2023-06-20 00:45:54,446 - INFO - Welcome User A!
+2023-06-20 00:46:14,075 - INFO - Welcome User I!
+2023-06-20 00:46:14,335 - INFO - Welcome User I!
+2023-06-20 00:46:39,726 - INFO - Welcome User I!
+2023-06-20 00:46:47,902 - INFO - Welcome User A!
+2023-06-20 00:46:48,164 - INFO - Welcome User A!
+2023-06-20 00:46:51,635 - INFO - Welcome User A!
+2023-06-20 00:47:02,382 - INFO - Welcome User I!
+2023-06-20 00:47:02,662 - INFO - Welcome User I!
+2023-06-20 00:49:45,293 - INFO - Welcome User A!
+2023-06-20 00:49:45,305 - INFO - Welcome User I!
+2023-06-20 00:49:46,100 - INFO - Welcome User A!
+2023-06-20 00:49:55,234 - INFO - Welcome User I!
+2023-06-20 00:50:00,986 - INFO - Welcome User A!
+2023-06-20 00:50:06,509 - INFO - Welcome User A!
+2023-06-20 00:50:16,018 - INFO - Welcome User I!
+2023-06-20 00:50:16,248 - INFO - Welcome User I!
+2023-06-20 00:51:47,780 - INFO - Connection to the database closed.
+2023-06-20 11:16:39,735 - INFO - Welcome User I!
+2023-06-20 11:16:39,751 - INFO - Connection to the database initialized. User: User I
+2023-06-20 11:16:39,936 - INFO - Welcome User I!
+2023-06-20 11:16:57,353 - INFO - Welcome User A!
+2023-06-20 11:16:57,772 - INFO - Welcome User A!
+2023-06-20 11:17:03,923 - INFO - Welcome User A!
+2023-06-20 11:17:04,796 - INFO - Welcome User A!
+2023-06-20 11:17:05,824 - INFO - Welcome User A!
+2023-06-20 11:17:06,748 - INFO - Welcome User A!
+2023-06-20 11:17:07,568 - INFO - Welcome User A!
+2023-06-20 11:17:08,548 - INFO - Welcome User A!
+2023-06-20 11:17:09,339 - INFO - Welcome User A!
+2023-06-20 11:17:10,727 - INFO - Welcome User A!
+2023-06-20 11:17:12,052 - INFO - Welcome User A!
+2023-06-20 11:17:14,726 - INFO - Welcome User A!
+2023-06-20 11:17:29,558 - INFO - Welcome User I!
+2023-06-20 11:17:30,636 - INFO - Welcome User I!
+2023-06-20 11:17:52,880 - INFO - Welcome User I!
+2023-06-20 11:18:03,518 - INFO - Welcome User A!
+2023-06-20 11:18:04,535 - INFO - Welcome User A!
+2023-06-20 11:18:05,020 - INFO - Welcome User A!
+2023-06-20 11:18:05,330 - INFO - Welcome User A!
+2023-06-20 11:18:06,463 - INFO - Welcome User A!
+2023-06-20 11:18:07,206 - INFO - Welcome User A!
+2023-06-20 11:18:07,388 - INFO - Welcome User A!
+2023-06-20 11:18:08,412 - INFO - Welcome User A!
+2023-06-20 11:18:09,450 - INFO - Welcome User A!
+2023-06-20 11:18:10,527 - INFO - Welcome User A!
+2023-06-20 11:18:11,189 - INFO - Welcome User A!
+2023-06-20 11:18:16,141 - INFO - Welcome User A!
+2023-06-20 11:18:18,105 - INFO - Welcome User A!
+2023-06-20 11:19:12,225 - INFO - Welcome User I!
+2023-06-20 11:19:12,434 - INFO - Welcome User I!
+2023-06-20 11:22:08,351 - INFO - Welcome User A!
+2023-06-20 11:22:08,641 - INFO - Welcome User A!
+2023-06-20 11:22:15,045 - INFO - Welcome User I!
+2023-06-20 11:22:22,330 - INFO - Welcome User I!
+2023-06-20 11:22:29,064 - INFO - Welcome User A!
+2023-06-20 11:22:38,235 - INFO - Welcome User I!
+2023-06-20 11:22:38,443 - INFO - Welcome User I!
+2023-06-20 11:23:11,552 - INFO - Welcome User A!
+2023-06-20 11:23:11,763 - INFO - Welcome User A!
+2023-06-20 11:23:26,382 - INFO - Welcome User I!
+2023-06-20 11:23:26,626 - INFO - Welcome User I!
+2023-06-20 11:24:03,542 - INFO - Welcome User I!
+2023-06-20 11:25:38,632 - INFO - Welcome User A!
+2023-06-20 11:25:38,644 - INFO - Welcome User I!
+2023-06-20 11:25:39,267 - INFO - Welcome User A!
+2023-06-20 11:26:27,035 - INFO - Welcome User I!
+2023-06-20 11:26:27,051 - INFO - Welcome User A!
+2023-06-20 11:26:33,432 - INFO - Welcome User A!
+2023-06-20 11:26:33,442 - INFO - Welcome User I!
+2023-06-20 11:26:47,756 - INFO - Welcome User I!
+2023-06-20 11:26:56,936 - INFO - Welcome User I!
+2023-06-20 11:26:59,726 - INFO - Welcome User I!
+2023-06-20 11:27:03,383 - INFO - Welcome User I!
+2023-06-20 11:27:06,103 - INFO - Welcome User I!
+2023-06-20 11:27:11,427 - INFO - Welcome User A!
+2023-06-20 11:27:27,457 - INFO - Welcome User I!
+2023-06-20 11:27:27,722 - INFO - Welcome User I!
+2023-06-20 11:44:41,282 - INFO - Welcome User I!
+2023-06-20 11:44:41,285 - INFO - Welcome User A!
+2023-06-20 11:44:42,347 - INFO - Welcome User A!
+2023-06-20 11:44:47,378 - INFO - Welcome User A!
+2023-06-20 11:44:54,719 - INFO - Welcome User I!
+2023-06-20 11:45:01,262 - INFO - Welcome User I!
+2023-06-20 11:45:01,495 - INFO - Welcome User I!
+2023-06-20 11:45:53,134 - INFO - Welcome User I!
+2023-06-20 11:45:53,147 - INFO - Welcome User A!
+2023-06-20 11:45:53,802 - INFO - Welcome User A!
+2023-06-20 11:45:59,383 - INFO - Welcome User I!
+2023-06-20 11:46:20,622 - INFO - Welcome User A!
+2023-06-20 11:46:20,836 - INFO - Welcome User A!
+2023-06-20 11:46:28,175 - INFO - Welcome User I!
+2023-06-20 11:46:28,472 - INFO - Welcome User I!
+2023-06-20 11:46:44,750 - INFO - Welcome User I!
+2023-06-20 11:46:45,080 - INFO - Welcome User I!
+2023-06-20 11:46:51,523 - INFO - Welcome User A!
+2023-06-20 11:46:51,722 - INFO - Welcome User A!
+2023-06-20 11:47:00,499 - INFO - Welcome User I!
+2023-06-20 11:47:00,755 - INFO - Welcome User I!
+2023-06-20 11:47:54,254 - INFO - Welcome User A!
+2023-06-20 11:47:54,495 - INFO - Welcome User A!
+2023-06-20 11:48:02,925 - INFO - Welcome User I!
+2023-06-20 11:48:03,148 - INFO - Welcome User I!
+2023-06-20 11:48:12,244 - INFO - Welcome User I!
+2023-06-20 11:53:09,589 - INFO - Connection to the database closed.
+2023-06-20 11:53:40,740 - INFO - Welcome User A!
+2023-06-20 11:53:40,745 - INFO - Connection to the database initialized. User: User A
+2023-06-20 11:53:40,890 - INFO - Welcome User A!
+2023-06-20 11:53:47,046 - INFO - Welcome User A!
+2023-06-20 11:53:48,540 - INFO - Welcome User A!
+2023-06-20 11:53:49,464 - INFO - Welcome User A!
+2023-06-20 11:53:50,190 - INFO - Welcome User A!
+2023-06-20 11:53:51,010 - INFO - Welcome User A!
+2023-06-20 11:53:52,318 - INFO - Welcome User A!
+2023-06-20 11:53:54,343 - INFO - Welcome User A!
+2023-06-20 11:53:56,714 - INFO - Welcome User A!
+2023-06-20 11:53:58,383 - INFO - Welcome User A!
+2023-06-20 11:54:01,690 - INFO - Welcome User A!
+2023-06-20 11:54:03,440 - INFO - Welcome User A!
+2023-06-20 11:54:05,805 - INFO - Welcome User A!
+2023-06-20 11:54:15,490 - INFO - Welcome User I!
+2023-06-20 11:54:16,571 - INFO - Welcome User I!
+2023-06-20 11:54:17,957 - INFO - Welcome User I!
+2023-06-20 11:54:23,648 - INFO - Welcome User I!
+2023-06-20 11:54:23,756 - INFO - Welcome User I!
+2023-06-20 11:54:31,668 - INFO - Welcome User A!
+2023-06-20 11:54:32,578 - INFO - Welcome User A!
+2023-06-20 11:54:38,753 - INFO - Welcome User A!
+2023-06-20 11:54:39,709 - INFO - Welcome User A!
+2023-06-20 11:54:41,218 - INFO - Welcome User A!
+2023-06-20 11:54:42,071 - INFO - Welcome User A!
+2023-06-20 11:54:42,257 - INFO - Welcome User A!
+2023-06-20 11:54:47,692 - INFO - Welcome User A!
+2023-06-20 11:54:51,694 - INFO - Welcome User A!
+2023-06-20 11:54:52,481 - INFO - Welcome User A!
+2023-06-20 11:54:54,416 - INFO - Welcome User A!
+2023-06-20 11:54:55,595 - INFO - Welcome User A!
+2023-06-20 11:54:57,367 - INFO - Welcome User A!
+2023-06-20 11:54:58,446 - INFO - Welcome User A!
+2023-06-20 11:55:09,599 - INFO - Welcome User I!
+2023-06-20 11:55:09,850 - INFO - Welcome User I!
+2023-06-20 11:56:09,728 - INFO - Welcome User I!
+2023-06-20 11:56:17,480 - INFO - Welcome User I!
+2023-06-20 11:56:20,888 - INFO - Welcome User A!
+2023-06-20 11:56:21,143 - INFO - Welcome User A!
+2023-06-20 11:56:23,068 - INFO - Welcome User A!
+2023-06-20 11:56:23,924 - INFO - Welcome User A!
+2023-06-20 11:56:25,081 - INFO - Welcome User A!
+2023-06-20 11:56:35,471 - INFO - Welcome User I!
+2023-06-20 11:56:35,769 - INFO - Welcome User I!
+2023-06-20 11:56:43,849 - INFO - Welcome User I!
+2023-06-20 11:56:45,598 - INFO - Welcome User I!
+2023-06-20 11:57:18,039 - INFO - Welcome User A!
+2023-06-20 11:57:18,049 - INFO - Welcome User I!
+2023-06-20 11:57:18,694 - INFO - Welcome User A!
+2023-06-20 11:57:39,920 - INFO - Welcome User A!
+2023-06-20 11:57:39,921 - INFO - Welcome User I!
+2023-06-20 11:58:14,463 - INFO - Welcome User I!
+2023-06-20 11:58:14,464 - INFO - Welcome User A!
+2023-06-20 11:58:24,145 - INFO - Welcome User I!
+2023-06-20 11:59:19,466 - INFO - Welcome User I!
+2023-06-20 11:59:19,477 - INFO - Welcome User A!
+2023-06-20 11:59:30,203 - INFO - Welcome User A!
+2023-06-20 11:59:30,204 - INFO - Welcome User I!
+2023-06-20 11:59:34,765 - INFO - Welcome User A!
+2023-06-20 11:59:34,766 - INFO - Welcome User I!
+2023-06-20 12:00:05,050 - INFO - Welcome User A!
+2023-06-20 12:00:05,060 - INFO - Welcome User I!
+2023-06-20 12:00:20,338 - INFO - Connection to the database closed.
+2023-06-20 12:00:43,113 - INFO - Welcome User A!
+2023-06-20 12:00:43,117 - INFO - Connection to the database initialized. User: User A
+2023-06-20 12:00:43,336 - INFO - Welcome User A!

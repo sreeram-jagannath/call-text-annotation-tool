@@ -25,6 +25,32 @@ logging.basicConfig(
 )
 
 
+def reset_session_state(calls_df):
+    # find the current connection id and chunk id of the
+    # user
+    try:
+        print(calls_df)
+        idx = calls_df[
+            (calls_df[CONN_ID_COLNAME] == st.session_state["current_conn_id"])
+            & (calls_df[CHUNK_ID_COLNAME] == st.session_state["current_chunk_id"])
+        ].index.values[0]
+
+        st.session_state["current_idx"] = idx
+
+        if st.session_state.get("role") != "annotator" and "conn_id_select" in st.session_state:
+            st.session_state["conn_id_select"] = st.session_state["current_conn_id"]
+            st.session_state["chunk_id_select"] = st.session_state["current_chunk_id"]
+
+    # catching the "save and next" exception when the cache
+    # is cleared, only for annotator
+    except Exception as e:
+        print("Exception caught!")
+        st.session_state["current_idx"] -= len(st.session_state["annotated_idx"])
+
+    st.session_state["annotated_idx"] = set()
+    print(st.session_state["current_idx"], "reset_session_function")
+
+
 def show_pdf(file_path: str) -> None:
     """
     Displays a PDF file.
@@ -194,7 +220,7 @@ def get_unannotated_ids(
                 + x[CHUNK_ID_COLNAME].astype(str)
             )
             .sort_values(by=[CONN_ID_COLNAME, CHUNK_ID_COLNAME])
-            .reset_index(drop=True)
+            # .reset_index(drop=True)
         )
 
         # Perform outer join
@@ -209,7 +235,7 @@ def get_unannotated_ids(
         # Perform anti-join
         anti_join = outer[(outer._merge == "left_only")].drop("_merge", axis=1)
 
-        return anti_join
+        return anti_join.reset_index(drop=True)
 
     except Exception as e:
         logging.error("An error occurred while retrieving unannotated IDs.")
@@ -355,7 +381,7 @@ def previous_button_clicked_reviewer():
         idx = st.session_state["current_idx"] - 1
 
         if idx == -1:
-            idx = st.session_state["n_chunks"] - 1
+            idx = st.session_state["call_ids_shape"] - 1
 
         st.session_state["current_idx"] = idx
 
@@ -374,7 +400,7 @@ def next_button_clicked_reviewer():
     try:
         idx = st.session_state["current_idx"] + 1
 
-        if idx == st.session_state["n_chunks"]:
+        if idx == st.session_state["call_ids_shape"]:
             idx = 0
 
         st.session_state["current_idx"] = idx
@@ -428,7 +454,7 @@ def save_next_button_clicked_reviewer(
 
         idx = st.session_state["current_idx"] + 1
 
-        if idx == st.session_state["n_chunks"]:
+        if idx == st.session_state["call_ids_shape"]:
             idx = 0
 
         st.session_state["current_idx"] = idx
@@ -450,7 +476,7 @@ def previous_button_clicked():
 
         while True:
             if idx == -1:
-                # idx = st.session_state["n_chunks"] - 1
+                # idx = st.session_state["call_ids_shape"] - 1
                 break
             if idx not in st.session_state["annotated_idx"]:
                 st.session_state["current_idx"] = idx
@@ -472,7 +498,7 @@ def next_button_clicked():
         idx = st.session_state["current_idx"] + 1
 
         while True:
-            if idx == st.session_state["n_chunks"]:
+            if idx == st.session_state["call_ids_shape"]:
                 idx = 0
             if idx not in st.session_state["annotated_idx"]:
                 st.session_state["current_idx"] = idx
@@ -527,14 +553,14 @@ def save_next_button_clicked(
 
         st.session_state["annotated_idx"].add(st.session_state["current_idx"])
 
-        if len(st.session_state["annotated_idx"]) == st.session_state["n_chunks"]:
+        if len(st.session_state["annotated_idx"]) == st.session_state["call_ids_shape"]:
             st.session_state["all_done"] = True
             return
 
         idx = st.session_state["current_idx"] + 1
 
         while True:
-            if idx == st.session_state["n_chunks"]:
+            if idx == st.session_state["call_ids_shape"]:
                 idx = 0
 
             if idx not in st.session_state["annotated_idx"]:
@@ -612,7 +638,9 @@ def get_call_ids_to_be_reviewed(
         if st.session_state.get("role") == "admin":
             final_call_ids = call_ids.copy()
         elif st.session_state.get("role") == "reviewer":
-            final_call_ids = call_ids.query("Reviewer == @rev_username")
+            final_call_ids = call_ids.query("Reviewer == @rev_username").reset_index(
+                drop=True
+            )
 
         return final_call_ids
 
@@ -670,11 +698,14 @@ def reviewer_select_connid(review_df):
         None
     """
     try:
-        conn_id_select = st.session_state.get("conn_id_select")
+        if review_df.shape[0] == st.session_state["call_ids_shape"]:
+            print("conn selectbox changed!")
+            print(review_df)
+            conn_id_select = st.session_state.get("conn_id_select")
 
-        if conn_id_select is not None:
-            idx = review_df[review_df[CONN_ID_COLNAME] == conn_id_select].index[0]
-            st.session_state["current_idx"] = idx
+            if conn_id_select is not None:
+                idx = review_df[review_df[CONN_ID_COLNAME] == conn_id_select].index[0]
+                st.session_state["current_idx"] = idx
     except Exception as e:
         logging.error(f"An error occurred in 'reviewer_select_connid': {e}")
         logging.error(traceback.format_exc())
@@ -691,19 +722,30 @@ def reviewer_select_chunkid(review_df):
         None
     """
     try:
-        conn_id_select = st.session_state.get("conn_id_select")
-        chunk_id_select = st.session_state.get("chunk_id_select")
+        # print("chunk selectbox changed!")
+        # print(review_df.shape[0])
+        # print(st.session_state["call_ids_shape"])
+        if review_df.shape[0] == st.session_state["call_ids_shape"]:
+            conn_id_select = st.session_state.get("conn_id_select")
+            chunk_id_select = st.session_state.get("chunk_id_select")
 
-        if conn_id_select is not None and chunk_id_select is not None:
-            idx = review_df[
-                (review_df[CONN_ID_COLNAME] == conn_id_select)
-                & (review_df[CHUNK_ID_COLNAME] == chunk_id_select)
-            ].index[0]
-            st.session_state["current_idx"] = idx
+            if conn_id_select is not None and chunk_id_select is not None:
+                idx = review_df[
+                    (review_df[CONN_ID_COLNAME] == conn_id_select)
+                    & (review_df[CHUNK_ID_COLNAME] == chunk_id_select)
+                ].index[0]
+                st.session_state["current_idx"] = idx
 
     except Exception as e:
         logging.error(f"An error occurred in 'reviewer_select_chunkid': {e}")
         logging.error(traceback.format_exc())
+
+
+def conf_checkbox_func():
+    """on change callback which will run whenever the
+    checkbox is enabled or disabled
+    """
+    st.session_state["current_idx"] = 0
 
 
 def display_annotation_details(current_row):

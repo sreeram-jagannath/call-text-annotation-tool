@@ -1,7 +1,6 @@
 import pandas as pd
 import streamlit as st
 
-from config import CONN_ID_COLNAME
 from helper_functions import *
 
 
@@ -15,6 +14,9 @@ def get_annotator_page(conn, cursor):
     display_name_and_role()
 
     data, intents, mapping = read_dataframes()
+    # data = data[data["ConnectionID"] == "c_202201271611026714"].head()
+    data = data.groupby("ConnectionID").head(4).reset_index(drop=True)
+
     all_intents = get_all_intent_options(intent_df=intents)
     all_subintents = get_all_subintent_options(intent_df=intents)
 
@@ -28,10 +30,29 @@ def get_annotator_page(conn, cursor):
         username=st.session_state.get("name"),
     )
 
+    # store the already annotated data in session state,
+    # check if the data has changed due to clearing cache
+    # if the data has been changed, then clear required
+    # keys from the session state
+    if "call_ids_shape" in st.session_state:
+        # if current call_ids is not equal to stored one
+        # it means the some new user has logged in
+        if st.session_state["call_ids_shape"] != call_ids.shape[0]:
+            # st.session_state["call_ids_shape"] = call_ids.shape[0]
+            # clear out the appropriate keys in session states
+            st.session_state["call_ids_shape"] = call_ids.shape[0]
+            reset_session_state(calls_df=call_ids)
+
+    else:
+        st.session_state["og_total_calls"] = call_ids.shape[0]
+        st.session_state["call_ids_shape"] = call_ids.shape[0]
+
+    # st.dataframe(call_ids, use_container_width=True)
+
     if "all_done" not in st.session_state:
         st.session_state["all_done"] = False
 
-    # st.write(call_ids)
+    # st.write(st.session_state)
 
     if call_ids.empty or st.session_state["all_done"]:
         st.balloons()
@@ -40,11 +61,13 @@ def get_annotator_page(conn, cursor):
         # connection_id = connection_ids[0]
         if "annotated_idx" not in st.session_state:
             st.session_state["current_idx"] = 0
-            st.session_state["n_chunks"] = call_ids.shape[0]
             st.session_state["annotated_idx"] = set()
 
         current_row = call_ids.iloc[st.session_state["current_idx"]]
         current_conn_id = current_row[CONN_ID_COLNAME]
+
+        st.session_state["current_conn_id"] = current_conn_id
+        st.session_state["current_chunk_id"] = current_row[CHUNK_ID_COLNAME]
 
         # st.write(current_row)
 
@@ -71,9 +94,11 @@ def get_annotator_page(conn, cursor):
                 unsafe_allow_html=True,
             )
 
-        progress_text = f"Progress: [{len(st.session_state['annotated_idx'])} / {st.session_state['n_chunks']}]"
+        diff = st.session_state["og_total_calls"] - st.session_state["call_ids_shape"]
+        progress_text = f"Progress: [{len(st.session_state['annotated_idx']) + diff} / {st.session_state['og_total_calls']}]"
         st.progress(
-            value=len(st.session_state["annotated_idx"]) / st.session_state["n_chunks"],
+            value=(len(st.session_state["annotated_idx"]) + diff)
+            / st.session_state["og_total_calls"],
             text=progress_text,
         )
 
@@ -157,8 +182,8 @@ def get_annotator_page(conn, cursor):
         _, bcol1, bcol2, bcol3, _ = st.columns([1.5, 1, 1, 1, 1])
 
         # st.write(st.session_state)
-        if st.session_state["current_idx"] > 0:
-            bcol1.button("Previous", on_click=previous_button_clicked)
+        # if st.session_state["current_idx"] > 0:
+        bcol1.button("Previous", on_click=previous_button_clicked)
 
         # if done with all the chunks for the user, don't show the save and next button
         # if st.session_state["current_idx"] + 1 < len(call_ids):
@@ -179,6 +204,13 @@ def get_annotator_page(conn, cursor):
         )
 
         st.divider()
+
+        select_data_query = "SELECT * FROM call_annotation_table"
+        df = pd.read_sql_query(select_data_query, conn).sort_values(
+            by=["date", "time"], ascending=False
+        )
+        st.subheader("Database")
+        st.dataframe(df, use_container_width=True)
 
         with st.expander(label="Guidelines to use the dashboard"):
             show_pdf(file_path="../sample.pdf")

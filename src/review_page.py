@@ -12,34 +12,69 @@ def get_reviewer_page(conn, cursor):
     display_name_and_role()
 
     data, intents, mapping = read_dataframes()
+    data = data.groupby("ConnectionID").head(4).reset_index(drop=True)
+
     all_intents = get_all_intent_options(intent_df=intents)
     all_subintents = get_all_subintent_options(intent_df=intents)
 
     already_annotated_df = read_annotated_data(_conn=conn)
 
     # this can be some chunk of a call too...not necessarily the starting from a new call
-    review_call_ids = get_call_ids_to_be_reviewed(
+    all_review_call_ids = get_call_ids_to_be_reviewed(
         call_data=data,
         user_call_mapping=mapping,
         annot_data=already_annotated_df,
         rev_username=st.session_state.get("name"),
     )
 
-    # st.write(annot_data)
-    # st.write(review_call_ids)
+    _, cf1, _ = st.columns([2, 2, 1])
+    cf1.checkbox(
+        "Filter only calls with Low/Medium confidence",
+        value=True,
+        key="conf_filter",
+        on_change=conf_checkbox_func,
+    )
+    if st.session_state["conf_filter"]:
+        review_call_ids = all_review_call_ids[
+            all_review_call_ids["confidence"] != "High"
+        ].reset_index(drop=True)
+    else:
+        review_call_ids = all_review_call_ids.copy()
+
+    # st.dataframe(review_call_ids, use_container_width=True)
+
+    # store the already annotated data in session state,
+    # check if the data has changed due to clearing cache
+    # if the data has been changed, then clear required
+    # keys from the session state
+    if "call_ids_shape" in st.session_state:
+        # if current call_ids is not equal to stored one
+        # it means the some new user has logged in
+        if st.session_state["call_ids_shape"] != all_review_call_ids.shape[0]:
+            # st.session_state["call_ids_shape"] = call_ids.shape[0]
+            # clear out the appropriate keys in session states
+            st.session_state["call_ids_shape"] = all_review_call_ids.shape[0]
+            reset_session_state(calls_df=review_call_ids)
+
+    else:
+        st.session_state["current_idx"] = 0
+        st.session_state["call_ids_shape"] = all_review_call_ids.shape[0]
+
+    # st.write(st.session_state)
+
+    # st.write(st.session_state.get("current_idx"), "after reset_session")
 
     if review_call_ids.empty:
         st.success("You don't have any texts to review!")
         st.balloons()
     else:
-        if "current_idx" not in st.session_state:
-            st.session_state["current_idx"] = 0
-            st.session_state["n_chunks"] = review_call_ids.shape[0]
-            st.session_state["annotated_idx"] = set()
-
         current_row = review_call_ids.iloc[st.session_state["current_idx"]]
         current_conn_id = current_row[CONN_ID_COLNAME]
         current_chunk_id = current_row[CHUNK_ID_COLNAME]
+        # print(current_conn_id, current_chunk_id)
+
+        st.session_state["current_conn_id"] = current_conn_id
+        st.session_state["current_chunk_id"] = current_chunk_id
 
         if "conn_id_select" in st.session_state:
             st.session_state["conn_id_select"] = current_conn_id
@@ -56,21 +91,42 @@ def get_reviewer_page(conn, cursor):
             .tolist()
         )
 
+        # st.write(f"{st.session_state.get('current_idx')=}")
+        # st.write(f"{st.session_state.get('current_conn_id')=}")
+        # st.write(f"{st.session_state.get('current_chunk_id')=}")
+        # st.write(f"{st.session_state.get('conn_id_select')=}")
+        # st.write(f"{st.session_state.get('chunk_id_select')=}")
+
+
+
+        # conn_sel_idx = conn_id_list.index()
+        # print(
+        #     conn_id_list,
+        #     chunk_id_list,
+        #     conn_id_list.index(current_conn_id),
+        #     chunk_id_list.index(current_chunk_id),
+        # )
         _, fcol1, fcol2, _ = st.columns([1, 2, 2, 1])
         fcol1.selectbox(
             "Connection ID",
             options=conn_id_list,
+            index=conn_id_list.index(current_conn_id),
             key="conn_id_select",
             on_change=reviewer_select_connid,
             args=(review_call_ids,),
         )
+        # print('passed connection dropdown')
+
         fcol2.selectbox(
             "Chunk ID",
             options=chunk_id_list,
+            index=chunk_id_list.index(current_chunk_id),
             key="chunk_id_select",
             on_change=reviewer_select_chunkid,
             args=(review_call_ids,),
         )
+
+        # print('passed both dropdowns')
 
         with st.expander(
             label=f"Expand to see full conversation (ConnectionID: {current_conn_id})"
@@ -227,5 +283,14 @@ def get_reviewer_page(conn, cursor):
         #     st.write(df)
         st.divider()
 
+        select_data_query = "SELECT * FROM call_annotation_table"
+        df = pd.read_sql_query(select_data_query, conn).sort_values(
+            by=["date", "time"], ascending=False
+        )
+        st.subheader("Database")
+        st.dataframe(df, use_container_width=True)
+
         with st.expander(label="Guidelines to use the dashboard"):
             show_pdf(file_path="../sample.pdf")
+
+        # print("*" * 20)
