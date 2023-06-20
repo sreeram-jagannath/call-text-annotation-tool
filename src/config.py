@@ -1,3 +1,4 @@
+# column names in input file
 CONN_ID_COLNAME = "ConnectionID"
 CHUNK_ID_COLNAME = "chunk_id"
 TEXT_COLNAME = "text"
