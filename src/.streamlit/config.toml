@@ -5,5 +5,5 @@ base = "light"
 toolbarMode = "minimal"
 
 [server]
-sslCertFile = "../certificate.pem"
-sslKeyFile = "../private_key.pem"
+sslCertFile = "certificate.pem"
+sslKeyFile = "private_key.pem"
