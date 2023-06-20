@@ -15,6 +15,9 @@ from config import (
     INTENT_COLNAME,
     SUB_INTENT_COLNAME,
     TEXT_COLNAME,
+    INPUT_FILE,
+    INTENT_FILE,
+    MAPPING_FILE,
     DEBUG,
 )
 
@@ -159,9 +162,9 @@ def read_dataframes() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]: A tuple containing the dataframes (data, intents, mapping).
     """
     try:
-        data = pd.read_parquet("../inputs/data.parquet")
-        intents = pd.read_parquet("../inputs/intents.parquet")
-        mapping = pd.read_parquet("../inputs/mapping.parquet")
+        data = pd.read_parquet(INPUT_FILE)
+        intents = pd.read_parquet(INTENT_FILE)
+        mapping = pd.read_parquet(MAPPING_FILE)
 
         return data, intents, mapping
 
