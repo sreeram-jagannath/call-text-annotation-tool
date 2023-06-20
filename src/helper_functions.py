@@ -163,8 +163,6 @@ def read_dataframes() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         intents = pd.read_parquet("../inputs/intents.parquet")
         mapping = pd.read_parquet("../inputs/mapping.parquet")
 
-        data = data.groupby("ConnectionID").head(10).reset_index(drop=True)
-
         return data, intents, mapping
 
     except Exception as e:
